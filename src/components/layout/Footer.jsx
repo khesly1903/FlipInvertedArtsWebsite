@@ -10,6 +10,7 @@ import {
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YoutubeIcon from "@mui/icons-material/Youtube";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -36,6 +37,52 @@ export default function Footer() {
             }}
           />
 
+          <Stack direction="row" spacing={2} sx={{ mb: 2 }}>
+            <Button
+              color="inherit"
+              component={RouterLink}
+              to="/classes"
+              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+            >
+              Classes
+            </Button>
+            <Button
+              color="inherit"
+              component={RouterLink}
+              to="/events"
+              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+            >
+              Events
+            </Button>
+            <Button
+              color="inherit"
+              component={RouterLink}
+              to="/schedules"
+              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+            >
+              Schedules
+            </Button>
+          </Stack>
+
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{ mb: 2, flexWrap: "wrap", justifyContent: "center" }}
+          >
+            <Button color="inherit" component={RouterLink} to="/about-flip">
+              About Flip
+            </Button>
+            <Button color="inherit" component={RouterLink} to="/faq">
+              FAQ
+            </Button>
+            <Button color="inherit" component={RouterLink} to="/privacy-policy">
+              Privacy Policy
+            </Button>
+            <Button color="inherit" component={RouterLink} to="/safety">
+              Safety
+            </Button>
+          </Stack>
+
           <Typography variant="body2" align="center" sx={{ opacity: 0.8 }}>
             © {new Date().getFullYear()} Flip Inverted Arts. All rights
             reserved.
@@ -52,7 +99,7 @@ export default function Footer() {
               target="_blank"
               aria-label="Instagram"
             >
-              <InstagramIcon />
+              <InstagramIcon sx={{ fontSize: 40 }} />
             </IconButton>
             <IconButton
               color="inherit"
@@ -60,7 +107,7 @@ export default function Footer() {
               target="_blank"
               aria-label="Facebook"
             >
-              <FacebookIcon />
+              <FacebookIcon sx={{ fontSize: 40 }} />
             </IconButton>
             <IconButton
               color="inherit"
@@ -68,7 +115,7 @@ export default function Footer() {
               target="_blank"
               aria-label="Youtube"
             >
-              <YoutubeIcon />
+              <YoutubeIcon sx={{ fontSize: 40 }} />
             </IconButton>
           </Stack>
 

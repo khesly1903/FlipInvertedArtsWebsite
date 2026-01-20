@@ -11,20 +11,30 @@ import {
 import { Link as RouterLink } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 
-export default function ClassCard({ image, title, age, detail, link }) {
+export default function ClassCard({
+  image,
+  title,
+  age,
+  detail,
+  link,
+  competitive,
+}) {
   const theme = useTheme();
 
   return (
     <Card
+      component={RouterLink}
+      to={link}
       sx={{
         width: "100%",
-        maxWidth: 345,
-        height: 700,
+        maxWidth: 500,
+        height: 500,
         borderRadius: 4,
         boxShadow: 3,
         display: "flex",
         flexDirection: "column",
-        overflow: "hidden", // Ensure border radius clips content
+        position: "relative",
+        textDecoration: "none",
         transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
         "&:hover": {
           transform: "translateY(-8px)",
@@ -32,89 +42,117 @@ export default function ClassCard({ image, title, age, detail, link }) {
         },
       }}
     >
-      {/* Top Image Section */}
-      <CardMedia
-        component="img"
-        image={image}
-        alt={title}
-        sx={{
-          height: 400,
-          objectFit: "cover",
-          border: "8px solid white", // White border around the image
-          boxSizing: "border-box", // Ensure border is included in dimensions
-          borderRadius: 4, // Match card border radius
-        }}
-      />
-
-      {/* Bottom White Area Section */}
-      <CardContent
-        sx={{
-          flexGrow: 1,
-          display: "flex",
-          flexDirection: "column",
-          gap: 1.5,
-          bgcolor: "background.paper", // White background
-          p: 3,
-        }}
-      >
-        {/* Title */}
-        <Typography
-          variant="h5"
-          component="div"
+      <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
+        {/* Background Image */}
+        <CardMedia
+          component="img"
+          image={image}
+          alt={title}
           sx={{
-            fontWeight: "bold",
-            color: "text.primary",
+            height: "100%",
             width: "100%",
+            objectFit: "cover",
           }}
-        >
-          {title}
-        </Typography>
+        />
 
-        {/* Age Chip */}
-        {age && (
-          <Box sx={{ width: "100%" }}>
-            <Chip
-              label={age}
-              size="small"
-              sx={{
-                fontWeight: "medium",
-                backgroundColor: theme.palette.grey[200],
-                color: "text.primary",
-                border: "none",
-              }}
-            />
-          </Box>
-        )}
-
-        {/* Detail Text */}
-        <Typography
-          variant="body2"
-          sx={{ color: "text.secondary", flexGrow: 1 }}
-        >
-          {detail}
-        </Typography>
-
-        {/* Action Button */}
-        <Button
-          size="medium"
-          variant="contained"
-          component={RouterLink}
-          to={link}
-          fullWidth
+        {/* Dark Gradient Overlay for Readability */}
+        <Box
           sx={{
-            textTransform: "none",
-            borderRadius: 50,
-            mt: 1,
-            bgcolor: "primary.main",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%)",
+          }}
+        />
+
+        {/* Content Container */}
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            p: 3,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
             color: "white",
-            "&:hover": {
-              bgcolor: "primary.dark",
-            },
+            boxSizing: "border-box",
           }}
         >
-          More Info
-        </Button>
-      </CardContent>
+          {/* Top Section: Title and Chips */}
+          <Box>
+            <Typography
+              variant="h4"
+              component="div"
+              sx={{
+                fontWeight: "bold",
+                color: "white",
+                mb: 2,
+                textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
+                fontSize: "3.5rem",
+              }}
+            >
+              {title}
+            </Typography>
+
+            <Box
+              sx={{
+                display: "flex",
+                gap: 1,
+                flexWrap: "wrap",
+              }}
+            >
+              {age && (
+                <Chip
+                  label={age}
+                  size="small"
+                  sx={{
+                    fontWeight: "medium",
+                    bgcolor: "rgba(255, 255, 255, 0.2)",
+                    color: "white",
+                    backdropFilter: "blur(4px)",
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                  }}
+                />
+              )}
+              {competitive && (
+                <Chip
+                  label={competitive}
+                  size="small"
+                  sx={{
+                    fontWeight: "medium",
+                    bgcolor: "rgba(255, 255, 255, 0.2)",
+                    color: "white",
+                    backdropFilter: "blur(4px)",
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                  }}
+                />
+              )}
+            </Box>
+          </Box>
+
+          {/* Bottom Section: Detail */}
+          <Typography
+            variant="body2"
+            sx={{
+              color: "rgba(255, 255, 255, 0.9)",
+              textShadow: "1px 1px 2px rgba(0,0,0,0.8)",
+              display: "-webkit-box",
+              WebkitLineClamp: 3, // Limit text to 3 lines
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+              fontSize: "1.25rem",
+            }}
+          >
+            {detail}
+          </Typography>
+        </Box>
+      </Box>
     </Card>
   );
 }

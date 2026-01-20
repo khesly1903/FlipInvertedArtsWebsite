@@ -27,6 +27,7 @@ import classes_7 from "../assets/classes/classes_7.png";
 export const classes = [
   {
     id: '1',
+    competitive:"competitive",
     type:'kids',
     slug: 'class1',
     title: 'Gymnastics Level 1',
@@ -41,6 +42,7 @@ export const classes = [
   },
   {
     id: '2', 
+    competitive:"non-competitive",
     type:'kids',
     slug: 'class2',
     title: 'Gymnastics Level 2',
@@ -55,7 +57,8 @@ export const classes = [
   },
   {
     id: '3',
-     type:'kids',
+    competitive:"competitive",
+    type:'kids',
     slug: 'class3',
     title: 'Gymnastics Level 3',
     description:
@@ -67,22 +70,24 @@ export const classes = [
     },
     detail: {}
   },
-  {
-    id: '4',
-     type:'adults',
-    slug: 'class4',
-    title: 'Flexibility Flow',
-    description:
-      'Increase your range of motion in forward and backward bending and spinal twists to progress towards splits, lotus and backbends.',
-    ageRange: 'Ages: 14 - Adult',
-    image: {
-      src: classes_4,
-      alt: 'Flexibility Flow',
-    },
-    detail: {}
-  },
+  // {
+  //   id: '4',
+  //   competitive:"non-competitive",
+  //   type:'adults',
+  //   slug: 'class4',
+  //   title: 'Flexibility Flow',
+  //   description:
+  //     'Increase your range of motion in forward and backward bending and spinal twists to progress towards splits, lotus and backbends.',
+  //   ageRange: 'Ages: 14 - Adult',
+  //   image: {
+  //     src: classes_4,
+  //     alt: 'Flexibility Flow',
+  //   },
+  //   detail: {}
+  // },
   {
     id: '5',
+    competitive:"competitive",
     type:'adults',
     slug: 'class5',
     title: 'Handstands',
@@ -97,7 +102,8 @@ export const classes = [
   },
   {
     id: '6',
-type:'adults',
+    competitive:"competitive",
+    type:'adults',
     slug: 'class6',
     title: 'Adult Gymnastics & Parkour',
     description:
@@ -111,6 +117,7 @@ type:'adults',
   },
   {
     id: '7',
+    competitive:"competitive",
     type:'adults',
     slug: 'class7',
     title: 'Personal Training',

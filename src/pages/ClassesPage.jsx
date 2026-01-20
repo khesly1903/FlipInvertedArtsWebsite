@@ -1,4 +1,5 @@
 import { Typography, Container, Box, Grid } from "@mui/material";
+import { motion } from "framer-motion";
 import landingImage from "../assets/landing.webp";
 import ClassCard from "../components/ClassCard";
 import AnimatedInformation from "../components/AnimatedInformation";
@@ -33,26 +34,43 @@ export default function ClassesPage() {
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
       />
 
-      <Box sx={{ mb: 8 }}>
-        <Grid container spacing={4} justifyContent="center">
+      <Box sx={{ mb: 8, px: 2 }}>
+        <Grid
+          container
+          spacing={3}
+          justifyContent="center"
+          maxWidth={"xl"}
+          sx={{ mx: "auto" }}
+        >
           {classes
             .filter((c) => c.type === "kids")
-            .map((cls) => (
+            .map((cls, index) => (
               <Grid
                 item
                 key={cls.id}
-                xs={12}
-                sm={6}
-                md={4}
+                size={{ xs: 12, md: 4 }}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
-                <ClassCard
-                  image={cls.image.src}
-                  title={cls.title}
-                  age={cls.ageRange}
-                  detail={cls.description}
-                  link={`/classes/${cls.slug}`}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <ClassCard
+                    image={cls.image.src}
+                    title={cls.title}
+                    age={cls.ageRange}
+                    detail={cls.description}
+                    link={`/classes/${cls.slug}`}
+                    competitive={cls.competitive}
+                  />
+                </motion.div>
               </Grid>
             ))}
         </Grid>
@@ -63,26 +81,43 @@ export default function ClassesPage() {
         title="Adults Classes"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
       />
-      <Box sx={{ mb: 8 }}>
-        <Grid container spacing={4} justifyContent="center">
+      <Box sx={{ mb: 8, px: 2 }}>
+        <Grid
+          container
+          spacing={3}
+          justifyContent="center"
+          maxWidth={"xl"}
+          sx={{ mx: "auto" }}
+        >
           {classes
             .filter((c) => c.type === "adults")
-            .map((cls) => (
+            .map((cls, index) => (
               <Grid
                 item
                 key={cls.id}
-                xs={12}
-                sm={6}
-                md={4}
+                size={{ xs: 12, md: 4 }}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
-                <ClassCard
-                  image={cls.image.src}
-                  title={cls.title}
-                  age={cls.ageRange}
-                  detail={cls.description}
-                  link={`/classes/${cls.slug}`}
-                />
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <ClassCard
+                    image={cls.image.src}
+                    title={cls.title}
+                    age={cls.ageRange}
+                    detail={cls.description}
+                    link={`/classes/${cls.slug}`}
+                    competitive={cls.competitive}
+                  />
+                </motion.div>
               </Grid>
             ))}
         </Grid>
