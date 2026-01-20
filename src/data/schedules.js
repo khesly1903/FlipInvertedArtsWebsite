@@ -1,0 +1,26 @@
+// add type safety
+[
+    {
+        id:"1",
+        title:"",
+        age:"",
+        date:"",
+        time:"",
+        location:"",
+        gender:"",
+        type:"",
+        program:"",  
+    },
+     {
+        id:"2",
+        title:"",
+        age:"",
+        date:"",
+        time:"",
+        duration:"",
+        location:"",
+        gender:"",
+        type:"",
+        program:"",
+    }
+]

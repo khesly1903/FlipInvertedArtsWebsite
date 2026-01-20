@@ -3,7 +3,7 @@ import RootLayout from "../components/layout/RootLayout";
 import HomePage from "../pages/HomePage";
 import ClassesPage from "../pages/ClassesPage";
 import EventsPage from "../pages/EventsPage";
-import LocationsPage from "../pages/LocationsPage";
+import SchedulesPage from "../pages/SchedulesPage";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <EventsPage />,
       },
       {
-        path: "locations",
-        element: <LocationsPage />,
+        path: "schedules",
+        element: <SchedulesPage />,
       },
     ],
   },

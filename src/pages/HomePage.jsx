@@ -1,4 +1,5 @@
 import { Typography, Container, Box, Grid } from "@mui/material";
+import { motion } from "framer-motion";
 import { Link as RouterLink } from "react-router-dom";
 import SplitText from "../components/SplitText";
 import landingImage from "../assets/landing.webp";
@@ -8,6 +9,11 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SchoolIcon from "@mui/icons-material/School";
 import EventIcon from "@mui/icons-material/Event";
 import StorefrontIcon from "@mui/icons-material/Storefront";
+
+import ReviewCard from "../components/ReviewCard";
+import HomePageCard from "../components/HomePageCard";
+import { reviews } from "../data/review";
+import AnimatedInformation from "../components/AnimatedInformation";
 
 export default function HomePage() {
   return (
@@ -85,19 +91,14 @@ export default function HomePage() {
                 icon: <EventIcon sx={{ fontSize: 60 }} />,
               },
               {
-                label: "Locations",
-                path: "/locations",
+                label: "Schedules",
+                path: "/schedules",
                 icon: <LocationOnIcon sx={{ fontSize: 60 }} />,
               },
               {
                 label: "Shop",
                 path: "/shop",
                 icon: <StorefrontIcon sx={{ fontSize: 60 }} />,
-              },
-              {
-                label: "Contact",
-                path: "/",
-                icon: <AddIcCallIcon sx={{ fontSize: 60 }} />,
               },
             ].map((item) => (
               <Grid
@@ -137,23 +138,104 @@ export default function HomePage() {
       </Box>
 
       {/* Main Content */}
-      <Container maxWidth="lg" sx={{ py: 4 }}>
+
+      <AnimatedInformation
+        title={"Our Mission"}
+        text={
+          "Our Mission (instead of Hospitality & Residence): Flip Inverted ArtsAcademy is one of the first academies to bring recreational gymnastics for kids and adults to Egypt. Flip’s founder, Julia Alexan, is certified by USA Gymnastics and brings in many new concepts on how to teach and train gymnastics, different from what is typically found in Egypt. At Flip, we believe that you can instill athletics in kids at a young age through gymnastics by building their progress in a fun and friendly way that leaves them loving the sport, and it will leave a long-lasting positive effect on their lifelong concept of gymnastics, fitness and sports in general."
+        }
+      />
+      {/* Highlights Section */}
+      <Container maxWidth="xl" sx={{ py: 4 }}>
         <Typography variant="h4" gutterBottom textAlign={"center"}>
-          Our Mission
+          What we offer
         </Typography>
-        <Typography variant="body1" gutterBottom textAlign={"center"}>
-          Our Mission (instead of Hospitality & Residence): Flip Inverted Arts
-          Academy is one of the first academies to bring recreational gymnastics
-          for kids and adults to Egypt. Flip’s founder, Julia Alexan, is
-          certified by USA Gymnastics and brings in many new concepts on how to
-          teach and train gymnastics, different from what is typically found in
-          Egypt. At Flip, we believe that you can instill athletics in kids at a
-          young age through gymnastics by building their progress in a fun and
-          friendly way that leaves them loving the sport, and it will leave a
-          long-lasting positive effect on their lifelong concept of gymnastics,
-          fitness and sports in general.
-        </Typography>
+        <Grid container spacing={4}>
+          {[
+            {
+              title: "Classes",
+              description:
+                "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+              image: "./placeholder.png",
+              path: "/classes",
+            },
+            {
+              title: "Events",
+              description:
+                "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+              image: "./placeholder.png",
+              path: "./events",
+            },
+            {
+              title: "Schedules",
+              description:
+                "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+              image: "./placeholder.png",
+              path: "./schedules",
+            },
+          ].map((item, index) => (
+            <Grid item size={{ xs: 12, md: 4 }} key={item.title}>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
+                <HomePageCard
+                  title={item.title}
+                  description={item.description}
+                  image={item.image}
+                  path={item.path}
+                />
+              </motion.div>
+            </Grid>
+          ))}
+        </Grid>
       </Container>
+
+      {/* Reviews Section */}
+      <Box sx={{ py: 8, overflow: "hidden" }}>
+        <Container maxWidth="xl">
+          <Typography
+            variant="h4"
+            gutterBottom
+            textAlign="center"
+            sx={{ mb: 4 }}
+          >
+            Realistic Reviews
+          </Typography>
+        </Container>
+        <Box sx={{ display: "flex", overflow: "hidden", width: "100%", py: 4 }}>
+          <motion.div
+            style={{ display: "flex", width: "max-content" }}
+            animate={{ x: "-50%" }}
+            transition={{
+              repeat: Infinity,
+              ease: "linear",
+              duration: 40,
+            }}
+          >
+            {[...reviews, ...reviews].map((review, index) => (
+              <Box
+                key={`${review.id}-${index}`}
+                sx={{
+                  width: { xs: 300, md: 400 },
+                  flexShrink: 0,
+                  mx: 1,
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <ReviewCard
+                  image={review.image}
+                  name={review.name}
+                  text={review.text}
+                />
+              </Box>
+            ))}
+          </motion.div>
+        </Box>
+      </Box>
     </Box>
   );
 }
