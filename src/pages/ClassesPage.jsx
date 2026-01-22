@@ -5,6 +5,15 @@ import ClassCard from "../components/ClassCard";
 import AnimatedInformation from "../components/AnimatedInformation";
 import PageLandings from "../components/PageLandings";
 import { classes } from "../data/classes";
+import ImageCarousel from "../components/ImageCarousel";
+
+import classes_1 from "../assets/classes/classes_1.png";
+import classes_2 from "../assets/classes/classes_2.png";
+import classes_3 from "../assets/classes/classes_3.png";
+import classes_4 from "../assets/classes/classes_4.png";
+import classes_5 from "../assets/classes/classes_5.png";
+import classes_6 from "../assets/classes/classes_6.png";
+import classes_7 from "../assets/classes/classes_7.png";
 
 export default function ClassesPage() {
   return (
@@ -19,15 +28,26 @@ export default function ClassesPage() {
       />
 
       {/* idk.png */}
-      <Box
+      {/* <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
         width={"100%"}
       >
         <img src="/idk.png" alt="idk" />
-      </Box>
+      </Box> */}
 
+      <ImageCarousel
+        images={[
+          classes_1,
+          classes_2,
+          classes_3,
+          classes_4,
+          classes_5,
+          classes_6,
+          classes_7,
+        ]}
+      />
       {/* Kids Classes Section */}
       <AnimatedInformation
         title="Kids Classes"
