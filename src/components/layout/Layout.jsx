@@ -1,8 +1,12 @@
 import { Box } from "@mui/material";
+import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
     <Box
       sx={{
@@ -11,7 +15,7 @@ export default function Layout({ children }) {
         minHeight: "100vh",
       }}
     >
-      <Navbar />
+      <Navbar hideOnScrollTop={isHomePage} />
       <Box component="main" sx={{ flexGrow: 1 }}>
         {children}
       </Box>
