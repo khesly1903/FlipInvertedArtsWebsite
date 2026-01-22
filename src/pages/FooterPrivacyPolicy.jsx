@@ -1,22 +1,20 @@
 import { Container, Typography, Box } from "@mui/material";
+import HalfPageLanding from "../components/HalfPageLanding";
+import landing from "../assets/landing.webp";
 
 export default function FooterPrivacyPolicy() {
   return (
     <Box>
+      <HalfPageLanding
+        image={landing}
+        title1="Your Info"
+        title2="PRIVACY POLICY"
+      />
+
       <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Typography variant="h2" gutterBottom>
-          Privacy Policy
-        </Typography>
-        <Typography variant="body1" paragraph>
-          At Flip Inverted Arts, we take your privacy seriously. This policy
-          outlines how we collect, use, and protect your personal information.
-        </Typography>
-        <Typography variant="h5" gutterBottom sx={{ mt: 3 }}>
-          Information Collection
-        </Typography>
-        <Typography variant="body1" paragraph>
-          We collect information you provide directly to us when you register
-          for classes or contact us.
+        <Typography variant="body1">
+          Your privacy is important to us. The info you submit to us is used to
+          find you a session most fit for you. We never share or sell your info.
         </Typography>
       </Container>
     </Box>
