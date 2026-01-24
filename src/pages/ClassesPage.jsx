@@ -1,5 +1,7 @@
 import { Typography, Container, Box, Grid } from "@mui/material";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import landingImage from "../assets/landing.webp";
 import ClassCard from "../components/ClassCard";
@@ -15,8 +17,18 @@ import class_4_card from "../assets/classes/class_4/class_4_card.png";
 import class_5_card from "../assets/classes/class_5/class_5_card.png";
 import class_6_card from "../assets/classes/class_6/class_6_card.png";
 
-
 export default function ClassesPage() {
+  const { state } = useLocation();
+
+  useEffect(() => {
+    if (state && state.targetId) {
+      const element = document.getElementById(state.targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [state]);
+
   return (
     <Box>
       {/* Classes Banner */}
@@ -49,10 +61,12 @@ export default function ClassesPage() {
         ]}
       />
       {/* Kids Classes Section */}
-      <AnimatedInformation
-        title="Kids Classes"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
-      />
+      <Box id="kids-classes">
+        <AnimatedInformation
+          title="Kids Classes"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+        />
+      </Box>
 
       <Box sx={{ mb: 8, px: 2 }}>
         <Grid
@@ -97,10 +111,12 @@ export default function ClassesPage() {
       </Box>
 
       {/* Adults Classes Section */}
-      <AnimatedInformation
-        title="Adults Classes"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
-      />
+      <Box id="adults-classes">
+        <AnimatedInformation
+          title="Adults Classes"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+        />
+      </Box>
       <Box sx={{ mb: 8, px: 2 }}>
         <Grid
           container

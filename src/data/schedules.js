@@ -41,9 +41,9 @@ export const schedules = [
     },
     {
         id: "3",
-        location: "New Cairo",
+        location: "Gezira Club October",
         image: newCairo1,
-        path: "new-cairo",
+        path: "gezira-club-october",
         details: {
             images: [
                 newCairo1,
@@ -69,9 +69,9 @@ export const schedules = [
     },
     {
         id: "5",
-        location: "Octobar",
+        location: "New Cairo",
         image: newCairo1, // Fallback as no image provided
-        path: "octobar",
+        path: "new-cairo",
         details: {
             images: [
                  newCairo1,
@@ -83,9 +83,9 @@ export const schedules = [
     },
     {
         id: "6",
-        location: "Heliopolis",
+        location: "Sahel",
         image: zamalekStudio1, // Fallback as no image provided
-        path: "heliopolis",
+        path: "sahel",
         details: {
             images: [
                  zamalekStudio1,

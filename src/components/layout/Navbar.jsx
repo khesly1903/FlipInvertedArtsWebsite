@@ -29,9 +29,12 @@ const menuItems = [
     path: "/classes",
     desc: "Explore our classes",
     subLinks: [
-      { title: "Classes 1", path: "/classes/1" },
-      { title: "Classes 2", path: "/classes/2" },
-      { title: "Classes 3", path: "/classes/3" },
+      { title: "Kids Classes", path: "/classes", sectionId: "kids-classes" },
+      {
+        title: "Adults Classes",
+        path: "/classes",
+        sectionId: "adults-classes",
+      },
     ],
   },
   {
@@ -39,8 +42,13 @@ const menuItems = [
     path: "/events",
     desc: "Upcoming events",
     subLinks: [
-      { title: "Event 1", path: "/events/1" },
-      { title: "Event 2", path: "/events/2" },
+      { title: "Current Events", path: "/events", sectionId: "current-events" },
+      {
+        title: "Upcoming Events",
+        path: "/events",
+        sectionId: "upcoming-events",
+      },
+      { title: "Past Events", path: "/events", sectionId: "past-events" },
     ],
   },
   {
@@ -48,27 +56,25 @@ const menuItems = [
     path: "/schedules",
     desc: "Check our timings",
     subLinks: [
-      { title: "Schedule 1", path: "/schedules/1" },
-      { title: "Schedule 2", path: "/schedules/2" },
+      { title: "Zamalek", path: "/schedules/zamalek" },
+      { title: "Maadi", path: "/schedules/maadi" },
+      { title: "Gezira Club October", path: "/schedules/gezira-club-october" },
+      { title: "Sheikh Zayed", path: "/schedules/sheikh-zayed" },
+      { title: "New Cairo", path: "/schedules/new-cairo" },
+      { title: "Sahel", path: "/schedules/sahel" },
     ],
   },
   {
     title: "About Flip",
     path: "/about-flip",
     desc: "Learn more about us",
-    subLinks: [
-      { title: "Our Story", path: "/about-flip/story" },
-      { title: "Team", path: "/about-flip/team" },
-    ],
+    subLinks: [],
   },
   {
     title: "FAQ",
     path: "/faq",
     desc: "Frequently Asked Questions",
-    subLinks: [
-      { title: "General", path: "/faq/general" },
-      { title: "Payment", path: "/faq/payment" },
-    ],
+    subLinks: [],
   },
 ];
 
@@ -96,8 +102,8 @@ export default function Navbar({ hideOnScrollTop = false }) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleNavigation = (path) => {
-    navigate(path);
+  const handleNavigation = (path, sectionId) => {
+    navigate(path, { state: { targetId: sectionId } });
     setIsMenuOpen(false);
   };
 
@@ -178,47 +184,47 @@ export default function Navbar({ hideOnScrollTop = false }) {
       >
         <Container maxWidth="lg">
           <Box sx={{ mt: 4 }}>
-            {menuItems.map((item, index) => (
-              <Accordion
-                key={index}
-                sx={{
-                  backgroundColor: "transparent",
-                  color: "white",
-                  boxShadow: "none",
-                  borderBottom: "1px solid rgba(255,255,255,0.1)",
-                  "&:before": {
-                    display: "none",
-                  },
-                }}
-              >
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-                  aria-controls={`panel${index}-content`}
-                  id={`panel${index}-header`}
+            {menuItems.map((item, index) =>
+              item.subLinks && item.subLinks.length > 0 ? (
+                <Accordion
+                  key={index}
+                  sx={{
+                    backgroundColor: "transparent",
+                    color: "white",
+                    boxShadow: "none",
+                    borderBottom: "1px solid rgba(255,255,255,0.1)",
+                    "&:before": {
+                      display: "none",
+                    },
+                  }}
                 >
-                  <Typography variant="h4" fontWeight="bold">
-                    {item.title}
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails
-                  sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                >
-                  <Typography
-                    variant="h6"
-                    sx={{
-                      paddingLeft: "1rem",
-                      cursor: "pointer",
-                      "&:hover": { color: "#ccc", paddingLeft: "1.5rem" },
-                      transition: "padding 0.3s ease",
-                      fontWeight: "bold",
-                      opacity: 0.8,
-                    }}
-                    onClick={() => handleNavigation(item.path)}
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+                    aria-controls={`panel${index}-content`}
+                    id={`panel${index}-header`}
                   >
-                    View {item.title} Page &rarr;
-                  </Typography>
-                  {item.subLinks &&
-                    item.subLinks.map((subLink, subIndex) => (
+                    <Typography variant="h4" fontWeight="bold">
+                      {item.title}
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        paddingLeft: "1rem",
+                        cursor: "pointer",
+                        "&:hover": { color: "#ccc", paddingLeft: "1.5rem" },
+                        transition: "padding 0.3s ease",
+                        fontWeight: "bold",
+                        opacity: 0.8,
+                      }}
+                      onClick={() => handleNavigation(item.path)}
+                    >
+                      View {item.title} Page &rarr;
+                    </Typography>
+                    {item.subLinks.map((subLink, subIndex) => (
                       <Typography
                         key={subIndex}
                         variant="body1"
@@ -229,14 +235,40 @@ export default function Navbar({ hideOnScrollTop = false }) {
                           transition: "padding 0.3s ease",
                           fontSize: "1.2rem",
                         }}
-                        onClick={() => handleNavigation(subLink.path)}
+                        onClick={() =>
+                          handleNavigation(subLink.path, subLink.sectionId)
+                        }
                       >
                         {subLink.title}
                       </Typography>
                     ))}
-                </AccordionDetails>
-              </Accordion>
-            ))}
+                  </AccordionDetails>
+                </Accordion>
+              ) : (
+                <Box
+                  key={index}
+                  sx={{
+                    borderBottom: "1px solid rgba(255,255,255,0.1)",
+                    py: 1.5,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      px: 2,
+                      cursor: "pointer",
+                    }}
+                    onClick={() => handleNavigation(item.path)}
+                  >
+                    <Typography variant="h4" fontWeight="bold">
+                      {item.title}
+                    </Typography>
+                  </Box>
+                </Box>
+              ),
+            )}
           </Box>
         </Container>
       </Dialog>
