@@ -113,7 +113,7 @@ export default function Navbar({ hideOnScrollTop = false }) {
         position="fixed"
         elevation={scrolled ? 4 : 0}
         sx={{
-          backgroundColor: scrolled ? "rgba(0, 0, 0, 0.6)" : "transparent",
+          backgroundColor: scrolled ? "rgba(0, 0, 0, 0.6)" : "rgba(0, 0, 0, 0.1)",
           transition:
             "background-color 1s ease, opacity 1s ease, visibility 1s ease",
           boxShadow: scrolled ? undefined : "none",
