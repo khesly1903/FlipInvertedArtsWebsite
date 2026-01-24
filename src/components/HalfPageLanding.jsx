@@ -4,7 +4,7 @@ export default function HalfPageLanding({ image, title1, title2 }) {
   return (
     <Box
       sx={{
-        height: "50vh",
+        height: "70vh",
         width: "100%",
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",

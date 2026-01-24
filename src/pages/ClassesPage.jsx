@@ -1,5 +1,6 @@
 import { Typography, Container, Box, Grid } from "@mui/material";
 import { motion } from "framer-motion";
+
 import landingImage from "../assets/landing.webp";
 import ClassCard from "../components/ClassCard";
 import AnimatedInformation from "../components/AnimatedInformation";
@@ -7,13 +8,13 @@ import PageLandings from "../components/PageLandings";
 import { classes } from "../data/classes";
 import ImageCarousel from "../components/ImageCarousel";
 
-import classes_1 from "../assets/classes/classes_1.png";
-import classes_2 from "../assets/classes/classes_2.png";
-import classes_3 from "../assets/classes/classes_3.png";
-import classes_4 from "../assets/classes/classes_4.png";
-import classes_5 from "../assets/classes/classes_5.png";
-import classes_6 from "../assets/classes/classes_6.png";
-import classes_7 from "../assets/classes/classes_7.png";
+import class_1_card from "../assets/classes/class_1/class_1_card.png";
+import class_2_card from "../assets/classes/class_2/class_2_card.png";
+import class_3_card from "../assets/classes/class_3/class_3_card.png";
+import class_4_card from "../assets/classes/class_4/class_4_card.png";
+import class_5_card from "../assets/classes/class_5/class_5_card.png";
+import class_6_card from "../assets/classes/class_6/class_6_card.png";
+
 
 export default function ClassesPage() {
   return (
@@ -39,13 +40,12 @@ export default function ClassesPage() {
 
       <ImageCarousel
         images={[
-          classes_1,
-          classes_2,
-          classes_3,
-          classes_4,
-          classes_5,
-          classes_6,
-          classes_7,
+          class_1_card,
+          class_2_card,
+          class_3_card,
+          class_4_card,
+          class_5_card,
+          class_6_card,
         ]}
       />
       {/* Kids Classes Section */}

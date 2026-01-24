@@ -2,8 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../components/layout/RootLayout";
 import HomePage from "../pages/HomePage";
 import ClassesPage from "../pages/ClassesPage";
+import ClassDetailPage from "../pages/ClassDetailPage";
 import EventsPage from "../pages/EventsPage";
 import SchedulesPage from "../pages/SchedulesPage";
+import ScheduleDetailPage from "../pages/ScheduleDetailPage";
 import FooterAboutFlip from "../pages/FooterAboutFlip";
 import FooterFAQ from "../pages/FooterFAQ";
 import FooterPrivacyPolicy from "../pages/FooterPrivacyPolicy";
@@ -20,7 +22,16 @@ const router = createBrowserRouter([
       },
       {
         path: "classes",
-        element: <ClassesPage />,
+        children: [
+          {
+            index: true,
+            element: <ClassesPage />,
+          },
+          {
+            path: ":slug",
+            element: <ClassDetailPage />,
+          },
+        ],
       },
       {
         path: "events",
@@ -28,7 +39,16 @@ const router = createBrowserRouter([
       },
       {
         path: "schedules",
-        element: <SchedulesPage />,
+        children: [
+          {
+            index: true,
+            element: <SchedulesPage />,
+          },
+          {
+            path: ":slug",
+            element: <ScheduleDetailPage />,
+          },
+        ],
       },
       {
         path: "about-flip",

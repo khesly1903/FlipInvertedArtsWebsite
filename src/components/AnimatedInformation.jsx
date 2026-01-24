@@ -41,7 +41,7 @@ export default function AnimatedInformation({ title, text }) {
             initial="hidden"
             animate={controls}
           >
-            <Typography variant="h3" gutterBottom>
+            <Typography variant="h3" gutterBottom fontSize={{ xs: "4rem", md: "4rem" }}>
               {title}
             </Typography>
           </motion.div>

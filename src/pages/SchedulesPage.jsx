@@ -3,34 +3,10 @@ import LocationCard from "../components/LocationCard";
 import landingImage from "../assets/landing.webp";
 import PageLandings from "../components/PageLandings";
 import AnimatedInformation from "../components/AnimatedInformation";
+import { schedules } from "../data/schedules";
+import { Link } from "react-router-dom";
 
 export default function SchedulesPage() {
-  const locations = [
-    {
-      title: "Location 1",
-      image: "./placeholder.png",
-    },
-    {
-      title: "Location 2",
-      image: "./placeholder.png",
-    },
-    {
-      title: "Location 3",
-      image: "./placeholder.png",
-    },
-    {
-      title: "Location 4",
-      image: "./placeholder.png",
-    },
-    {
-      title: "Location 5",
-      image: "./placeholder.png",
-    },
-    {
-      title: "Location 6",
-      image: "./placeholder.png",
-    },
-  ];
   return (
     <Box>
       {/* Locations Banner */}
@@ -41,11 +17,18 @@ export default function SchedulesPage() {
       />
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Grid container spacing={4}>
-          {locations.map((location) => (
-            <Grid item size={{ xs: 12, md: 6, lg: 4 }} key={location.title}>
+          {schedules.map((schedule) => (
+            <Grid
+              item
+              size={{ xs: 12, md: 6, lg: 4 }}
+              key={schedule.id}
+              component={Link}
+              to={`/schedules/${schedule.path}`}
+              sx={{ textDecoration: "none" }}
+            >
               <LocationCard
-                locationTitle={location.title}
-                image={location.image}
+                locationTitle={schedule.location}
+                image={schedule.image}
               />
             </Grid>
           ))}
