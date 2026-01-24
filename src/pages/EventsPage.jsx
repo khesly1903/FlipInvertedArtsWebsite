@@ -7,6 +7,7 @@ import MasonryGrid from "../components/Masonry";
 import { events } from "../data/events";
 import landingImage from "../assets/landing.webp";
 import AnimatedTitle from "../components/AnimatedTitle";
+import eventSummerVideo from "../assets/events/event_summer.mp4";
 
 const EventsPage = () => {
   const { state } = useLocation();
@@ -68,6 +69,16 @@ const EventsPage = () => {
           </Box>
         )}
       </Container>
+      <Box sx={{ width: "100%", overflow: "hidden" }}>
+        <video
+          src={eventSummerVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ width: "100%", height: "auto", display: "block" }}
+        />
+      </Box>
     </Box>
   );
 };
