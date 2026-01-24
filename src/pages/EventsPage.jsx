@@ -27,7 +27,7 @@ const EventsPage = () => {
 
   return (
     <Box>
-      <HalfPageLanding image={landingImage} title1="FLIP" title2="EVENTS" />
+      <HalfPageLanding image={landingImage} logo="/flip_logo.svg" />
 
       <AnimatedInformation
         title="Events"
@@ -35,7 +35,7 @@ const EventsPage = () => {
       />
 
       <Divider />
-      <Box id="current-events"  sx={{ scrollMarginTop: "50px" }}>
+      <Box id="current-events" sx={{ scrollMarginTop: "50px" }}>
         <AnimatedTitle title="Current Events" />
       </Box>
       <Container maxWidth="lg" sx={{ mb: 8 }}>
@@ -50,7 +50,7 @@ const EventsPage = () => {
         {/* Upcoming Events */}
         {upcomingEvents.length > 0 && (
           <Box sx={{ mb: 8 }}>
-            <Box id="upcoming-events"  sx={{ scrollMarginTop: "50px" }}>
+            <Box id="upcoming-events" sx={{ scrollMarginTop: "50px" }}>
               <AnimatedTitle title="What is coming" />
             </Box>
             <MasonryGrid images={upcomingEvents.map((e) => e.image)} />
@@ -61,7 +61,7 @@ const EventsPage = () => {
         {/* Unavailable Events */}
         {unavailableEvents.length > 0 && (
           <Box sx={{ mb: 8 }}>
-            <Box id="past-events"  sx={{ scrollMarginTop: "50px" }}>
+            <Box id="past-events" sx={{ scrollMarginTop: "50px" }}>
               <AnimatedTitle title="What did you miss" />
             </Box>
             <MasonryGrid images={unavailableEvents.map((e) => e.image)} />

@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import landingImage from "../assets/landing.webp";
 import ClassCard from "../components/ClassCard";
 import AnimatedInformation from "../components/AnimatedInformation";
-import PageLandings from "../components/PageLandings";
+import HalfPageLanding from "../components/HalfPageLanding";
 import { classes } from "../data/classes";
 import ImageCarousel from "../components/ImageCarousel";
 
@@ -32,7 +32,7 @@ export default function ClassesPage() {
   return (
     <Box>
       {/* Classes Banner */}
-      <PageLandings image={landingImage} logo="/flip_logo.svg" />
+      <HalfPageLanding image={landingImage} logo="/flip_logo.svg" />
 
       {/* About classes section */}
       <AnimatedInformation
