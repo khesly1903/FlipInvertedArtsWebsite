@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link as RouterLink } from "react-router-dom";
 import SplitText from "../components/SplitText";
 import landingImage from "../assets/landing.webp";
+import { useTranslation } from "react-i18next";
 
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -16,6 +17,7 @@ import { reviews } from "../data/review";
 import AnimatedInformation from "../components/AnimatedInformation";
 
 export default function HomePage() {
+  const { t } = useTranslation();
   return (
     <Box>
       {/* Hero Section */}
@@ -81,22 +83,22 @@ export default function HomePage() {
           >
             {[
               {
-                label: "Classes",
+                label: t("home.classes"),
                 path: "/classes",
                 icon: <SchoolIcon sx={{ fontSize: 60 }} />,
               },
               {
-                label: "Events",
+                label: t("home.events"),
                 path: "/events",
                 icon: <EventIcon sx={{ fontSize: 60 }} />,
               },
               {
-                label: "Schedules",
+                label: t("home.schedules"),
                 path: "/schedules",
                 icon: <LocationOnIcon sx={{ fontSize: 60 }} />,
               },
               {
-                label: "Shop",
+                label: t("home.shop"),
                 path: "/shop",
                 icon: <StorefrontIcon sx={{ fontSize: 60 }} />,
               },
@@ -140,36 +142,31 @@ export default function HomePage() {
       {/* Main Content */}
 
       <AnimatedInformation
-        title={"Our Mission"}
-        text={
-          "Our Mission (instead of Hospitality & Residence): Flip Inverted ArtsAcademy is one of the first academies to bring recreational gymnastics for kids and adults to Egypt. Flip’s founder, Julia Alexan, is certified by USA Gymnastics and brings in many new concepts on how to teach and train gymnastics, different from what is typically found in Egypt. At Flip, we believe that you can instill athletics in kids at a young age through gymnastics by building their progress in a fun and friendly way that leaves them loving the sport, and it will leave a long-lasting positive effect on their lifelong concept of gymnastics, fitness and sports in general."
-        }
+        title={t("home.home-title")}
+        text={t("home.home-text")}
       />
       {/* Highlights Section */}
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Typography variant="h4" gutterBottom textAlign={"center"}>
-          What we offer
+          {t("home.what-we-offer")}
         </Typography>
         <Grid container spacing={4}>
           {[
             {
-              title: "Classes",
-              description:
-                "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+              title: t("home.classes"),
+              description: t("home.classes-description"),
               image: "./placeholder.png",
               path: "/classes",
             },
             {
-              title: "Events",
-              description:
-                "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+              title: t("home.events"),
+              description: t("home.events-description"),
               image: "./placeholder.png",
               path: "./events",
             },
             {
-              title: "Schedules",
-              description:
-                "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+              title: t("home.schedules"),
+              description: t("home.schedules-description"),
               image: "./placeholder.png",
               path: "./schedules",
             },
@@ -202,7 +199,7 @@ export default function HomePage() {
             textAlign="center"
             sx={{ mb: 4 }}
           >
-            Realistic Reviews
+            {t("home.reviews")}
           </Typography>
         </Container>
         <Box sx={{ display: "flex", overflow: "hidden", width: "100%", py: 4 }}>

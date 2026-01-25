@@ -1,77 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Container, Typography, Box, Grid } from "@mui/material";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import landing from "../assets/landing.webp";
 import HalfPageLanding from "../components/HalfPageLanding";
-
-const faqData1 = [
-  {
-    id: 1,
-    question: "What if I can’t do the splits?",
-    answer:
-      "No problem!  That’s what we’re here for is to learn how to safely get just 1 cm closer, and keep progressing from there.",
-  },
-  {
-    id: 2,
-    question: "I’m not flexible at all. Can I still join?",
-    answer:
-      "Of course!!  The point of the course is to increase your flexibility no matter what level you’re currently at.  So let’s work on it together!",
-  },
-  {
-    id: 3,
-    question: "Am I too old to become more flexible?",
-    answer:
-      "When it comes to flexibility, your only physical limits are your bones and joints.  The muscles are what we work with to lengthen and extend to give you more room to move about your joints.  So, as long as your muscles are in normal condition, then we will be able to increase your flexibility and therefore mobility as well.  Stick to the course, follow the techniques, and you’ll get the progress you’re looking for no matter what age you are.  You can get there with dedication even if you’re over 70 years old.",
-  },
-  {
-    id: 4,
-    question: "What if I have an injury?",
-    answer:
-      "If it’s a recent injury, we don’t recommend a flexibility program unless specifically prescribed to you by your doctor.  If it’s an old injury, this is the best program for you! Old injuries left unattended build scar tissues in the muscles that you need to release through direct intervention.",
-  },
-  {
-    id: 5,
-    question: "What if I have an injury?",
-    answer:
-      "If it’s a recent injury, we don’t recommend a flexibility program unless specifically prescribed to you by your doctor.  If it’s an old injury, this is the best program for you! Old injuries left unattended build scar tissues in the muscles that you need to release through direct intervention.",
-  },
-  {
-    id: 6,
-    question: "What if I have an injury?",
-    answer:
-      "If it’s a recent injury, we don’t recommend a flexibility program unless specifically prescribed to you by your doctor.  If it’s an old injury, this is the best program for you! Old injuries left unattended build scar tissues in the muscles that you need to release through direct intervention.",
-  },
-  {
-    id: 7,
-    question:
-      "What if I have a disc like a bulging or herniated disc in my spine?",
-    answer:
-      "For most cases that are not severe, this can be quite easily fixed with directed flexibility & strength. We can cover this in your personalized plan when you register for a package.",
-  },
-  {
-    id: 8,
-    question: "How does flexibility help professional athletes?",
-    answer:
-      "Flexibility is a very important element to playing your sport well.  First to increase or maintain the range the motion you need for your most efficient backstroke, for example, for a swimmer; or, to hit a great forehand/backhand for a squash or tennis player; or to avoid pulling a hamstring for a soccer player kicking the ball a long distance.  And secondly, to decrease your recovery time so you can hit the court again the next day feeling fresh!  Julia has worked with Professional Men’s Women’s Squash players seated in the top 20 in the world, tennis athletes, gymnasts and professional soccer players on implementing a flexibility program to prevent injuries, increase their mobility specific to their sport, and recovering from their injuries.",
-  },
-];
-
-const faqData2 = [
-  {
-    id: 1,
-    question: "Can my child still join gymnastics with no prior training?",
-    answer:
-      "Yes, of course! We offer a recreational program that accomodates everyone at the current training level. Registration is ongoing so you can join anytime!",
-  },
-];
-
-const faqData3 = [
-  {
-    id: 1,
-    question: "What if my internet connection drops?",
-    answer:
-      "Well, for online classes, it's your responsibility to make sure you have a strong and stable internet connection before you start. There are no make up classes or refunds for online classes.",
-  },
-];
+import { useMemo } from "react";
 
 function FAQuestion({ title, text }) {
   return (
@@ -98,18 +30,77 @@ function FAQuestion({ title, text }) {
 }
 
 export default function FooterFAQ() {
+  const { t } = useTranslation();
+
+  const faqData1 = useMemo(
+    () => [
+      {
+        id: 1,
+        question: t("footer-pages.faq.flexibility-flow.q1.question"),
+        answer: t("footer-pages.faq.flexibility-flow.q1.answer"),
+      },
+      {
+        id: 2,
+        question: t("footer-pages.faq.flexibility-flow.q2.question"),
+        answer: t("footer-pages.faq.flexibility-flow.q2.answer"),
+      },
+      {
+        id: 3,
+        question: t("footer-pages.faq.flexibility-flow.q3.question"),
+        answer: t("footer-pages.faq.flexibility-flow.q3.answer"),
+      },
+      {
+        id: 4,
+        question: t("footer-pages.faq.flexibility-flow.q4.question"),
+        answer: t("footer-pages.faq.flexibility-flow.q4.answer"),
+      },
+      {
+        id: 5,
+        question: t("footer-pages.faq.flexibility-flow.q5.question"),
+        answer: t("footer-pages.faq.flexibility-flow.q5.answer"),
+      },
+      {
+        id: 6,
+        question: t("footer-pages.faq.flexibility-flow.q6.question"),
+        answer: t("footer-pages.faq.flexibility-flow.q6.answer"),
+      },
+    ],
+    [t],
+  );
+
+  const faqData2 = useMemo(
+    () => [
+      {
+        id: 1,
+        question: t("footer-pages.faq.kids-gymnastics.q1.question"),
+        answer: t("footer-pages.faq.kids-gymnastics.q1.answer"),
+      },
+    ],
+    [t],
+  );
+
+  const faqData3 = useMemo(
+    () => [
+      {
+        id: 1,
+        question: t("footer-pages.faq.general-questions.q1.question"),
+        answer: t("footer-pages.faq.general-questions.q1.answer"),
+      },
+    ],
+    [t],
+  );
+
   return (
     <Box>
       <HalfPageLanding
         image={landing}
-        title1="So many Questions!"
-        title2="FAQ"
+        title1={t("footer-pages.faq.subtitle")}
+        title2={t("footer-pages.faq.title").toUpperCase()}
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>
-
         <Grid container spacing={2}>
           <Typography width="100%" variant="h4" gutterBottom textAlign="center">
-            Flexibility Flow
+            {t("footer-pages.faq.flexibility-flow.title")}
           </Typography>
           {faqData1.map((item) => (
             <Grid item xs={12} md={6} key={item.id}>
@@ -120,7 +111,7 @@ export default function FooterFAQ() {
 
         <Grid container spacing={2}>
           <Typography width="100%" variant="h4" gutterBottom textAlign="center">
-            Kids Gymnastics
+            {t("footer-pages.faq.kids-gymnastics.title")}
           </Typography>
           {faqData2.map((item) => (
             <Grid item xs={12} md={6} key={item.id}>
@@ -131,7 +122,7 @@ export default function FooterFAQ() {
 
         <Grid container spacing={2}>
           <Typography width="100%" variant="h4" gutterBottom textAlign="center">
-            General Questions
+            {t("footer-pages.faq.general-questions.title")}
           </Typography>
           {faqData3.map((item) => (
             <Grid item xs={12} md={6} key={item.id}>
