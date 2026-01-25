@@ -12,6 +12,217 @@
     "pastEvents": "Past Events",
     "viewPage": "View {{page}} Page"
   },
+  "classes": {
+    "classes-title": "About Classes",
+    "classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "about-kids-classes": "About Kids Classes",
+    "about-kids-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
+    "about-adults-classes": "About Adults Classes",
+    "about-adults-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
+    "kids": {
+      "common": {
+        "competitive": "competitive",
+        "non-competitive": "non-competitive",
+        "type": "kids",
+        "age-range-1": "Ages: 3.5 - 4.5",
+        "age-range-2": "Ages: 5 - 7",
+        "age-range-3": "Ages: 5 - 13",
+        "age-range-4": "Ages: 8 - 10",
+        "ages-range-5": "Ages: 14 +",
+        "ages-range-6": "All Ages"
+      },
+      "kids-1": {
+        "title": "Gymnastics Level 1",
+        "description": "Learn front and back rolls, basic jumps and build strength for handstands and cartwheels.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-2": {
+        "title": "Gymnastics Level 2",
+        "description": "Strengthen handstand holds, cartwheels and learn front and back walkovers.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-3": {
+        "title": "Gymnastics Level 3 - 4",
+        "description": "With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-4": {
+        "title": "Boys Gymnastics",
+        "description": "Strengthen handstand holds, cartwheels and learn front and back walkovers.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-5": {
+        "title": "Parkour",
+        "description": "With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-6": {
+        "title": "Toddlers",
+        "description": "With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      }
+    },
+    "adults": {
+      "common": {
+        "competitive": "Competitive",
+        "non-competitive": "Non-Competitive",
+        "type": "adults",
+        "ages-range-1": "Ages: 14 +",
+        "ages-range-2": "Ages: All Ages",
+        "ages-range-3": "All Ages"
+      },
+      "adults-1": {
+        "title": "Handstands",
+        "description": "Start your handstand journey learning the basics of hand balancing, other inversions and handstands.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "adults-2": {
+        "title": "Adult Gymnastics & Parkour",
+        "description": "Learn the basics of handstands, flips, climbing, jumping and vaulting with style.",
+        "image-1": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "adults-3": {
+        "title": "Personal Training",
+        "description": "Personalize your workout and train in anything we offer. Send us your goals and we will accomodate.",
+        "image-1": {
+          "title": "Learn Forward Rolls",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "Build Strength & Balance",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "Basic Gymnastics Shapes",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-5": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-6": {
+          "title": "Beginning Handstands",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      }
+    }
+  },
   "shop": {
     "comingSoon": "Coming Soon",
     "message": "We are currently working on this page. Thank you for your patience.",

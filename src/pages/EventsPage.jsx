@@ -82,7 +82,7 @@ const EventsPage = () => {
                     display: "block",
                   }}
                 />
-              </Box>
+              </Box> 
               <Box sx={{ flex: 1 }}>
                 <AnimatedTitle title="Summer Show" fontSize="2rem" />
                 <Typography

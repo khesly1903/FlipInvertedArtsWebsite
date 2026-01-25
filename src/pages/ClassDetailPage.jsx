@@ -2,12 +2,13 @@ import React, { useMemo, useRef, useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { Box, Container, Typography, Grid } from "@mui/material";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../components/HalfPageLanding";
 import { classes } from "../data/classes";
 
 import landing from "../assets/landing.webp";
 
-const ClassDetailItem = ({ item, isEven }) => {
+const ClassDetailItem = ({ item, isEven, t }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   const controls = useAnimation();
@@ -44,14 +45,14 @@ const ClassDetailItem = ({ item, isEven }) => {
             animate={controls}
           >
             <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}>
-              {item.title}
+              {t(item.title)}
             </Typography>
             <Typography
               variant="body1"
               fontSize="1.1rem"
               color="text.secondary"
             >
-              {item.description}
+              {t(item.description)}
             </Typography>
           </motion.div>
         </Grid>
@@ -84,6 +85,7 @@ const ClassDetailItem = ({ item, isEven }) => {
 };
 
 export default function ClassDetailPage() {
+  const { t } = useTranslation();
   const { slug } = useParams();
 
   const classItem = useMemo(() => {
@@ -102,13 +104,15 @@ export default function ClassDetailPage() {
       <HalfPageLanding
         image={classItem.slugImage.src}
         title1="CLASS:"
-        title2={classItem.title.toUpperCase()}
+        title2={t(classItem.title).toUpperCase()}
       />
 
       <Container maxWidth="lg" sx={{ py: 6 }}>
         {details.map((item, index) => {
           const isEven = index % 2 === 0;
-          return <ClassDetailItem key={index} item={item} isEven={isEven} />;
+          return (
+            <ClassDetailItem key={index} item={item} isEven={isEven} t={t} />
+          );
         })}
       </Container>
     </Box>

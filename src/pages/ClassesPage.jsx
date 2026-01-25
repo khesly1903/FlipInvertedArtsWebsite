@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 import landingImage from "../assets/landing.webp";
 import ClassCard from "../components/ClassCard";
 import AnimatedInformation from "../components/AnimatedInformation";
@@ -19,6 +21,7 @@ import class_6_card from "../assets/classes/class_6/class_6_card.png";
 
 export default function ClassesPage() {
   const { state } = useLocation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (state && state.targetId) {
@@ -36,8 +39,8 @@ export default function ClassesPage() {
 
       {/* About classes section */}
       <AnimatedInformation
-        title="About Classes"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+        title={t("classes.classes-title")}
+        text={t("classes.classes-text")}
       />
 
       {/* idk.png */}
@@ -63,8 +66,8 @@ export default function ClassesPage() {
       {/* Kids Classes Section */}
       <Box id="kids-classes">
         <AnimatedInformation
-          title="Kids Classes"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+          title={t("classes.about-kids-classes")}
+          text={t("classes.about-kids-classes-text")}
         />
       </Box>
 
@@ -98,11 +101,11 @@ export default function ClassesPage() {
                 >
                   <ClassCard
                     image={cls.image.src}
-                    title={cls.title}
-                    age={cls.ageRange}
-                    detail={cls.description}
+                    title={t(cls.title)}
+                    age={t(cls.ageRange)}
+                    detail={t(cls.description)}
                     link={`/classes/${cls.slug}`}
-                    competitive={cls.competitive}
+                    competitive={t(cls.competitive)}
                   />
                 </motion.div>
               </Grid>
@@ -113,8 +116,8 @@ export default function ClassesPage() {
       {/* Adults Classes Section */}
       <Box id="adults-classes">
         <AnimatedInformation
-          title="Adults Classes"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+          title={t("classes.about-adults-classes")}
+          text={t("classes.about-adults-classes-text")}
         />
       </Box>
       <Box sx={{ mb: 8, px: 2 }}>
@@ -147,11 +150,11 @@ export default function ClassesPage() {
                 >
                   <ClassCard
                     image={cls.image.src}
-                    title={cls.title}
-                    age={cls.ageRange}
-                    detail={cls.description}
+                    title={t(cls.title)}
+                    age={t(cls.ageRange)}
+                    detail={t(cls.description)}
                     link={`/classes/${cls.slug}`}
-                    competitive={cls.competitive}
+                    competitive={t(cls.competitive)}
                   />
                 </motion.div>
               </Grid>

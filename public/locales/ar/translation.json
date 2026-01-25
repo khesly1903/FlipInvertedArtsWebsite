@@ -12,6 +12,217 @@
     "pastEvents": "الفعاليات السابقة",
     "viewPage": "عرض صفحة {{page}}"
   },
+  "classes": {
+    "classes-title": "عن الدورات",
+    "classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "about-kids-classes": "عن دورات الأطفال",
+    "about-kids-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
+    "about-adults-classes": "عن دورات الكبار",
+    "about-adults-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
+    "kids": {
+      "common": {
+        "competitive": "تنافسي",
+        "non-competitive": "غير تنافسي",
+        "type": "أطفال",
+        "age-range-1": "الأعمار: 3.5 - 4.5",
+        "age-range-2": "الأعمار: 5 - 7",
+        "age-range-3": "الأعمار: 5 - 13",
+        "age-range-4": "الأعمار: 8 - 10",
+        "ages-range-5": "الأعمار: 14 +",
+        "ages-range-6": "كل الأعمار"
+      },
+      "kids-1": {
+        "title": "الجمباز المستوى 1",
+        "description": "تعلم التدحرج الأمامي والخلفي، القفزات الأساسية وبناء القوة للوقوف على اليدين والعجلات.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-2": {
+        "title": "الجمباز المستوى 2",
+        "description": "تقوية الوقوف على اليدين، العجلات وتعلم الشقلبات الأمامية والخلفية.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-3": {
+        "title": "الجمباز المستوى 3 - 4",
+        "description": "مع زيادة القوة والمرونة، سيتعلم طفلك الشقلبات الأمامية والخلفية والعجلات الجانبية.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-4": {
+        "title": "جمباز الأولاد",
+        "description": "تقوية الوقوف على اليدين، العجلات وتعلم الشقلبات الأمامية والخلفية.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-5": {
+        "title": "باركور",
+        "description": "مع زيادة القوة والمرونة، سيتعلم طفلك الشقلبات الأمامية والخلفية والعجلات الجانبية.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "kids-6": {
+        "title": "الأطفال الصغار",
+        "description": "مع زيادة القوة والمرونة، سيتعلم طفلك الشقلبات الأمامية والخلفية والعجلات الجانبية.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      }
+    },
+    "adults": {
+      "common": {
+        "competitive": "تنافسي",
+        "non-competitive": "غير تنافسي",
+        "type": "كبار",
+        "ages-range-1": "الأعمار: 14 +",
+        "ages-range-2": "الأعمار: كل الأعمار",
+        "ages-range-3": "كل الأعمار"
+      },
+      "adults-1": {
+        "title": "الوقوف على اليدين",
+        "description": "ابدأ رحلة الوقوف على اليدين بتعلم أساسيات توازن اليدين والانقلابات الأخرى والوقوف على اليدين.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "adults-2": {
+        "title": "جمباز الكبار والباركور",
+        "description": "تعلم أساسيات الوقوف على اليدين، الشقلبات، التسلق، القفز والوثب بأسلوب مميز.",
+        "image-1": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      },
+      "adults-3": {
+        "title": "تدريب شخصي",
+        "description": "خصص تمرينك وتدرب في أي شيء نقدمه. أرسل لنا أهدافك وسنتكيف معها.",
+        "image-1": {
+          "title": "تعلم الدحروجة الأمامية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-2": {
+          "title": "بناء القوة والتوازن",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-3": {
+          "title": "أشكال الجمباز الأساسية",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-4": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-5": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        },
+        "image-6": {
+          "title": "بداية الوقوف على اليدين",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+        }
+      }
+    }
+  },
   "shop": {
     "comingSoon": "قريباً",
     "message": "نحن نعمل حالياً على هذه الصفحة. شكراً لصبركم.",
