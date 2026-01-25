@@ -15,9 +15,6 @@ import ImageCarousel from "../components/ImageCarousel";
 import class_1_card from "../assets/classes/class_1/class_1_card.png";
 import class_2_card from "../assets/classes/class_2/class_2_card.png";
 import class_3_card from "../assets/classes/class_3/class_3_card.png";
-import class_4_card from "../assets/classes/class_4/class_4_card.png";
-import class_5_card from "../assets/classes/class_5/class_5_card.png";
-import class_6_card from "../assets/classes/class_6/class_6_card.png";
 
 export default function ClassesPage() {
   const { state } = useLocation();
@@ -58,9 +55,9 @@ export default function ClassesPage() {
           class_1_card,
           class_2_card,
           class_3_card,
-          class_4_card,
-          class_5_card,
-          class_6_card,
+          // class_4_card,
+          // class_5_card,
+          // class_6_card,
         ]}
       />
       {/* Kids Classes Section */}
