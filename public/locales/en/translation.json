@@ -12,6 +12,16 @@
     "pastEvents": "Past Events",
     "viewPage": "View {{page}} Page"
   },
+  "footer": {
+    "classes": "classes",
+    "events": "events",
+    "schedules": "schedules",
+    "about-flip": "about-flip",
+    "faq": "faq",
+    "privacy-policy": "privacy-policy",
+    "safety": "safety",
+    "contact-us": "contact-us"
+  },
   "classes": {
     "classes-title": "About Classes",
     "classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
@@ -223,6 +233,70 @@
       }
     }
   },
+  "events": {
+    "events-title": "Events",
+    "events-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "current-event": "Current Event",
+    "annual-event": "Upcoming Event",
+    "past-event": "Past Event",
+    "annual": {
+      "summer": {
+        "title": "Summer Show",
+        "description": " lorem ipsum"
+      },
+      "winter": {
+        "title": "Winter Meet Games",
+        "description": " lorem ipsum"
+      },
+      "spring": {
+        "title": "Spring Shows",
+        "description": " lorem ipsum"
+      }
+    }
+  },
+  "schedules": {
+    "schedules-title": "Schedules",
+    "schedules-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "common": {
+      "find-us": "Find Us",
+      "contact-us": "Contact Us",
+      "contact-us-text": "Have questions about classes? Reach out to us directly!",
+      "chat-on-whatsapp": "Chat on WhatsApp"
+    },
+    "gezira-club-october": {
+      "title": "Gezira Club October",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "gazira-club-zamalek": {
+      "title": "Gazira Club Zamalek",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "zamalek-studio": {
+      "title": "Zamalek Studio",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "maadi": {
+      "title": "Maadi",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "sheikh-zayed": {
+      "title": "Sheikh Zayed",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "new-cairo": {
+      "title": "New Cairo",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "almaza-bay": {
+      "title": "Almaza Bay",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "diplo": {
+      "title": "Diplo",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    }
+  },
+
   "shop": {
     "comingSoon": "Coming Soon",
     "message": "We are currently working on this page. Thank you for your patience.",

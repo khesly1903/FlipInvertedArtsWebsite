@@ -9,7 +9,10 @@ import landingImage from "../assets/landing.webp";
 import AnimatedTitle from "../components/AnimatedTitle";
 import eventSummerVideo from "../assets/events/event_summer.mp4";
 
+import { useTranslation } from "react-i18next";
+
 const EventsPage = () => {
+  const { t } = useTranslation();
   const { state } = useLocation();
   const availableEvents = events.filter((e) => e.availability === "available");
   const upcomingEvents = events.filter((e) => e.availability === "upcoming");
@@ -31,13 +34,13 @@ const EventsPage = () => {
       <HalfPageLanding image={landingImage} logo="/flip_logo.svg" />
 
       <AnimatedInformation
-        title="Events"
-        text="Join us for our upcoming workshops, performances, and special events. Whether you are looking to learn a new skill or enjoy a show, we have something for everyone."
+        title={t("events.events-title")}
+        text={t("events.events-text")}
       />
 
       <Divider />
       <Box id="current-events" sx={{ scrollMarginTop: "50px" }}>
-        <AnimatedTitle title="Current Events" />
+        <AnimatedTitle title={t("events.current-event")} />
       </Box>
       <Container maxWidth="lg" sx={{ mb: 8 }}>
         {/* Available Events */}
@@ -48,7 +51,7 @@ const EventsPage = () => {
         )}
 
         <Divider />
-        <AnimatedTitle title="Our Annual Events" fontSize="3rem"/>
+        <AnimatedTitle title={t("events.annual-event")} fontSize="3rem" />
         <Container maxWidth="lg" sx={{ my: 10 }}>
           {/* Section 1: Video Left / Text Right */}
           <Box sx={{ mb: 10 }}>
@@ -82,17 +85,17 @@ const EventsPage = () => {
                     display: "block",
                   }}
                 />
-              </Box> 
+              </Box>
               <Box sx={{ flex: 1 }}>
-                <AnimatedTitle title="Summer Show" fontSize="2rem" />
+                <AnimatedTitle
+                  title={t("events.annual.summer.title")}
+                  fontSize="2rem"
+                />
                 <Typography
                   variant="body1"
                   sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
                 >
-                  Dive into the energy of our summer events. Experience the
-                  thrill, the community, and the unforgettable moments that make
-                  our summer sessions unique. Join us for a season of growth and
-                  fun.
+                  {t("events.annual.summer.description")}
                 </Typography>
               </Box>
             </Box>
@@ -109,15 +112,12 @@ const EventsPage = () => {
               }}
             >
               <Box sx={{ flex: 1 }}>
-                <AnimatedTitle title="Winter Meet Games" />
+                <AnimatedTitle title={t("events.annual.winter.title")} />
                 <Typography
                   variant="body1"
                   sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
                 >
-                  Whether you are a beginner or looking to refine your advanced
-                  techniques, our workshops are designed to push your limits.
-                  Watch as our students demonstrate focus, strength, and agility
-                  in every move.
+                  {t("events.annual.winter.description")}
                 </Typography>
               </Box>
               <Box
@@ -180,15 +180,12 @@ const EventsPage = () => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <AnimatedTitle title="Spring Shows" />
+                <AnimatedTitle title={t("events.annual.spring.title")} />
                 <Typography
                   variant="body1"
                   sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
                 >
-                  It's not just about the training; it's about the people. Our
-                  events bring together a diverse community of enthusiasts.
-                  Share laughs, challenges, and successes with friends old and
-                  new at our next gathering.
+                  {t("events.annual.spring.description")}
                 </Typography>
               </Box>
             </Box>
@@ -200,7 +197,7 @@ const EventsPage = () => {
         {unavailableEvents.length > 0 && (
           <Box sx={{ mb: 8 }}>
             <Box id="past-events" sx={{ scrollMarginTop: "50px" }}>
-              <AnimatedTitle title="What did you miss" />
+              <AnimatedTitle title={t("events.past-event")} />
             </Box>
             <MasonryGrid images={unavailableEvents.map((e) => e.image)} />
           </Box>

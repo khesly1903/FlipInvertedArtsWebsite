@@ -12,6 +12,16 @@
     "pastEvents": "الفعاليات السابقة",
     "viewPage": "عرض صفحة {{page}}"
   },
+  "footer": {
+    "classes": "الدورات",
+    "events": "الفعاليات",
+    "schedules": "الجداول",
+    "about-flip": "عن فليب",
+    "faq": "الأسئلة الشائعة",
+    "privacy-policy": "سياسة الخصوصية",
+    "safety": "السلامة",
+    "contact-us": "اتصل بنا"
+  },
   "classes": {
     "classes-title": "عن الدورات",
     "classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
@@ -221,6 +231,69 @@
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
         }
       }
+    }
+  },
+  "events": {
+    "events-title": "الفعاليات",
+    "events-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "current-event": "الحدث الحالي",
+    "annual-event": "الأحداث القادمة",
+    "past-event": "الحدث الماضي",
+    "annual": {
+      "summer": {
+        "title": "عرض الصيف",
+        "description": " lorem ipsum"
+      },
+      "winter": {
+        "title": "ألعاب الشتاء",
+        "description": " lorem ipsum"
+      },
+      "spring": {
+        "title": "عروض الربيع",
+        "description": " lorem ipsum"
+      }
+    }
+  },
+  "schedules": {
+    "schedules-title": "الجداول",
+    "schedules-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "common": {
+      "find-us": "تجدنا",
+      "contact-us": "اتصل بنا",
+      "contact-us-text": "هل لديك أسئلة حول الدروس؟ تواصل معنا مباشرة!",
+      "chat-on-whatsapp": "الدردشة على الواتساب"
+    },
+    "gezira-club-october": {
+      "title": "نادي الجزيرة أكتوبر",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "gazira-club-zamalek": {
+      "title": "نادي الجزيرة الزمالك",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "zamalek-studio": {
+      "title": "استوديو الزمالك",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "maadi": {
+      "title": "المعادي",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "sheikh-zayed": {
+      "title": "الشيخ زايد",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "new-cairo": {
+      "title": "القاهرة الجديدة",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "almaza-bay": {
+      "title": "ألماظة باي",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
+    },
+    "diplo": {
+      "title": "ديبلو",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil."
     }
   },
   "shop": {

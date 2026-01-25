@@ -6,14 +6,17 @@ import AnimatedInformation from "../components/AnimatedInformation";
 import { schedules } from "../data/schedules";
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 export default function SchedulesPage() {
+  const { t } = useTranslation();
   return (
     <Box>
       {/* Locations Banner */}
       <HalfPageLanding image={landingImage} logo="/flip_logo.svg" />
       <AnimatedInformation
-        title="Schdules by Location"
-        text="You can choose the option that best suits you from the locations below. Not every location may have every activity (maybe a some warning like that)."
+        title={t("schedules.schedules-title")}
+        text={t("schedules.schedules-text")}
       />
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Grid container spacing={4} justifyContent="center">
@@ -27,7 +30,7 @@ export default function SchedulesPage() {
               sx={{ textDecoration: "none" }}
             >
               <LocationCard
-                locationTitle={schedule.location}
+                locationTitle={t(schedule.location)}
                 image={schedule.image}
               />
             </Grid>

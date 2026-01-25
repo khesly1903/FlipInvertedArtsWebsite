@@ -11,11 +11,12 @@ import zamalekStudio1 from '../assets/schedules/zamalek_studio_1.png';
 
 export const schedules = [
     {
-        id: "3",
-        location: "Gezira Club October",
+        id: "1",
+        location: "schedules.gezira-club-october.title",
         image: "/locations_card_gezira_club_october.jpeg",
         path: "gezira-club-october",
         details: {
+            description: "schedules.gezira-club-october.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                 newCairo1,
@@ -26,11 +27,12 @@ export const schedules = [
         },
     },
      {
-        id: "6",
-        location: "Gazira Club Zamalek",
+        id: "2",
+        location: "schedules.gazira-club-zamalek.title",
         image: zamalekStudio1,
         path: "sahel",
         details: {
+             description: "schedules.gazira-club-zamalek.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                  zamalekStudio1,
@@ -41,11 +43,12 @@ export const schedules = [
         },
     },
     {
-        id: "1",
-        location: "Zamalek Studio",
+        id: "3",
+        location: "schedules.zamalek-studio.title",
         image: "/location_zamalek.jpeg",
         path: "zamalek",
         details: {
+             description: "schedules.zamalek-studio.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                 zamalekStudio1,
@@ -57,11 +60,12 @@ export const schedules = [
         },
     },
     {
-        id: "2",
-        location: "Maadi",
+        id: "4",
+        location: "schedules.maadi.title",
         image: "/location_maadi.jpeg",
         path: "maadi",
         details: {
+             description: "schedules.maadi.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                 maadi1,
@@ -74,11 +78,12 @@ export const schedules = [
     },
     
     {
-        id: "4",
-        location: "Sheikh Zayed",
+        id: "5",
+        location: "schedules.sheikh-zayed.title",
         image: sheikhZayed1,
         path: "sheikh-zayed",
         details: {
+             description: "schedules.sheikh-zayed.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                 sheikhZayed1,
@@ -89,11 +94,12 @@ export const schedules = [
         },
     },
     {
-        id: "5",
-        location: "New Cairo",
+        id: "6",
+        location: "schedules.new-cairo.title",
         image: newCairo1, // Fallback as no image provided
         path: "new-cairo",
         details: {
+             description: "schedules.new-cairo.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                  newCairo1,
@@ -105,10 +111,11 @@ export const schedules = [
     },
      {
         id: "7",
-        location: "Almaza Bay",
+        location: "schedules.almaza-bay.title",
         image: newCairo1, // Fallback as no image provided
         path: "new-cairo",
         details: {
+             description: "schedules.almaza-bay.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                  newCairo1,
@@ -119,10 +126,11 @@ export const schedules = [
         },
     }, {
         id: "8",
-        location: "Diplo",
+        location: "schedules.diplo.title",
         image: newCairo1, // Fallback as no image provided
         path: "new-cairo",
         details: {
+             description: "schedules.diplo.description",
             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
             images: [
                  newCairo1,

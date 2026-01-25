@@ -16,6 +16,7 @@ import {
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useState, useEffect, forwardRef } from "react";
 import { useTranslation } from "react-i18next";
+import { schedules } from "../../data/schedules";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -77,17 +78,10 @@ export default function Navbar({ hideOnScrollTop = false }) {
       title: t("navbar.schedules"),
       path: "/schedules",
       desc: "Check our timings",
-      subLinks: [
-        { title: "Zamalek", path: "/schedules/zamalek" },
-        { title: "Maadi", path: "/schedules/maadi" },
-        {
-          title: "Gezira Club October",
-          path: "/schedules/gezira-club-october",
-        },
-        { title: "Sheikh Zayed", path: "/schedules/sheikh-zayed" },
-        { title: "New Cairo", path: "/schedules/new-cairo" },
-        { title: "Sahel", path: "/schedules/sahel" },
-      ],
+      subLinks: schedules.map((schedule) => ({
+        title: t(schedule.location),
+        path: `/schedules/${schedule.path}`,
+      })),
     },
     {
       title: t("navbar.about"),

@@ -14,8 +14,11 @@ import MasonryGrid from "../components/Masonry";
 import { schedules } from "../data/schedules";
 
 import landing from "../assets/landing.webp";
+import { useTranslation } from "react-i18next";
+import AnimatedInformation from "../components/AnimatedInformation";
 
 export default function ScheduleDetailPage() {
+  const { t } = useTranslation();
   const { slug } = useParams();
 
   const schedule = useMemo(() => {
@@ -31,21 +34,17 @@ export default function ScheduleDetailPage() {
       {/* 1. Header with Location Name */}
       <HalfPageLanding
         image={schedule.details.landingImage}
-        title1="SCHEDULE:"
-        title2={schedule.location.toUpperCase()}
+        title1={t("schedules.schedules-title").toUpperCase() + ":"}
+        title2={t(schedule.location).toUpperCase()}
       />
 
       <Container maxWidth="lg" sx={{ py: 6, mb: 8 }}>
         {/* 2. Masonry Gallery */}
         <Box sx={{ mb: 8 }}>
-          <Typography
-            variant="h4"
-            align="center"
-            gutterBottom
-            sx={{ fontWeight: "bold", mb: 4 }}
-          >
-            Gallery
-          </Typography>
+          <AnimatedInformation
+            title={t(schedule.location)}
+            text={t(schedule.details.description)}
+          />
           <Grid container spacing={2} justifyContent="center">
             {schedule.details.images.map((img, index) => (
               <Grid item xs={12} md={4} key={index}>
@@ -77,7 +76,7 @@ export default function ScheduleDetailPage() {
           {/* Map Section */}
           <Box sx={{ flex: 1, minHeight: "400px" }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
-              Find Us
+              {t("schedules.common.find-us")}
             </Typography>
             <Paper
               elevation={3}
@@ -117,15 +116,14 @@ export default function ScheduleDetailPage() {
               gutterBottom
               sx={{ fontWeight: "bold", mb: 3 }}
             >
-              Contact Us
+              {t("schedules.common.contact-us")}
             </Typography>
             <Typography
               variant="body1"
               align="center"
               sx={{ mb: 3, maxWidth: "80%" }}
             >
-              Have questions about {schedule.location} classes? Reach out to us
-              directly!
+              {t("schedules.common.contact-us-text")}
             </Typography>
             <IconButton
               component="a"
@@ -146,7 +144,7 @@ export default function ScheduleDetailPage() {
               variant="subtitle1"
               sx={{ mt: 2, fontWeight: "medium" }}
             >
-              Chat on WhatsApp
+              {t("schedules.common.chat-on-whatsapp")}
             </Typography>
           </Box>
         </Box>

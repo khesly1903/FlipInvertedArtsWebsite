@@ -11,8 +11,10 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YoutubeIcon from "@mui/icons-material/Youtube";
 import { Link as RouterLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <Box
       component="footer"
@@ -44,7 +46,7 @@ export default function Footer() {
               to="/classes"
               sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
             >
-              Classes
+              {t("footer.classes")}
             </Button>
             <Button
               color="inherit"
@@ -52,7 +54,7 @@ export default function Footer() {
               to="/events"
               sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
             >
-              Events
+              {t("footer.events")}
             </Button>
             <Button
               color="inherit"
@@ -60,7 +62,7 @@ export default function Footer() {
               to="/schedules"
               sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
             >
-              Schedules
+              {t("footer.schedules")}
             </Button>
           </Stack>
 
@@ -70,16 +72,16 @@ export default function Footer() {
             sx={{ mb: 2, flexWrap: "wrap", justifyContent: "center" }}
           >
             <Button color="inherit" component={RouterLink} to="/about-flip">
-              About Flip
+              {t("footer.about-flip")}
             </Button>
             <Button color="inherit" component={RouterLink} to="/faq">
-              FAQ
+              {t("footer.faq")}
             </Button>
             <Button color="inherit" component={RouterLink} to="/privacy-policy">
-              Privacy Policy
+              {t("footer.privacy-policy")}
             </Button>
             <Button color="inherit" component={RouterLink} to="/safety">
-              Safety
+              {t("footer.safety")}
             </Button>
           </Stack>
 
@@ -130,7 +132,7 @@ export default function Footer() {
               },
             }}
           >
-            Contact Us
+            {t("footer.contact-us")}
           </Button>
         </Stack>
       </Container>
