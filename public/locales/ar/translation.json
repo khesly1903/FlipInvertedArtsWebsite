@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "classes": "الدورات",
+    "events": "الفعاليات",
+    "schedules": "الجداول",
+    "about": "عن فليب",
+    "faq": "الأسئلة الشائعة",
+    "kidsClasses": "دورات الأطفال",
+    "adultsClasses": "دورات الكبار",
+    "currentEvents": "الفعاليات الحالية",
+    "upcomingEvents": "الفعاليات القادمة",
+    "pastEvents": "الفعاليات السابقة",
+    "viewPage": "عرض صفحة {{page}}"
+  },
+  "shop": {
+    "comingSoon": "قريباً",
+    "message": "نحن نعمل حالياً على هذه الصفحة. شكراً لصبركم.",
+    "returnHome": "العودة للرئيسية"
+  }
+}

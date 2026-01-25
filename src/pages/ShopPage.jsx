@@ -3,9 +3,11 @@ import { Box, Typography, Container, Button } from "@mui/material";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import { useNavigate } from "react-router-dom";
 import AnimatedTitle from "../components/AnimatedTitle";
+import { useTranslation } from "react-i18next";
 
 const ShopPage = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <Container maxWidth="md">
@@ -26,7 +28,7 @@ const ShopPage = () => {
         />
 
         <Box>
-          <AnimatedTitle title="Coming Soon" />
+          <AnimatedTitle title={t("shop.comingSoon")} />
         </Box>
 
         <Typography
@@ -34,7 +36,7 @@ const ShopPage = () => {
           color="text.secondary"
           sx={{ maxWidth: "600px" }}
         >
-          We are currently working on this page. Thank you for your patience.
+          {t("shop.message")}
         </Typography>
 
         <Button
@@ -43,7 +45,7 @@ const ShopPage = () => {
           onClick={() => navigate("/")}
           sx={{ mt: 2 }}
         >
-          Return to Home
+          {t("shop.returnHome")}
         </Button>
       </Box>
     </Container>

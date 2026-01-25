@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Typography, Box } from "@mui/material";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-const AnimatedTitle = ({ title }) => {
+const AnimatedTitle = ({ title, fontSize }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
@@ -32,8 +32,7 @@ const AnimatedTitle = ({ title }) => {
         <Typography
           variant="h3"
           component="h2"
-        //   fontSize={{ xs: "1.5rem", md: "2.5rem" }}
-        
+          fontSize={fontSize || "2.5rem"}
           sx={{
             fontWeight: "bold",
             textAlign: "center",

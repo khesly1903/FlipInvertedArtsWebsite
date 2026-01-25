@@ -9,6 +9,7 @@ export default function LocationsCard({ locationTitle, image }) {
           position: "relative",
           overflow: "hidden",
           borderRadius: 2,
+          aspectRatio: "1 / 1",
           cursor: "pointer",
           transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
           "&:hover": {
@@ -33,8 +34,8 @@ export default function LocationsCard({ locationTitle, image }) {
           }}
         >
           <Typography
-            variant="h5"
-            component="h3"
+            variant="h3"
+            component="h"
             sx={{
               color: "white",
               fontWeight: "bold",

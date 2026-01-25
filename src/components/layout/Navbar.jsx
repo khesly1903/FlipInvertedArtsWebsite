@@ -10,9 +10,12 @@ import {
   AccordionDetails,
   Typography,
   Slide,
+  Menu,
+  MenuItem,
 } from "@mui/material";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useState, useEffect, forwardRef } from "react";
+import { useTranslation } from "react-i18next";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -23,65 +26,82 @@ const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const menuItems = [
-  {
-    title: "Classes",
-    path: "/classes",
-    desc: "Explore our classes",
-    subLinks: [
-      { title: "Kids Classes", path: "/classes", sectionId: "kids-classes" },
-      {
-        title: "Adults Classes",
-        path: "/classes",
-        sectionId: "adults-classes",
-      },
-    ],
-  },
-  {
-    title: "Events",
-    path: "/events",
-    desc: "Upcoming events",
-    subLinks: [
-      { title: "Current Events", path: "/events", sectionId: "current-events" },
-      {
-        title: "Upcoming Events",
-        path: "/events",
-        sectionId: "upcoming-events",
-      },
-      { title: "Past Events", path: "/events", sectionId: "past-events" },
-    ],
-  },
-  {
-    title: "Schedules",
-    path: "/schedules",
-    desc: "Check our timings",
-    subLinks: [
-      { title: "Zamalek", path: "/schedules/zamalek" },
-      { title: "Maadi", path: "/schedules/maadi" },
-      { title: "Gezira Club October", path: "/schedules/gezira-club-october" },
-      { title: "Sheikh Zayed", path: "/schedules/sheikh-zayed" },
-      { title: "New Cairo", path: "/schedules/new-cairo" },
-      { title: "Sahel", path: "/schedules/sahel" },
-    ],
-  },
-  {
-    title: "About Flip",
-    path: "/about-flip",
-    desc: "Learn more about us",
-    subLinks: [],
-  },
-  {
-    title: "FAQ",
-    path: "/faq",
-    desc: "Frequently Asked Questions",
-    subLinks: [],
-  },
-];
-
 export default function Navbar({ hideOnScrollTop = false }) {
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
   const navigate = useNavigate();
+
+  const menuItems = [
+    {
+      title: t("navbar.classes"),
+      path: "/classes",
+      desc: "Explore our classes",
+      subLinks: [
+        {
+          title: t("navbar.kidsClasses"),
+          path: "/classes",
+          sectionId: "kids-classes",
+        },
+        {
+          title: t("navbar.adultsClasses"),
+          path: "/classes",
+          sectionId: "adults-classes",
+        },
+      ],
+    },
+    {
+      title: t("navbar.events"),
+      path: "/events",
+      desc: "Upcoming events",
+      subLinks: [
+        {
+          title: t("navbar.currentEvents"),
+          path: "/events",
+          sectionId: "current-events",
+        },
+        {
+          title: t("navbar.upcomingEvents"),
+          path: "/events",
+          sectionId: "upcoming-events",
+        },
+        {
+          title: t("navbar.pastEvents"),
+          path: "/events",
+          sectionId: "past-events",
+        },
+      ],
+    },
+    {
+      title: t("navbar.schedules"),
+      path: "/schedules",
+      desc: "Check our timings",
+      subLinks: [
+        { title: "Zamalek", path: "/schedules/zamalek" },
+        { title: "Maadi", path: "/schedules/maadi" },
+        {
+          title: "Gezira Club October",
+          path: "/schedules/gezira-club-october",
+        },
+        { title: "Sheikh Zayed", path: "/schedules/sheikh-zayed" },
+        { title: "New Cairo", path: "/schedules/new-cairo" },
+        { title: "Sahel", path: "/schedules/sahel" },
+      ],
+    },
+    {
+      title: t("navbar.about"),
+      path: "/about-flip",
+      desc: "Learn more about us",
+      subLinks: [],
+    },
+    {
+      title: t("navbar.faq"),
+      path: "/faq",
+      desc: "Frequently Asked Questions",
+      subLinks: [],
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -107,13 +127,29 @@ export default function Navbar({ hideOnScrollTop = false }) {
     setIsMenuOpen(false);
   };
 
+  const handleLanguageMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleLanguageMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    // document.dir = i18n.dir(lng); // If you want to automatically switch RTL/LTR
+    handleLanguageMenuClose();
+  };
+
   return (
     <>
       <AppBar
         position="fixed"
         elevation={scrolled ? 4 : 0}
         sx={{
-          backgroundColor: scrolled ? "rgba(0, 0, 0, 0.6)" : "rgba(0, 0, 0, 0.1)",
+          backgroundColor: scrolled
+            ? "rgba(0, 0, 0, 0.6)"
+            : "rgba(0, 0, 0, 0.1)",
           transition:
             "background-color 1s ease, opacity 1s ease, visibility 1s ease",
           boxShadow: scrolled ? undefined : "none",
@@ -147,9 +183,22 @@ export default function Navbar({ hideOnScrollTop = false }) {
               />
             </Box>
             <Box sx={{ display: "flex", gap: 2, zIndex: 1302 }}>
-              <IconButton color="inherit">
+              <IconButton color="inherit" onClick={handleLanguageMenuOpen}>
                 <LanguageIcon sx={{ color: "white" }} />
               </IconButton>
+              <Menu
+                anchorEl={anchorEl}
+                open={Boolean(anchorEl)}
+                onClose={handleLanguageMenuClose}
+              >
+                <MenuItem onClick={() => changeLanguage("en")}>
+                  English
+                </MenuItem>
+                <MenuItem onClick={() => changeLanguage("ar")}>
+                  العربية
+                </MenuItem>
+              </Menu>
+
               <IconButton
                 color="inherit"
                 onClick={handleMenuToggle}
@@ -222,7 +271,7 @@ export default function Navbar({ hideOnScrollTop = false }) {
                       }}
                       onClick={() => handleNavigation(item.path)}
                     >
-                      View {item.title} Page &rarr;
+                      {t("navbar.viewPage", { page: item.title })} &rarr;
                     </Typography>
                     {item.subLinks.map((subLink, subIndex) => (
                       <Typography

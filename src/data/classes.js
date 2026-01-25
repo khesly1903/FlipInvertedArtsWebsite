@@ -11,6 +11,7 @@ import class_2_1 from "../assets/classes/class_2/class_2_1.png";
 import class_2_2 from "../assets/classes/class_2/class_2_2.png";
 import class_2_3 from "../assets/classes/class_2/class_2_3.png";
 import class_2_4 from "../assets/classes/class_2/class_2_4.png";
+import level_2_landing from "../assets/classes/class_2/level_2_landing.jpeg";
 
 import class_3_landing from "../assets/classes/class_3/class_3_landing.png";
 import class_3_card from "../assets/classes/class_3/class_3_card.png";
@@ -18,6 +19,7 @@ import class_3_1 from "../assets/classes/class_3/class_3_1.png";
 import class_3_2 from "../assets/classes/class_3/class_3_2.png";
 import class_3_3 from "../assets/classes/class_3/class_3_3.png";
 import class_3_4 from "../assets/classes/class_3/class_3_4.png";
+import level_3_landing from "../assets/classes/class_3/level_3_landing.jpeg";
 
 import class_4_landing from "../assets/classes/class_4/class_4_landing.png";
 import class_4_card from "../assets/classes/class_4/class_4_card.png";
@@ -25,9 +27,13 @@ import class_4_1 from "../assets/classes/class_4/class_4_1.png";
 import class_4_2 from "../assets/classes/class_4/class_4_2.png";
 import class_4_3 from "../assets/classes/class_4/class_4_3.png";
 import class_4_4 from "../assets/classes/class_4/class_4_4.png";
+import level_4_landing from "../assets/classes/class_4/level_4_landing.jpeg";
 
 import class_5_landing from "../assets/classes/class_5/class_5_landing.png";
 import class_5_card from "../assets/classes/class_5/class_5_card.png";
+import class_5_1 from "../assets/classes/class_5/class_5_1.jpeg";
+import class_5_2 from "../assets/classes/class_5/class_5_2.jpeg";
+import level_5_landing from "../assets/classes/class_5/level_5_landing.jpeg";
 
 
 import class_6_landing from "../assets/classes/class_6/class_6_landing.png";
@@ -38,6 +44,9 @@ import class_6_3 from "../assets/classes/class_6/class_6_3.png";
 import class_6_4 from "../assets/classes/class_6/class_6_4.png";
 import class_6_5 from "../assets/classes/class_6/class_6_5.png";
 import class_6_6 from "../assets/classes/class_6/class_6_6.png";
+
+import class_4_landing_ from "../assets/classes/class_4_1/class_4_landing_.jpeg";
+
 
 
 /**
@@ -120,7 +129,7 @@ export const classes = [
       alt: 'Gymnastics Level 1',
     },
      slugImage: {
-      src: class_2_landing,
+      src: level_2_landing,
       alt: 'Kids practicing yoga',
     },
     detail: [
@@ -155,7 +164,7 @@ export const classes = [
     competitive:"competitive",
     type:'kids',
     slug: 'gymnastics-level-3',
-    title: 'Gymnastics Level 3',
+    title: 'Gymnastics Level 3 - 4',
     description:
       'With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.',
     ageRange: 'Ages: 8 - 10',
@@ -164,7 +173,139 @@ export const classes = [
       alt: 'Gymnastics Level 3',
     },
      slugImage: {
-      src: class_3_landing,
+      src: level_3_landing,
+      alt: 'Kids practicing yoga',
+    },
+    detail: [
+      {
+      id: '1',
+      title: "Learn Forward Rolls",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_1
+      },
+      {
+      id: '2',
+      title: "Build Strength & Balance",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_2
+      },
+      {
+      id: '3',
+      title: "Basic Gymnastics Shapes",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_3
+      },
+      {
+      id: '4',
+      title: "Beginning Handstands",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_4
+      },
+    ]
+  },
+   {
+    id: '4', 
+    competitive:"non-competitive",
+    type:'kids',
+    slug: 'boys-gymnastics',
+    title: 'Boys Gymnastics',
+    description:
+      'Strengthen handstand holds, cartwheels and learn front and back walkovers.',
+    ageRange: 'Ages: 5 - 7',
+    image: {
+      src: class_2_card,
+      alt: 'Gymnastics Level 1',
+    },
+     slugImage: {
+      src: class_4_landing_,
+      alt: 'Kids practicing yoga',
+    },
+    detail: [
+      {
+      id: '1',
+      title: "Learn Forward Rolls",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_2_1
+      },
+      {
+      id: '2',
+      title: "Build Strength & Balance",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_2_2
+      },
+      {
+      id: '3',
+      title: "Basic Gymnastics Shapes",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_2_3
+      },
+      {
+      id: '4',
+      title: "Beginning Handstands",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_2_4
+      },
+    ]
+  },
+  {
+    id: '5',
+    competitive:"non-competitive",
+    type:'kids',
+    slug: 'kids-parkour',
+    title: 'Parkour',
+    description:
+      'With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.',
+    ageRange: 'Ages: 5 - 13',
+    image: {
+      src: class_3_card,
+      alt: 'Gymnastics Level 3',
+    },
+     slugImage: {
+      src: level_3_landing,
+      alt: 'Kids practicing yoga',
+    },
+    detail: [
+      {
+      id: '1',
+      title: "Learn Forward Rolls",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_1
+      },
+      {
+      id: '2',
+      title: "Build Strength & Balance",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_2
+      },
+      {
+      id: '3',
+      title: "Basic Gymnastics Shapes",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_3
+      },
+      {
+      id: '4',
+      title: "Beginning Handstands",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_3_4
+      },
+    ]
+  },
+  {
+    id: '6',
+    competitive:"non-competitive",
+    type:'kids',
+    slug: 'toddlers',
+    title: 'Toddlers',
+    description:
+      'With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.',
+    ageRange: 'Ages: 5 - 13',
+    image: {
+      src: class_3_card,
+      alt: 'Gymnastics Level 3',
+    },
+     slugImage: {
+      src: level_3_landing,
       alt: 'Kids practicing yoga',
     },
     detail: [
@@ -208,7 +349,7 @@ export const classes = [
       alt: 'Handstands',
     },
      slugImage: {
-      src: class_4_landing,
+      src: level_4_landing,
       alt: 'Kids practicing yoga',
     },
     detail: [
@@ -252,11 +393,21 @@ export const classes = [
       alt: 'Adult Gymnastics & Parkour',
     }, 
     slugImage: {
-      src: class_5_landing,
+      src: level_5_landing,
       alt: 'Kids practicing yoga',
     },
     detail: [
-     
+     {
+      id: '1',
+      title: "Beginning Handstands",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_5_1
+      },{
+      id: '2',
+      title: "Beginning Handstands",
+      description:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum.",
+      image: class_5_2
+      },
     ]
   },
   {

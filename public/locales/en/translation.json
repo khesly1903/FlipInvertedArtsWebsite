@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "classes": "Classes",
+    "events": "Events",
+    "schedules": "Schedules",
+    "about": "About Flip",
+    "faq": "FAQ",
+    "kidsClasses": "Kids Classes",
+    "adultsClasses": "Adults Classes",
+    "currentEvents": "Current Events",
+    "upcomingEvents": "Upcoming Events",
+    "pastEvents": "Past Events",
+    "viewPage": "View {{page}} Page"
+  },
+  "shop": {
+    "comingSoon": "Coming Soon",
+    "message": "We are currently working on this page. Thank you for your patience.",
+    "returnHome": "Return to Home"
+  }
+}

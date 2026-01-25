@@ -30,12 +30,12 @@ export default function ScheduleDetailPage() {
     <Box>
       {/* 1. Header with Location Name */}
       <HalfPageLanding
-        image={landing}
+        image={schedule.details.landingImage}
         title1="SCHEDULE:"
         title2={schedule.location.toUpperCase()}
       />
 
-      <Container maxWidth="lg" sx={{ py: 6, mb:8 }}>
+      <Container maxWidth="lg" sx={{ py: 6, mb: 8 }}>
         {/* 2. Masonry Gallery */}
         <Box sx={{ mb: 8 }}>
           <Typography
