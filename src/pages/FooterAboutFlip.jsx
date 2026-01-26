@@ -8,8 +8,7 @@ export default function FooterAboutFlip() {
     <Box>
       <HalfPageLanding
         image={landing}
-        title1={t("footer-pages.about-flip.title")}
-        title2={t("footer-pages.about-flip.subtitle").toUpperCase()}
+        logo="/logos/flip_logo_half_landing_white_about.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Typography variant="body1">

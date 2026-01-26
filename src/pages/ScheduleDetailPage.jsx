@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, useNavigate,Navigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -7,6 +7,8 @@ import {
   IconButton,
   Paper,
   Grid,
+  Button,
+  Divider,
 } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import HalfPageLanding from "../components/HalfPageLanding";
@@ -17,8 +19,11 @@ import landing from "../assets/landing.webp";
 import { useTranslation } from "react-i18next";
 import AnimatedInformation from "../components/AnimatedInformation";
 
+
 export default function ScheduleDetailPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   const { slug } = useParams();
 
   const schedule = useMemo(() => {
@@ -66,25 +71,16 @@ export default function ScheduleDetailPage() {
         </Box>
 
         {/* 3. Map & Contact Section */}
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            gap: 4,
-          }}
-        >
+        <Grid container spacing={4} justifyContent="center">
           {/* Map Section */}
-          <Box sx={{ flex: 1, minHeight: "400px" }}>
-            <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
-              {t("schedules.common.find-us")}
-            </Typography>
+          <Grid item size={{ xs: 12, md: 6 }}>
             <Paper
               elevation={3}
               sx={{
                 width: "100%",
-                height: "100%",
+                aspectRatio: "1/1",
                 overflow: "hidden",
-                borderRadius: 2,
+                borderRadius: 6,
               }}
             >
               <Box
@@ -92,62 +88,142 @@ export default function ScheduleDetailPage() {
                 src={schedule.details.mapLocation}
                 width="100%"
                 height="100%"
-                sx={{ border: 0, minHeight: "400px" }}
+                sx={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title={`${schedule.location} Map`}
               />
             </Paper>
-          </Box>
+          </Grid>
 
-          {/* Contact Section */}
-          <Box
-            sx={{
-              flex: 1,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Typography
-              variant="h5"
-              gutterBottom
-              sx={{ fontWeight: "bold", mb: 3 }}
-            >
-              {t("schedules.common.contact-us")}
-            </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              sx={{ mb: 3, maxWidth: "80%" }}
-            >
-              {t("schedules.common.contact-us-text")}
-            </Typography>
-            <IconButton
-              component="a"
-              href={schedule.details.contact}
-              target="_blank"
-              rel="noopener noreferrer"
+          {/* Register and Contact Section */}
+          <Grid item size={{ xs: 12, md: 6 }}>
+            <Paper
+              elevation={0}
               sx={{
-                bgcolor: "#25D366",
-                color: "white",
-                width: 80,
-                height: 80,
-                "&:hover": { bgcolor: "#128C7E" },
+                p: { xs: 3, md: 4 },
+                width: "100%",
+                aspectRatio: "1/1",
+                borderRadius: 6,
+                background: "linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 2,
+                border: "1px solid rgba(0,0,0,0.08)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
               }}
             >
-              <WhatsAppIcon sx={{ fontSize: 40 }} />
-            </IconButton>
-            <Typography
-              variant="subtitle1"
-              sx={{ mt: 2, fontWeight: "medium" }}
-            >
-              {t("schedules.common.chat-on-whatsapp")}
-            </Typography>
-          </Box>
-        </Box>
+              <Box sx={{ textAlign: "center" }}>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    fontWeight: 900,
+                    fontSize: { xs: "1.5rem", md: "2rem" },
+                    lineHeight: 1.2,
+                    letterSpacing: -0.5,
+                  }}
+                >
+                  {t("schedules.common.interested")}
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  width: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <Button
+                  variant="contained"
+                  onClick={() =>
+                    navigate("/form", {
+                      state: {
+                        type: "schedules",
+                        // image: availableEvents[0].image.src,
+                        // description: availableEvents[0].description,
+                      },
+                    })
+                  }
+                  rel="noopener noreferrer"
+                  sx={{
+                    px: { xs: 4, md: 4 },
+                    py: { xs: 1.5, md: 1.5 },
+                    fontSize: { xs: "1rem", md: "1.1rem" },
+                    borderRadius: "50px",
+                    textTransform: "none",
+                    fontWeight: 800,
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+                    "&:hover": {
+                      transform: "translateY(-4px)",
+                      boxShadow: "0 15px 30px rgba(0,0,0,0.2)",
+                      background: "primary.dark",
+                    },
+                    transition:
+                      "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+                  }}
+                >
+                  {t("schedules.common.register-now")}
+                </Button>
+                <Divider sx={{ width: "100%", my: 2 }} />
+
+                <Box sx={{ textAlign: "center", mt: 1 }}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    sx={{ fontWeight: "bold", mb: 2 }}
+                  >
+                    {t("schedules.common.contact-us")}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    align="center"
+                    color="text.secondary"
+                    sx={{ mb: 3, px: 2 }}
+                  >
+                    {t("schedules.common.contact-us-text")}
+                  </Typography>
+
+                  <IconButton
+                    component="a"
+                    href={schedule.details.contact}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      bgcolor: "#25D366",
+                      color: "white",
+                      width: 64,
+                      height: 64,
+                      boxShadow: "0 4px 10px rgba(37, 211, 102, 0.3)",
+                      "&:hover": {
+                        bgcolor: "#128C7E",
+                        transform: "scale(1.05)",
+                      },
+                      transition: "all 0.3s ease",
+                    }}
+                  >
+                    <WhatsAppIcon sx={{ fontSize: 32 }} />
+                  </IconButton>
+                  <Typography
+                    variant="caption"
+                    display="block"
+                    sx={{
+                      mt: 1,
+                      fontWeight: "medium",
+                      color: "text.secondary",
+                    }}
+                  >
+                    {t("schedules.common.chat-on-whatsapp")}
+                  </Typography>
+                </Box>
+              </Box>
+            </Paper>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );

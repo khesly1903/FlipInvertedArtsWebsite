@@ -18,8 +18,7 @@ export default function FooterSafetyPage() {
     <Box>
       <HalfPageLanding
         image={landing}
-        title1={t("footer-pages.safety.title")}
-        title2={t("footer-pages.safety.subtitle").toUpperCase()}
+        logo="/logos/flip_logo_half_landing_white_safety.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Typography variant="body1" paragraph>

@@ -24,11 +24,12 @@ import event12 from '../assets/events/event_12.jpg';
 
 /** @type {Event[]} */
 export const events = [
+    // CURRENT EVENT CONFIG IS IN THE BELOW
     {
         id: "1",
         title: "Event 1",
         text: "Event 1 Text",
-        availability: "available",
+        availability: "unavailable",
         image: { src: event1, alt: "Event 1" },
     },
     {
@@ -87,5 +88,26 @@ export const events = [
         availability: "upcoming",
         image: { src: event12, alt: "Event 9" },
     },
+    {
+        id: "9",
+        title: "Event 9",
+        text: "Event 9 Text",
+        availability: "unavailable",
+        image: { src: event12, alt: "Event 9" },
+    },
+     {
+        id: "9",
+        title: "Event 9",
+        text: "Event 9 Text",
+        availability: "available",
+        description: "events.current-event-description",
+        image: { src: event12, alt: "Event 9" },
+    },
 
 ];
+
+// FOR THE CURRENT EVENT
+// WE NEED DESCRIPTION FOR ONLY CURRENT ONE
+// IT IS FOR THE REGISTRATION FORM
+// description text is in the events.js file
+// you can see in the events -> current-event-description

@@ -94,13 +94,12 @@ export default function FooterFAQ() {
     <Box>
       <HalfPageLanding
         image={landing}
-        title1={t("footer-pages.faq.subtitle")}
-        title2={t("footer-pages.faq.title").toUpperCase()}
+        logo="/logos/flip_logo_half_landing_white_faq.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Grid container spacing={2}>
-          <Typography width="100%" variant="h4" gutterBottom textAlign="center">
-            {t("footer-pages.faq.flexibility-flow.title")}
+          <Typography width="100%" variant="h4" fontWeight="bold" gutterBottom textAlign="center">
+            {t("footer-pages.faq.flexibility-flow.title").toUpperCase()}
           </Typography>
           {faqData1.map((item) => (
             <Grid item xs={12} md={6} key={item.id}>

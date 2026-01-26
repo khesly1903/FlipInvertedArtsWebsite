@@ -94,10 +94,10 @@ export default function ClassCard({
                 color: "white",
                 mb: 2,
                 textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
-                fontSize: "3.5rem",
+                fontSize: "3rem",
               }}
             >
-              {title}
+              {title.toUpperCase()}
             </Typography>
 
             <Box
@@ -138,7 +138,7 @@ export default function ClassCard({
 
           {/* Bottom Section: Detail */}
           <Typography
-            variant="body2"
+            variant="body1"
             sx={{
               color: "rgba(255, 255, 255, 0.9)",
               textShadow: "1px 1px 2px rgba(0,0,0,0.8)",

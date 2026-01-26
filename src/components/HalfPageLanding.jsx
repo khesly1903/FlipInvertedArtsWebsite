@@ -25,7 +25,7 @@ export default function HalfPageLanding({ image, title1, title2, logo }) {
           animate={{ rotateX: 360, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           style={{
-            width: "300px",
+            width: "500px",
             height: "auto",
             filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.5))",
           }}

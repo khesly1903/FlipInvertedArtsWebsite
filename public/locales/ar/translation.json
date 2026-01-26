@@ -228,6 +228,7 @@
     "events-title": "الفعاليات",
     "events-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
     "current-event": "الحدث الحالي",
+    "current-event-description": "نص تجريبي لاستمارة التسجيل",
     "annual-event": "الأحداث القادمة",
     "past-event": "الحدث الماضي",
     "annual": {
@@ -250,6 +251,8 @@
     "schedules-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
     "common": {
       "find-us": "تجدنا",
+      "interested": "هل أنت مهتم؟",
+      "register-now": "سجل الآن",
       "contact-us": "اتصل بنا",
       "contact-us-text": "هل لديك أسئلة حول الدروس؟ تواصل معنا مباشرة!",
       "chat-on-whatsapp": "الدردشة على الواتساب"

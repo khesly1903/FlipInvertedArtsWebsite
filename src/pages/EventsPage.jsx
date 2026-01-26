@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { Box, Typography, Container, Divider } from "@mui/material";
+import { useLocation, useNavigate } from "react-router-dom";
+import {
+  Box,
+  Typography,
+  Container,
+  Divider,
+  Grid,
+  Button,
+  Paper,
+} from "@mui/material";
 import HalfPageLanding from "../components/HalfPageLanding";
 import AnimatedInformation from "../components/AnimatedInformation";
 import MasonryGrid from "../components/Masonry";
@@ -13,6 +21,7 @@ import { useTranslation } from "react-i18next";
 
 const EventsPage = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { state } = useLocation();
   const availableEvents = events.filter((e) => e.availability === "available");
   const upcomingEvents = events.filter((e) => e.availability === "upcoming");
@@ -31,7 +40,10 @@ const EventsPage = () => {
 
   return (
     <Box>
-      <HalfPageLanding image={landingImage} logo="/flip_logo.svg" />
+      <HalfPageLanding
+        image={landingImage}
+        logo="/logos/flip_logo_half_landing_white_events.svg"
+      />
 
       <AnimatedInformation
         title={t("events.events-title")}
@@ -49,9 +61,90 @@ const EventsPage = () => {
             <MasonryGrid images={availableEvents.map((e) => e.image)} />
           </Box>
         )}
+        <Paper
+          elevation={0}
+          sx={{
+            p: { xs: 3, md: 5 },
+            mt: 4,
+            mb: 10,
+            mx: "auto",
+            maxWidth: "500px",
+            borderRadius: 6,
+            background: "linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)",
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 3,
+            border: "1px solid rgba(0,0,0,0.08)",
+            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+          }}
+        >
+          <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "text.secondary",
+                textTransform: "uppercase",
+                letterSpacing: 3,
+                fontWeight: 700,
+                fontSize: "0.85rem",
+                mb: 1,
+                fontStyle: "italic",
+              }}
+            >
+              Before April
+            </Typography>
+            <Typography
+              variant="h2"
+              component="div"
+              sx={{
+                fontWeight: 900,
+                color: "primary.main",
+                fontSize: { xs: "3rem", md: "4rem" },
+                lineHeight: 1,
+                letterSpacing: -2,
+              }}
+            >
+              $150
+            </Typography>
+          </Box>
+          <Box>
+            <Button
+              variant="contained"
+              size="large"
+              onClick={() =>
+                navigate("/form", {
+                  state: {
+                    type: "events",
+                    image: availableEvents[0].image.src,
+                    description: availableEvents[0].description,
+                  },
+                })
+              }
+              sx={{
+                px: { xs: 4, md: 6 },
+                py: { xs: 1.5, md: 2 },
+                fontSize: { xs: "1.1rem", md: "1.3rem" },
+                borderRadius: "50px",
+                textTransform: "none",
+                fontWeight: 800,
+                boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+                "&:hover": {
+                  transform: "translateY(-4px)",
+                  boxShadow: "0 15px 30px rgba(0,0,0,0.2)",
+                  background: "primary.dark",
+                },
+                transition: "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+              }}
+            >
+              Register Now
+            </Button>
+          </Box>
+        </Paper>
 
         <Divider />
-        <AnimatedTitle title={t("events.annual-event")} fontSize="3rem" />
+        <AnimatedTitle title={t("events.annual-event")} fontSize="1.9rem" />
         <Container maxWidth="lg" sx={{ my: 10 }}>
           {/* Section 1: Video Left / Text Right */}
           <Box sx={{ mb: 10 }}>
@@ -89,7 +182,7 @@ const EventsPage = () => {
               <Box sx={{ flex: 1 }}>
                 <AnimatedTitle
                   title={t("events.annual.summer.title")}
-                  fontSize="2rem"
+                  fontSize="1.9rem"
                 />
                 <Typography
                   variant="body1"
@@ -112,7 +205,7 @@ const EventsPage = () => {
               }}
             >
               <Box sx={{ flex: 1 }}>
-                <AnimatedTitle title={t("events.annual.winter.title")} />
+                <AnimatedTitle title={t("events.annual.winter.title")} fontSize="1.9rem" />
                 <Typography
                   variant="body1"
                   sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
@@ -180,7 +273,7 @@ const EventsPage = () => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <AnimatedTitle title={t("events.annual.spring.title")} />
+                <AnimatedTitle title={t("events.annual.spring.title")} fontSize="1.9rem" />
                 <Typography
                   variant="body1"
                   sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}

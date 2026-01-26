@@ -47,19 +47,17 @@ export default function HomePage() {
             alignItems: "center",
           }}
         >
-          <SplitText
-            text="FLIP INVERTED ARTS"
-            className=""
-            delay={50}
-            duration={3}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-            tag="h3"
+          <motion.img
+            src="/flip_logo.svg"
+            alt="Logo"
+            initial={{ rotateX: 90, opacity: 0 }}
+            animate={{ rotateX: 360, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            style={{
+              width: "500px",
+              height: "auto",
+              filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.5))",
+            }}
           />
         </Box>
 
@@ -129,8 +127,8 @@ export default function HomePage() {
                   }}
                 >
                   {item.icon}
-                  <Typography variant="h6" sx={{ mt: 1 }}>
-                    {item.label}
+                  <Typography variant="h6" fontWeight={600} sx={{ mt: 1 }}>
+                    {item.label.toUpperCase()}
                   </Typography>
                 </Box>
               </Grid>
@@ -147,7 +145,7 @@ export default function HomePage() {
       />
       {/* Highlights Section */}
       <Container maxWidth="xl" sx={{ py: 4 }}>
-        <Typography variant="h4" gutterBottom textAlign={"center"}>
+        <Typography variant="h4" fontWeight={600} gutterBottom textAlign={"center"}>
           {t("home.what-we-offer")}
         </Typography>
         <Grid container spacing={4}>
@@ -198,6 +196,7 @@ export default function HomePage() {
             gutterBottom
             textAlign="center"
             sx={{ mb: 4 }}
+            fontWeight={600}
           >
             {t("home.reviews")}
           </Typography>

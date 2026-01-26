@@ -13,7 +13,11 @@ export default function SchedulesPage() {
   return (
     <Box>
       {/* Locations Banner */}
-      <HalfPageLanding image={landingImage} logo="/flip_logo.svg" />
+      <HalfPageLanding
+        image={landingImage}
+        logo="/logos/flip_logo_half_landing_white_schedule.svg"
+      />
+
       <AnimatedInformation
         title={t("schedules.schedules-title")}
         text={t("schedules.schedules-text")}

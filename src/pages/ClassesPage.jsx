@@ -32,7 +32,7 @@ export default function ClassesPage() {
   return (
     <Box>
       {/* Classes Banner */}
-      <HalfPageLanding image={landingImage} logo="/flip_logo.svg" />
+      <HalfPageLanding image={landingImage} logo="/logos/flip_logo_half_landing_white_classes.svg" />
 
       {/* About classes section */}
       <AnimatedInformation

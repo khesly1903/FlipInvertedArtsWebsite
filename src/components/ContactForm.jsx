@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
 import {
   TextField,
   Button,
@@ -8,12 +9,21 @@ import {
   Alert,
   CircularProgress,
   TextareaAutosize,
+  MenuItem,
 } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import SendIcon from "@mui/icons-material/Send";
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
 export default function ContactForm() {
+  const { t } = useTranslation();
+  const { state } = useLocation();
+  const type = state?.type;
+  const image = state?.image;
+  const description = state?.description;
+
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [snackbar, setSnackbar] = useState({
@@ -82,107 +92,212 @@ export default function ContactForm() {
         p: 4,
       }}
     >
-      <Typography
-        variant="h4"
-        component="h2"
-        gutterBottom
-        sx={{ textAlign: "center", mb: 3, fontWeight: "bold" }}
-      >
-        Send us a message
-      </Typography>
+      {description && (
+        <Box sx={{ mb: 3, width: "100%" }}>
+          <Typography variant="body1">{t(description)}</Typography>
+        </Box>
+      )}
+      {image && (
+        <Box sx={{ mb: 3, width: "100%" }}>
+          <img
+            src={image}
+            alt="Event"
+            style={{
+              width: "100%",
+              height: "auto",
+              borderRadius: "8px",
+              display: "block",
+            }}
+          />
+        </Box>
+      )}
 
       <form ref={form} onSubmit={sendEmail}>
         <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-          <TextField
-            name="parent_name"
-            label="Your Full Name"
-            variant="outlined"
-            fullWidth
-            required
-          />
+          {type === "events" ? (
+            <>
+              <TextField
+                name="child_name"
+                label="Child's Full Name"
+                variant="outlined"
+                fullWidth
+                required
+              />
 
-          <TextField
-            name="child_name"
-            label="Child's Full Name"
-            variant="outlined"
-            fullWidth
-            required
-          />
+              <TextField
+                name="child_birthday"
+                label="Child's Birthday"
+                variant="outlined"
+                fullWidth
+                required
+                placeholder="DD/MM/YYYY"
+                inputProps={{ maxLength: 10 }}
+                onChange={(e) => {
+                  let value = e.target.value.replace(/\D/g, ""); // Remove non-digits
+                  if (value.length > 2)
+                    value = value.slice(0, 2) + "/" + value.slice(2);
+                  if (value.length > 5)
+                    value = value.slice(0, 5) + "/" + value.slice(5);
+                  e.target.value = value;
+                }}
+              />
 
-          <TextField
-            name="child_birthday"
-            label="Child's Birthday"
-            variant="outlined"
-            fullWidth
-            required
-            placeholder="DD/MM/YYYY"
-            inputProps={{ maxLength: 10 }}
-            onChange={(e) => {
-              let value = e.target.value.replace(/\D/g, ""); // Remove non-digits
-              if (value.length > 2)
-                value = value.slice(0, 2) + "/" + value.slice(2);
-              if (value.length > 5)
-                value = value.slice(0, 5) + "/" + value.slice(5);
-              e.target.value = value;
-            }}
-          />
+              <TextField
+                name="parent_name"
+                label="Your Full Name"
+                variant="outlined"
+                fullWidth
+                required
+              />
 
-          <TextField
-            name="child_school"
-            label="Child's School"
-            variant="outlined"
-            fullWidth
-            required
-          />
+              <TextField
+                name="parent_phone"
+                label="Your Phone Number"
+                variant="outlined"
+                fullWidth
+                required
+              />
 
-          <TextField
-            name="parent_phone"
-            label="Your Phone Number"
-            variant="outlined"
-            fullWidth
-            required
-          />
+              <TextField
+                name="parent_email"
+                label="Your Email"
+                variant="outlined"
+                fullWidth
+                required
+              />
 
-          <TextField
-            name="parent_email"
-            label="Your Email"
-            variant="outlined"
-            fullWidth
-            required
-          />
+              <TextField
+                name="flip_branch"
+                label="Flip Branch"
+                variant="outlined"
+                fullWidth
+                required
+                select
+                defaultValue=""
+              >
+                <MenuItem value="Gezira Club October">
+                  Gezira Club October
+                </MenuItem>
+                <MenuItem value="Gazira Club Zamalek">
+                  Gazira Club Zamalek
+                </MenuItem>
+                <MenuItem value="Zamalek Studio">Zamalek Studio</MenuItem>
+                <MenuItem value="Maadi">Maadi</MenuItem>
+                <MenuItem value="Sheikh Zayed">Sheikh Zayed</MenuItem>
+                <MenuItem value="New Cairo">New Cairo</MenuItem>
+                <MenuItem value="Almaza Bay">Almaza Bay</MenuItem>
+                <MenuItem value="Diplo">Diplo</MenuItem>
+              </TextField>
 
-          <TextField
-            name="membership_number"
-            label="Gezira Membership #"
-            variant="outlined"
-            fullWidth
-            required
-          />
+              <TextField
+                name="child_favorite_color"
+                label="Child's Favorite Color"
+                variant="outlined"
+                fullWidth
+                required
+              />
 
-          <TextField
-            name="emergancy_name"
-            label="Secondary or Emergancy Contact Name"
-            variant="outlined"
-            fullWidth
-            required
-          />
+              <TextField
+                name="child_favorite_second_color"
+                label="Child's Second Favorite Color"
+                variant="outlined"
+                fullWidth
+              />
 
-          <TextField
-            name="emergancy_phone"
-            label="Secondary or Emergancy Contact Phone"
-            variant="outlined"
-            fullWidth
-            required
-          />
+              <TextField
+                name="guests"
+                label="Names of the Guests"
+                variant="outlined"
+                fullWidth
+                helperText="Please separate names with a comma"
+              />
+            </>
+          ) : (
+            <>
+              <TextField
+                name="parent_name"
+                label="Your Full Name"
+                variant="outlined"
+                fullWidth
+                required
+              />
 
-          <TextField
-            name="message"
-            label="If you have a message for us"
-            variant="outlined"
-            fullWidth
-            multiline
-            rows={4}
-          />
+              <TextField
+                name="child_name"
+                label="Child's Full Name"
+                variant="outlined"
+                fullWidth
+                required
+              />
+
+              <TextField
+                name="child_birthday"
+                label="Child's Birthday"
+                variant="outlined"
+                fullWidth
+                required
+                placeholder="DD/MM/YYYY"
+                inputProps={{ maxLength: 10 }}
+                onChange={(e) => {
+                  let value = e.target.value.replace(/\D/g, ""); // Remove non-digits
+                  if (value.length > 2)
+                    value = value.slice(0, 2) + "/" + value.slice(2);
+                  if (value.length > 5)
+                    value = value.slice(0, 5) + "/" + value.slice(5);
+                  e.target.value = value;
+                }}
+              />
+
+              <TextField
+                name="child_school"
+                label="Child's School"
+                variant="outlined"
+                fullWidth
+                required
+              />
+
+              <TextField
+                name="parent_phone"
+                label="Your Phone Number"
+                variant="outlined"
+                fullWidth
+                required
+              />
+
+              <TextField
+                name="parent_email"
+                label="Your Email"
+                variant="outlined"
+                fullWidth
+                required
+              />
+
+              <TextField
+                name="emergancy_name"
+                label="Secondary or Emergancy Contact Name"
+                variant="outlined"
+                fullWidth
+                required
+              />
+
+              <TextField
+                name="emergancy_phone"
+                label="Secondary or Emergancy Contact Phone"
+                variant="outlined"
+                fullWidth
+                required
+              />
+
+              <TextField
+                name="message"
+                label="If you have a message for us"
+                variant="outlined"
+                fullWidth
+                multiline
+                rows={4}
+              />
+            </>
+          )}
           <Button
             type="submit"
             variant="outlined"
@@ -201,7 +316,11 @@ export default function ContactForm() {
               },
             }}
           >
-            {loading ? "Sending..." : "Send form"}
+            {loading
+              ? "Sending..."
+              : type === "events"
+                ? "Complete Registration"
+                : "Send form"}
           </Button>
         </Box>
       </form>

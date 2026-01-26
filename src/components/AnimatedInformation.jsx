@@ -54,7 +54,7 @@ export default function AnimatedInformation({ title, text }) {
             animate={controls}
           >
             <Box>
-              <Typography variant="body1" gutterBottom>
+              <Typography variant="body1" letterSpacing={1.5} gutterBottom>
                 {text}
               </Typography>
             </Box>

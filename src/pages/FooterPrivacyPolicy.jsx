@@ -9,8 +9,7 @@ export default function FooterPrivacyPolicy() {
     <Box>
       <HalfPageLanding
         image={landing}
-        title1={t("footer-pages.privacy-policy.title")}
-        title2={t("footer-pages.privacy-policy.subtitle").toUpperCase()}
+        logo="/logos/flip_logo_half_landing_white_privacy.svg"
       />
 
       <Container maxWidth="lg" sx={{ py: 8 }}>

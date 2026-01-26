@@ -227,6 +227,7 @@
     "events-title": "Events",
     "events-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
     "current-event": "Current Event",
+    "current-event-description": "Bla Bla for registration form",
     "annual-event": "Upcoming Event",
     "past-event": "Past Event",
     "annual": {
@@ -249,6 +250,8 @@
     "schedules-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
     "common": {
       "find-us": "Find Us",
+      "interested": "Are you interested?",
+      "register-now": "Register Now",
       "contact-us": "Contact Us",
       "contact-us-text": "Have questions about classes? Reach out to us directly!",
       "chat-on-whatsapp": "Chat on WhatsApp"
