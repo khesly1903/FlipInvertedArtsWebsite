@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { useParams, useNavigate,Navigate } from "react-router-dom";
+import { useParams, useNavigate, Navigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -18,7 +18,6 @@ import { schedules } from "../data/schedules";
 import landing from "../assets/landing.webp";
 import { useTranslation } from "react-i18next";
 import AnimatedInformation from "../components/AnimatedInformation";
-
 
 export default function ScheduleDetailPage() {
   const { t } = useTranslation();
@@ -39,8 +38,7 @@ export default function ScheduleDetailPage() {
       {/* 1. Header with Location Name */}
       <HalfPageLanding
         image={schedule.details.landingImage}
-        title1={t("schedules.schedules-title").toUpperCase() + ":"}
-        title2={t(schedule.location).toUpperCase()}
+        title={t(schedule.location).toUpperCase()}
       />
 
       <Container maxWidth="lg" sx={{ py: 6, mb: 8 }}>
@@ -144,8 +142,9 @@ export default function ScheduleDetailPage() {
                     navigate("/form", {
                       state: {
                         type: "schedules",
+                        gezira: slug.includes("gezira"),
+                        description: schedule.details.formDescription,
                         // image: availableEvents[0].image.src,
-                        // description: availableEvents[0].description,
                       },
                     })
                   }

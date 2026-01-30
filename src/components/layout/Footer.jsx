@@ -10,11 +10,13 @@ import {
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YoutubeIcon from "@mui/icons-material/Youtube";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   return (
     <Box
       component="footer"
@@ -32,10 +34,12 @@ export default function Footer() {
             component="img"
             src="/flip_logo.svg"
             alt="Flip Logo"
+            onClick={() => navigate("/")}
             sx={{
               height: 60,
               width: "auto",
               mb: 1,
+              cursor: "pointer",
             }}
           />
 
@@ -85,6 +89,20 @@ export default function Footer() {
             </Button>
           </Stack>
 
+          <Button
+            variant="text"
+            color="inherit"
+            onClick={() =>
+              navigate("/form", {
+                state: {
+                  type: "contact",
+                  description: "footer.contact-us",
+                },
+              })
+            }
+          >
+            {t("footer.contact-us")}
+          </Button>
           <Typography variant="body2" align="center" sx={{ opacity: 0.8 }}>
             © {new Date().getFullYear()} Flip Inverted Arts. All rights
             reserved.
@@ -120,20 +138,6 @@ export default function Footer() {
               <YoutubeIcon sx={{ fontSize: 40 }} />
             </IconButton>
           </Stack>
-
-          <Button
-            variant="outlined"
-            color="inherit"
-            sx={{
-              borderColor: "rgba(255, 255, 255, 0.5)",
-              "&:hover": {
-                borderColor: "#fff",
-                backgroundColor: "rgba(255, 255, 255, 0.05)",
-              },
-            }}
-          >
-            {t("footer.contact-us")}
-          </Button>
         </Stack>
       </Container>
     </Box>

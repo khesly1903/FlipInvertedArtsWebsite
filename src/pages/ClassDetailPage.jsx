@@ -103,8 +103,7 @@ export default function ClassDetailPage() {
     <Box>
       <HalfPageLanding
         image={classItem.slugImage.src}
-        title1="CLASS:"
-        title2={t(classItem.title).toUpperCase()}
+        title={t(classItem.title).toUpperCase()}
       />
 
       <Container maxWidth="lg" sx={{ py: 6 }}>

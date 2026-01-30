@@ -10,7 +10,7 @@ import FooterAboutFlip from "../pages/FooterAboutFlip";
 import FooterFAQ from "../pages/FooterFAQ";
 import FooterPrivacyPolicy from "../pages/FooterPrivacyPolicy";
 import FooterSafetyPage from "../pages/FooterSafetyPage";
-import TestFormPage from "../pages/TestFormPage";
+
 import ShopPage from "../pages/ShopPage";
 
 const router = createBrowserRouter([
@@ -68,10 +68,7 @@ const router = createBrowserRouter([
         path: "safety",
         element: <FooterSafetyPage />,
       },
-      {
-        path: "form",
-        element: <TestFormPage />,
-      },
+
       {
         path: "shop",
         element: <ShopPage />,

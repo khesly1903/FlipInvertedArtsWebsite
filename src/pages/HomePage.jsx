@@ -1,6 +1,6 @@
-import { Typography, Container, Box, Grid } from "@mui/material";
+import { Typography, Container, Box, Grid, Button } from "@mui/material";
 import { motion } from "framer-motion";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import SplitText from "../components/SplitText";
 import landingImage from "../assets/landing.webp";
 import { useTranslation } from "react-i18next";
@@ -15,9 +15,11 @@ import ReviewCard from "../components/ReviewCard";
 import HomePageCard from "../components/HomePageCard";
 import { reviews } from "../data/review";
 import AnimatedInformation from "../components/AnimatedInformation";
+import ImageCarousel from "../components/ImageCarousel";
 
 export default function HomePage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   return (
     <Box>
       {/* Hero Section */}
@@ -143,11 +145,26 @@ export default function HomePage() {
         title={t("home.home-title")}
         text={t("home.home-text")}
       />
+
+       <ImageCarousel
+          images={[
+            "/location_maadi.jpeg",
+            "/location_zamalek.jpeg",
+            "/locations_card_gezira_club_october.jpeg",
+            "locations_landing_gezira_club_zamalek.jpeg",
+          ]}
+        />
       {/* Highlights Section */}
       <Container maxWidth="xl" sx={{ py: 4 }}>
-        <Typography variant="h4" fontWeight={600} gutterBottom textAlign={"center"}>
+        <Typography
+          variant="h4"
+          fontWeight={600}
+          gutterBottom
+          textAlign={"center"}
+        >
           {t("home.what-we-offer")}
         </Typography>
+       
         <Grid container spacing={4}>
           {[
             {
@@ -187,6 +204,48 @@ export default function HomePage() {
           ))}
         </Grid>
       </Container>
+
+      {/* Contact CTA Section */}
+      <Box sx={{ py: 8, bgcolor: "grey.100" }}>
+        <Container maxWidth="md" sx={{ textAlign: "center" }}>
+          <Typography variant="h4" fontWeight={600} gutterBottom sx={{ mb: 2 }}>
+            {t("home.contact-section.title")}
+          </Typography>
+          <Typography
+            variant="h6"
+            color="text.secondary"
+            sx={{ mb: 4, maxWidth: "600px", mx: "auto", lineHeight: 1.6 }}
+          >
+            {t("home.contact-section.text")}
+          </Typography>
+          <Button
+            variant="contained"
+            size="large"
+            onClick={() =>
+              navigate("/form", {
+                // footer or navbar doesnt metter rn
+                state: { type: "contact", description: "footer.contact-us" },
+              })
+            }
+            sx={{
+              borderRadius: 50,
+              px: 6,
+              py: 1.5,
+              fontSize: "1.1rem",
+              fontWeight: 700,
+              textTransform: "none",
+              boxShadow: "0 8px 20px rgba(0,0,0,0.1)",
+              "&:hover": {
+                transform: "translateY(-2px)",
+                boxShadow: "0 12px 25px rgba(0,0,0,0.15)",
+              },
+              transition: "all 0.3s ease",
+            }}
+          >
+            {t("home.contact-section.button")}
+          </Button>
+        </Container>
+      </Box>
 
       {/* Reviews Section */}
       <Box sx={{ py: 8, overflow: "hidden" }}>

@@ -16,6 +16,9 @@ import { events } from "../data/events";
 import landingImage from "../assets/landing.webp";
 import AnimatedTitle from "../components/AnimatedTitle";
 import eventSummerVideo from "../assets/events/event_summer.mp4";
+import eventSpringVideo from "../assets/events/event_spring.mp4";
+import eventWinterVideo from "../assets/events/winter_coming_soon.jpeg";
+import eventLanding from "../assets/events/events_landing.jpeg";
 
 import { useTranslation } from "react-i18next";
 
@@ -41,7 +44,7 @@ const EventsPage = () => {
   return (
     <Box>
       <HalfPageLanding
-        image={landingImage}
+        image={eventLanding}
         logo="/logos/flip_logo_half_landing_white_events.svg"
       />
 
@@ -146,100 +149,8 @@ const EventsPage = () => {
         <Divider />
         <AnimatedTitle title={t("events.annual-event")} fontSize="1.9rem" />
         <Container maxWidth="lg" sx={{ my: 10 }}>
-          {/* Section 1: Video Left / Text Right */}
-          <Box sx={{ mb: 10 }}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "column", md: "row" },
-                alignItems: "center",
-                gap: 4,
-              }}
-            >
-              <Box
-                sx={{
-                  flex: 1,
-                  width: "100%",
-                  borderRadius: 2,
-                  overflow: "hidden",
-                  boxShadow: 3,
-                }}
-              >
-                <video
-                  src={eventSummerVideo}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    display: "block",
-                  }}
-                />
-              </Box>
-              <Box sx={{ flex: 1 }}>
-                <AnimatedTitle
-                  title={t("events.annual.summer.title")}
-                  fontSize="1.9rem"
-                />
-                <Typography
-                  variant="body1"
-                  sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
-                >
-                  {t("events.annual.summer.description")}
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-
-          {/* Section 2: Text Left / Video Right */}
-          <Box sx={{ mb: 10 }}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "column-reverse", md: "row" },
-                alignItems: "center",
-                gap: 4,
-              }}
-            >
-              <Box sx={{ flex: 1 }}>
-                <AnimatedTitle title={t("events.annual.winter.title")} fontSize="1.9rem" />
-                <Typography
-                  variant="body1"
-                  sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
-                >
-                  {t("events.annual.winter.description")}
-                </Typography>
-              </Box>
-              <Box
-                sx={{
-                  flex: 1,
-                  width: "100%",
-                  borderRadius: 2,
-                  overflow: "hidden",
-                  boxShadow: 3,
-                }}
-              >
-                <video
-                  src={eventSummerVideo}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    display: "block",
-                  }}
-                />
-              </Box>
-            </Box>
-          </Box>
-
-          {/* Section 3: Video Left / Text Right */}
+          {/* spring summer winter  */}
+          {/* Spring Section: Video Left / Text Right */}
           <Box sx={{ mb: 4 }}>
             <Box
               sx={{
@@ -259,7 +170,7 @@ const EventsPage = () => {
                 }}
               >
                 <video
-                  src={eventSummerVideo}
+                  src={eventSpringVideo}
                   autoPlay
                   loop
                   muted
@@ -273,12 +184,121 @@ const EventsPage = () => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <AnimatedTitle title={t("events.annual.spring.title")} fontSize="1.9rem" />
+                <AnimatedTitle
+                  title={t("events.annual.spring.title")}
+                  fontSize="1.9rem"
+                />
                 <Typography
                   variant="body1"
                   sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
                 >
                   {t("events.annual.spring.description")}
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+
+          {/* Summer Section: Text Left / Video Right */}
+          <Box sx={{ mb: 10 }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column-reverse", md: "row" },
+                alignItems: "center",
+                gap: 4,
+              }}
+            >
+              <Box sx={{ flex: 1 }}>
+                <AnimatedTitle
+                  title={t("events.annual.summer.title")}
+                  fontSize="1.9rem"
+                />
+                <Typography
+                  variant="body1"
+                  sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
+                >
+                  {t("events.annual.summer.description")}
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  flex: 1,
+                  width: "100%",
+                  borderRadius: 2,
+                  overflow: "hidden",
+                  boxShadow: 3,
+                }}
+              >
+                <video
+                  src={eventSummerVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
+              </Box>
+            </Box>
+          </Box>
+
+          {/* Winter Section: Video Left / Text Right */}
+          <Box sx={{ mb: 10 }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
+                alignItems: "center",
+                gap: 4,
+              }}
+            >
+              <Box
+                sx={{
+                  flex: 1,
+                  width: "100%",
+                  borderRadius: 2,
+                  overflow: "hidden",
+                  boxShadow: 3,
+                }}
+              >
+                {/* <video
+                  src={eventSummerVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                /> */}
+                <img
+                  src={eventWinterVideo}
+                  style={{
+                    width: "100%",
+                    height: "20rem",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                  alt="Winter"
+                />
+              </Box>
+              <Box sx={{ flex: 1 }}>
+                <AnimatedTitle
+                  title={t("events.annual.winter.title")}
+                  fontSize="1.9rem"
+                />
+                <Typography
+                  variant="body1"
+                  sx={{ mt: 2, fontSize: "1.1rem", color: "text.secondary" }}
+                >
+                  {t("events.annual.winter.description")}
                 </Typography>
               </Box>
             </Box>

@@ -95,6 +95,13 @@ export default function Navbar({ hideOnScrollTop = false }) {
       desc: "Frequently Asked Questions",
       subLinks: [],
     },
+    {
+      title: t("navbar.contact-us"),
+      path: "/form",
+      desc: "Contact Us",
+      subLinks: [],
+      state: { type: "contact", description: "navbar.contact-us" },
+    },
   ];
 
   useEffect(() => {
@@ -116,8 +123,17 @@ export default function Navbar({ hideOnScrollTop = false }) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleNavigation = (path, sectionId) => {
-    navigate(path, { state: { targetId: sectionId } });
+  const handleNavigation = (path, stateOrSectionId) => {
+    let state = {};
+    if (typeof stateOrSectionId === "string") {
+      state = { targetId: stateOrSectionId };
+    } else if (
+      typeof stateOrSectionId === "object" &&
+      stateOrSectionId !== null
+    ) {
+      state = stateOrSectionId;
+    }
+    navigate(path, { state });
     setIsMenuOpen(false);
   };
 
@@ -303,7 +319,7 @@ export default function Navbar({ hideOnScrollTop = false }) {
                       px: 2,
                       cursor: "pointer",
                     }}
-                    onClick={() => handleNavigation(item.path)}
+                    onClick={() => handleNavigation(item.path, item.state)}
                   >
                     <Typography variant="h4" fontWeight="bold">
                       {item.title}

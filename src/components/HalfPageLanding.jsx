@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
-export default function HalfPageLanding({ image, title1, title2, logo }) {
+export default function HalfPageLanding({ image, title, logo }) {
   return (
     <Box
       sx={{
@@ -31,33 +31,25 @@ export default function HalfPageLanding({ image, title1, title2, logo }) {
           }}
         />
       ) : (
-        <>
-          <Typography
-            variant="h3"
-            component="h3"
-            sx={{
-              color: "white",
-              mb: 2,
-              textAlign: "center",
-              textShadow: "1px 1px 1px rgba(0,0,0,0.5)",
-              fontWeight: "bold",
-            }}
-          >
-            {title1}
-          </Typography>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <Typography
             variant="h2"
-            component="h2"
+            component="h1"
             sx={{
               color: "white",
               textAlign: "center",
               textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
               fontWeight: "bold",
+              px: 2,
             }}
           >
-            {title2}
+            {title}
           </Typography>
-        </>
+        </motion.div>
       )}
     </Box>
   );

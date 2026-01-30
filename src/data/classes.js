@@ -33,12 +33,12 @@ import class_5_2 from "../assets/classes/class_5/class_5_2.jpeg";
 import class_5_3 from "../assets/classes/class_5/class_5_3.jpeg";
 import class_5_4 from "../assets/classes/class_5/class_5_4.jpeg";
 
-// import class_6_landing from "../assets/classes/class_6/class_6_landing.jpeg";
+import class_6_landing from "../assets/classes/class_6/class_6_landing.jpeg";
 import class_6_card from "../assets/classes/class_6/class_6_card.jpeg";
 import class_6_1 from "../assets/classes/class_6/class_6_1.jpeg";
 import class_6_2 from "../assets/classes/class_6/class_6_2.jpeg";
-// import class_6_3 from "../assets/classes/class_6/class_6_3.jpeg";
-// import class_6_4 from "../assets/classes/class_6/class_6_4.jpeg";
+import class_6_3 from "../assets/classes/class_6/class_6_3.jpeg";
+import class_6_4 from "../assets/classes/class_6/class_6_4.jpeg";
 
 import class_7_landing from "../assets/classes/class_7/class_7_landing.jpeg";
 import class_7_card from "../assets/classes/class_7/class_7_card.png";
@@ -162,12 +162,12 @@ export const classes = [
     description: 'classes.kids.kids-6.description',
     ageRange: 'classes.kids.common.age-range-3',
     image: { src: class_6_card, alt: 'classes.kids.kids-6.title' },
-    slugImage: { src: class_5_landing, alt: 'classes.kids.kids-6.title' },
+    slugImage: { src: class_6_landing, alt: 'classes.kids.kids-6.title' },
     detail: [
       { id: '1', title: "classes.kids.kids-6.image-1.title", description: "classes.kids.kids-6.image-1.description", image: class_6_1 },
       { id: '2', title: "classes.kids.kids-6.image-2.title", description: "classes.kids.kids-6.image-2.description", image: class_6_2 },
-      { id: '3', title: "classes.kids.kids-6.image-3.title", description: "classes.kids.kids-6.image-3.description", image: class_6_1 },
-      { id: '4', title: "classes.kids.kids-6.image-4.title", description: "classes.kids.kids-6.image-4.description", image: class_6_2 },
+      { id: '3', title: "classes.kids.kids-6.image-3.title", description: "classes.kids.kids-6.image-3.description", image: class_6_3 },
+      { id: '4', title: "classes.kids.kids-6.image-4.title", description: "classes.kids.kids-6.image-4.description", image: class_6_4 },
     ]
   },
   {
