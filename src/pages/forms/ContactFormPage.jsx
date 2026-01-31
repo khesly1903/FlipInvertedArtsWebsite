@@ -15,6 +15,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import landingImage from "../../assets/landing.webp"; // Using generic landing for now
+import SEO from "../../components/SEO";
 
 export default function ContactFormPage() {
   const { t } = useTranslation();
@@ -85,6 +86,10 @@ export default function ContactFormPage() {
 
   return (
     <Box>
+      <SEO
+        title="Contact Us | Flip Inverted Arts"
+        description="Get in touch with us for inquiries about our gymnastics, dance, and art classes."
+      />
       <HalfPageLanding
         image={landingImage}
         title={t("navbar.contact-us").toUpperCase()}

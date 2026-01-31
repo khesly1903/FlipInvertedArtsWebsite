@@ -17,6 +17,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import landingImage from "../../assets/landing.webp"; // Default landing
+import SEO from "../../components/SEO";
 
 export default function ScheduleRegistrationPage() {
   const { t } = useTranslation();
@@ -24,6 +25,7 @@ export default function ScheduleRegistrationPage() {
   const [loading, setLoading] = useState(false);
   const [captchaToken, setCaptchaToken] = useState(null);
   const [locationName, setLocationName] = useState("");
+  const [dobError, setDobError] = useState(false);
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: "",
@@ -112,6 +114,10 @@ export default function ScheduleRegistrationPage() {
 
   return (
     <Box>
+      <SEO
+        title="Class Registration | Flip Inverted Arts"
+        description="Sign up for our classes and become part of the Flip Inverted Arts family."
+      />
       <HalfPageLanding
         image={landingImage}
         title={t("home.schedules").toUpperCase()}
@@ -229,8 +235,23 @@ export default function ScheduleRegistrationPage() {
                   fullWidth
                   required
                   placeholder={t("forms.placeholders.dob")}
-                  helperText="e.g. 25/12/2015"
+                  helperText={
+                    dobError ? "Invalid Date (DD/MM/YYYY)" : "e.g. 25/12/2015"
+                  }
+                  error={dobError}
+                  inputProps={{ inputMode: "numeric" }}
+                  onBlur={(e) => {
+                    const val = e.target.value;
+                    if (!val) {
+                      setDobError(false);
+                      return;
+                    }
+                    const regex =
+                      /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d$/;
+                    setDobError(!regex.test(val));
+                  }}
                   onChange={(e) => {
+                    setDobError(false);
                     let value = e.target.value.replace(/\D/g, "");
                     if (value.length > 2)
                       value = value.slice(0, 2) + "/" + value.slice(2);

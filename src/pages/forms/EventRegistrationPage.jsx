@@ -16,12 +16,14 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import landingImage from "../../assets/landing.webp"; // Using generic or specific event image
+import SEO from "../../components/SEO";
 
 export default function EventRegistrationPage() {
   const { t } = useTranslation();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [captchaToken, setCaptchaToken] = useState(null);
+  const [dobError, setDobError] = useState(false);
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: "",
@@ -98,6 +100,10 @@ export default function EventRegistrationPage() {
 
   return (
     <Box>
+      <SEO
+        title="Event Registration | Flip Inverted Arts"
+        description="Register for upcoming events at Flip Inverted Arts. Camps, workshops, and more!"
+      />
       <HalfPageLanding
         image={landingImage}
         title={t("home.events").toUpperCase()}
@@ -194,8 +200,23 @@ export default function EventRegistrationPage() {
                   fullWidth
                   required
                   placeholder={t("forms.placeholders.dob")}
-                  helperText="e.g. 25/12/2015"
+                  helperText={
+                    dobError ? "Invalid Date (DD/MM/YYYY)" : "e.g. 25/12/2015"
+                  }
+                  error={dobError}
+                  inputProps={{ inputMode: "numeric" }}
+                  onBlur={(e) => {
+                    const val = e.target.value;
+                    if (!val) {
+                      setDobError(false);
+                      return;
+                    }
+                    const regex =
+                      /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d$/;
+                    setDobError(!regex.test(val));
+                  }}
                   onChange={(e) => {
+                    setDobError(false);
                     let value = e.target.value.replace(/\D/g, "");
                     if (value.length > 2)
                       value = value.slice(0, 2) + "/" + value.slice(2);
