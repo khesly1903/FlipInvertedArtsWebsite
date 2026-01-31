@@ -92,14 +92,7 @@ export default function Footer() {
           <Button
             variant="text"
             color="inherit"
-            onClick={() =>
-              navigate("/form", {
-                state: {
-                  type: "contact",
-                  description: "footer.contact-us",
-                },
-              })
-            }
+            onClick={() => navigate("/contact")}
           >
             {t("footer.contact-us")}
           </Button>

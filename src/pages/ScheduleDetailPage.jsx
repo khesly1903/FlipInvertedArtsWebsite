@@ -139,12 +139,9 @@ export default function ScheduleDetailPage() {
                 <Button
                   variant="contained"
                   onClick={() =>
-                    navigate("/form", {
+                    navigate("/register-schedule/" + slug, {
                       state: {
-                        type: "schedules",
-                        gezira: slug.includes("gezira"),
-                        description: schedule.details.formDescription,
-                        // image: availableEvents[0].image.src,
+                        locationName: t(schedule.location),
                       },
                     })
                   }

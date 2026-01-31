@@ -394,8 +394,52 @@
       "text": "Safety is important, take care <3"
     }
   },
-  "form": {
-    "send-form": "Send Form",
-    "sending": "Sending..."
+  "forms": {
+    "titles": {
+      "contact": "Contact Us",
+      "event-registration": "Event Registration",
+      "schedule-registration": "Schedule Registration"
+    },
+    "subtitles": {
+      "contact-text": "We'd love to hear from you. Send us a message!",
+      "event-text": "Please fill out the form below to register for our upcoming events.",
+      "schedule-text": "Secure your spot by filling out the registration form below.",
+      "parent-info": "Parent Information",
+      "child-info": "Child Information",
+      "emergency-contact": "Emergency Contact"
+    },
+    "labels": {
+      "full-name": "Your Full Name",
+      "email": "Your Email",
+      "message": "Message",
+      "parent-name": "Parent Full Name",
+      "child-name": "Child Full Name",
+      "phone": "Phone Number",
+      "dob": "Date of Birth",
+      "school": "Child's School",
+      "fav-color-1": "Favorite Color",
+      "fav-color-2": "Second Favorite Color",
+      "preferred-branch": "Preferred Flip Branch",
+      "guests": "Names of Guests (comma separated)",
+      "additional-notes": "Additional Message / Notes",
+      "gezira-membership": "Gezira Membership Number",
+      "emergency-name": "Emergency Contact Name",
+      "emergency-phone": "Emergency Contact Phone"
+    },
+    "placeholders": {
+      "dob": "DD/MM/YYYY",
+      "guests": "Optional"
+    },
+    "buttons": {
+      "send": "Send Form",
+      "sending": "Sending...",
+      "register": "Complete Registration"
+    },
+    "messages": {
+      "success": "Sent successfully!",
+      "registration-success": "Registration sent successfully! We will contact you shortly.",
+      "error": "Failed to send. Please try again later.",
+      "recaptcha": "Please complete the reCAPTCHA verification."
+    }
   }
 }

@@ -116,15 +116,7 @@ const EventsPage = () => {
             <Button
               variant="contained"
               size="large"
-              onClick={() =>
-                navigate("/form", {
-                  state: {
-                    type: "events",
-                    image: availableEvents[0].image.src,
-                    description: availableEvents[0].description,
-                  },
-                })
-              }
+              onClick={() => navigate("/register-event")}
               sx={{
                 px: { xs: 4, md: 6 },
                 py: { xs: 1.5, md: 2 },

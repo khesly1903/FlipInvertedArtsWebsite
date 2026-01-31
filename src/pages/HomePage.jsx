@@ -146,14 +146,14 @@ export default function HomePage() {
         text={t("home.home-text")}
       />
 
-       <ImageCarousel
-          images={[
-            "/location_maadi.jpeg",
-            "/location_zamalek.jpeg",
-            "/locations_card_gezira_club_october.jpeg",
-            "locations_landing_gezira_club_zamalek.jpeg",
-          ]}
-        />
+      <ImageCarousel
+        images={[
+          "/location_maadi.jpeg",
+          "/location_zamalek.jpeg",
+          "/locations_card_gezira_club_october.jpeg",
+          "locations_landing_gezira_club_zamalek.jpeg",
+        ]}
+      />
       {/* Highlights Section */}
       <Container maxWidth="xl" sx={{ py: 4 }}>
         <Typography
@@ -164,7 +164,7 @@ export default function HomePage() {
         >
           {t("home.what-we-offer")}
         </Typography>
-       
+
         <Grid container spacing={4}>
           {[
             {
@@ -221,12 +221,7 @@ export default function HomePage() {
           <Button
             variant="contained"
             size="large"
-            onClick={() =>
-              navigate("/form", {
-                // footer or navbar doesnt metter rn
-                state: { type: "contact", description: "footer.contact-us" },
-              })
-            }
+            onClick={() => navigate("/contact")}
             sx={{
               borderRadius: 50,
               px: 6,

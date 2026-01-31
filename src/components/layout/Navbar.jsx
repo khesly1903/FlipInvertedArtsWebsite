@@ -97,10 +97,9 @@ export default function Navbar({ hideOnScrollTop = false }) {
     },
     {
       title: t("navbar.contact-us"),
-      path: "/form",
+      path: "/contact",
       desc: "Contact Us",
       subLinks: [],
-      state: { type: "contact", description: "navbar.contact-us" },
     },
   ];
 

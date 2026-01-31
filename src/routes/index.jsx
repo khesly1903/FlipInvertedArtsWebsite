@@ -12,6 +12,9 @@ import FooterPrivacyPolicy from "../pages/FooterPrivacyPolicy";
 import FooterSafetyPage from "../pages/FooterSafetyPage";
 
 import ShopPage from "../pages/ShopPage";
+import ContactFormPage from "../pages/forms/ContactFormPage";
+import EventRegistrationPage from "../pages/forms/EventRegistrationPage";
+import ScheduleRegistrationPage from "../pages/forms/ScheduleRegistrationPage";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +72,22 @@ const router = createBrowserRouter([
         element: <FooterSafetyPage />,
       },
 
+      {
+        path: "contact",
+        element: <ContactFormPage />,
+      },
+      {
+        path: "register-event",
+        element: <EventRegistrationPage />,
+      },
+      {
+        path: "register-schedule",
+        element: <ScheduleRegistrationPage />,
+      },
+      {
+        path: "register-schedule/:slug",
+        element: <ScheduleRegistrationPage />,
+      },
       {
         path: "shop",
         element: <ShopPage />,

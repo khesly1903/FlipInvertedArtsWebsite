@@ -69,20 +69,43 @@ app.post('/api/register-event', async (req, res) => {
     const { 
         parentName, parentEmail, parentPhone, 
         childName, childDOB, 
+        favoriteColor1, favoriteColor2,
+        flipBranch, guests,
         message 
-        // Add other fields as needed
     } = req.body;
 
     const html = `
-        <h2>New Event Registration</h2>
-        <p><strong>Parent:</strong> ${parentName}</p>
-        <p><strong>Email:</strong> ${parentEmail}</p>
-        <p><strong>Phone:</strong> ${parentPhone}</p>
-        <hr/>
-        <p><strong>Child:</strong> ${childName}</p>
-        <p><strong>DOB:</strong> ${childDOB}</p>
-        <hr/>
-        <p><strong>Message/Notes:</strong> ${message || 'N/A'}</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+            <div style="background-color: #2c3e50; color: white; padding: 20px; text-align: center;">
+                <h2 style="margin: 0;">Event Registration</h2>
+                <p style="margin: 5px 0 0;">New registration received</p>
+            </div>
+            
+            <div style="padding: 20px;">
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">👨‍👩‍👧 Parent Information</h3>
+                <p><strong>Name:</strong> ${parentName}</p>
+                <p><strong>Email:</strong> ${parentEmail}</p>
+                <p><strong>Phone:</strong> ${parentPhone}</p>
+                
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #e74c3c; padding-bottom: 5px; margin-top: 25px;">👶 Child Information</h3>
+                <p><strong>Name:</strong> ${childName}</p>
+                <p><strong>Date of Birth:</strong> ${childDOB}</p>
+                <p><strong>Favorite Color 1:</strong> ${favoriteColor1}</p>
+                <p><strong>Favorite Color 2:</strong> ${favoriteColor2 || 'N/A'}</p>
+                
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f1c40f; padding-bottom: 5px; margin-top: 25px;">📝 Additional Details</h3>
+                <p><strong>Preferred Branch:</strong> ${flipBranch}</p>
+                <p><strong>Guests:</strong> ${guests || 'None'}</p>
+                <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 10px;">
+                    <strong>Message / Notes:</strong><br/>
+                    ${message ? message.replace(/\n/g, '<br/>') : 'No additional message.'}
+                </div>
+            </div>
+            
+            <div style="background-color: #f5f5f5; padding: 15px; text-align: center; font-size: 12px; color: #7f8c8d;">
+                Sent from Flip Inverted Arts Website
+            </div>
+        </div>
     `;
 
     const result = await sendMail(process.env.EMAIL_USER, `Event Registration: ${childName}`, html);
@@ -98,26 +121,45 @@ app.post('/api/register-event', async (req, res) => {
 app.post('/api/register-schedule', async (req, res) => {
     const { 
         locationName, 
-        parentName, parentEmail, parentPhone,
-        childName, childDOB,
+        parentName, parentEmail, parentPhone, geziraMembership,
+        childName, childDOB, childSchool,
+        emergencyName, emergencyPhone,
         message
     } = req.body;
 
-    if (!locationName) {
-         return res.status(400).json({ error: "Location name is required" });
-    }
-
     const html = `
-        <h2>New Schedule Registration</h2>
-        <h3 style="color: #2c3e50;">Location: ${locationName}</h3>
-        <p><strong>Parent:</strong> ${parentName}</p>
-        <p><strong>Email:</strong> ${parentEmail}</p>
-        <p><strong>Phone:</strong> ${parentPhone}</p>
-        <hr/>
-        <p><strong>Child:</strong> ${childName}</p>
-        <p><strong>DOB:</strong> ${childDOB}</p>
-        <hr/>
-        <p><strong>Message/Notes:</strong> ${message || 'N/A'}</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+            <div style="background-color: #2c3e50; color: white; padding: 20px; text-align: center;">
+                <h2 style="margin: 0;">Schedule Registration</h2>
+                <h3 style="margin: 5px 0 0; color: #ecf0f1; font-weight: normal;">${locationName || 'General Location'}</h3>
+            </div>
+            
+            <div style="padding: 20px;">
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">👨‍👩‍👧 Parent Information</h3>
+                <p><strong>Name:</strong> ${parentName}</p>
+                <p><strong>Email:</strong> ${parentEmail}</p>
+                <p><strong>Phone:</strong> ${parentPhone}</p>
+                ${geziraMembership ? `<p><strong>Gezira Membership #:</strong> ${geziraMembership}</p>` : ''}
+                
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #e74c3c; padding-bottom: 5px; margin-top: 25px;">👶 Child Information</h3>
+                <p><strong>Name:</strong> ${childName}</p>
+                <p><strong>Date of Birth:</strong> ${childDOB}</p>
+                <p><strong>School:</strong> ${childSchool}</p>
+                
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #e67e22; padding-bottom: 5px; margin-top: 25px;">🚨 Emergency Contact</h3>
+                <p><strong>Name:</strong> ${emergencyName}</p>
+                <p><strong>Phone:</strong> ${emergencyPhone}</p>
+
+                <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 25px;">
+                    <strong>Message / Notes:</strong><br/>
+                    ${message ? message.replace(/\n/g, '<br/>') : 'No additional message.'}
+                </div>
+            </div>
+            
+            <div style="background-color: #f5f5f5; padding: 15px; text-align: center; font-size: 12px; color: #7f8c8d;">
+                Sent from Flip Inverted Arts Website
+            </div>
+        </div>
     `;
 
     const result = await sendMail(process.env.EMAIL_USER, `Schedule Registration [${locationName}]: ${childName}`, html);
@@ -132,3 +174,5 @@ app.post('/api/register-schedule', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+
