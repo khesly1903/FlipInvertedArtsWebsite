@@ -46,11 +46,27 @@ app.post('/api/contact', async (req, res) => {
     }
 
     const html = `
-        <h2>New Contact Message</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+            <div style="background-color: #2c3e50; color: white; padding: 20px; text-align: center;">
+                <h2 style="margin: 0;">Contact Message</h2>
+                <p style="margin: 5px 0 0;">New inquiry received</p>
+            </div>
+            
+            <div style="padding: 20px;">
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">👤 Contact Details</h3>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                
+                <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 25px;">
+                    <h3 style="color: #2c3e50; margin-top: 0; font-size: 16px;">💬 Message</h3>
+                    ${message ? message.replace(/\n/g, '<br/>') : 'No message content.'}
+                </div>
+            </div>
+            
+            <div style="background-color: #f5f5f5; padding: 15px; text-align: center; font-size: 12px; color: #7f8c8d;">
+                Sent from Flip Inverted Arts Website
+            </div>
+        </div>
     `;
 
     // Send to admin (using same email for now, or add EMAIL_ADMIN to .env)
