@@ -1,14 +1,36 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
+// Enable if you're behind a reverse proxy (Heroku, Bluemix, AWS ELB, Nginx, etc)
+// see https://expressjs.com/en/guide/behind-proxies.html
+app.set('trust proxy', 1); 
+
 app.use(cors());
 app.use(express.json());
+
+// Rate Limiting
+const globalLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+    standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+    legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+});
+app.use(globalLimiter);
+
+const formLimiter = rateLimit({
+    windowMs: 60 * 60 * 1000, // 1 hour
+    max: 5, // Limit each IP to 5 form submissions per hour
+    message: { error: "Too many requests, please try again later." },
+    standardHeaders: true,
+    legacyHeaders: false,
+});
 
 // Transporter Configuration (Gmail Example)
 // For Gmail, you need an App Password: https://myaccount.google.com/apppasswords
@@ -55,7 +77,7 @@ const verifyRecaptcha = async (token) => {
 };
 
 // 1. Contact Form Endpoint
-app.post('/api/contact', async (req, res) => {
+app.post('/api/contact', formLimiter, async (req, res) => {
     const { name, email, message, captchaToken } = req.body;
 
     if (!name || !email || !message) {
@@ -102,7 +124,7 @@ app.post('/api/contact', async (req, res) => {
 });
 
 // 2. Event Registration Endpoint
-app.post('/api/register-event', async (req, res) => {
+app.post('/api/register-event', formLimiter, async (req, res) => {
     // Expecting full registration details
     const { 
         parentName, parentEmail, parentPhone, 
@@ -162,7 +184,7 @@ app.post('/api/register-event', async (req, res) => {
 });
 
 // 3. Schedule/Location Registration Endpoint
-app.post('/api/register-schedule', async (req, res) => {
+app.post('/api/register-schedule', formLimiter, async (req, res) => {
     const { 
         locationName, 
         parentName, parentEmail, parentPhone, geziraMembership,
