@@ -37,12 +37,34 @@ const sendMail = async (to, subject, html) => {
     }
 };
 
+// Helper to verify ReCAPTCHA
+const verifyRecaptcha = async (token) => {
+    if (!token) return false;
+    
+    try {
+        // Native fetch available in Node 18+
+        const response = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`, {
+            method: 'POST'
+        });
+        const data = await response.json();
+        return data.success;
+    } catch (error) {
+        console.error("ReCAPTCHA verification error:", error);
+        return false;
+    }
+};
+
 // 1. Contact Form Endpoint
 app.post('/api/contact', async (req, res) => {
-    const { name, email, message } = req.body;
+    const { name, email, message, captchaToken } = req.body;
 
     if (!name || !email || !message) {
         return res.status(400).json({ error: "Missing required fields" });
+    }
+
+    const isHuman = await verifyRecaptcha(captchaToken);
+    if (!isHuman) {
+        return res.status(400).json({ error: "ReCAPTCHA verification failed." });
     }
 
     const html = `
@@ -87,8 +109,14 @@ app.post('/api/register-event', async (req, res) => {
         childName, childDOB, 
         favoriteColor1, favoriteColor2,
         flipBranch, guests,
-        message 
+        message,
+        captchaToken
     } = req.body;
+
+    const isHuman = await verifyRecaptcha(captchaToken);
+    if (!isHuman) {
+        return res.status(400).json({ error: "ReCAPTCHA verification failed." });
+    }
 
     const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
@@ -140,8 +168,14 @@ app.post('/api/register-schedule', async (req, res) => {
         parentName, parentEmail, parentPhone, geziraMembership,
         childName, childDOB, childSchool,
         emergencyName, emergencyPhone,
-        message
+        message,
+        captchaToken
     } = req.body;
+
+    const isHuman = await verifyRecaptcha(captchaToken);
+    if (!isHuman) {
+        return res.status(400).json({ error: "ReCAPTCHA verification failed." });
+    }
 
     const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">

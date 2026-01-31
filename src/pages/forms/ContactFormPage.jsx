@@ -42,6 +42,7 @@ export default function ContactFormPage() {
     setLoading(true);
     const formData = new FormData(formRef.current);
     const data = Object.fromEntries(formData.entries());
+    data.captchaToken = captchaToken;
 
     try {
       const response = await fetch("http://localhost:3001/api/contact", {

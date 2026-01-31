@@ -65,6 +65,7 @@ export default function ScheduleRegistrationPage() {
 
     // Add location manually
     data.locationName = locationName;
+    data.captchaToken = captchaToken;
 
     try {
       const response = await fetch(
