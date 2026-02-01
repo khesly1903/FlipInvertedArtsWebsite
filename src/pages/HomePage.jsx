@@ -2,7 +2,7 @@ import { Typography, Container, Box, Grid, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import SplitText from "../components/SplitText";
-import landingImage from "../assets/landing.webp";
+
 import { useTranslation } from "react-i18next";
 
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
@@ -32,17 +32,30 @@ export default function HomePage() {
         sx={{
           height: "100vh",
           width: "100%",
-          backgroundImage: `url(${landingImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          fetchpriority: "high",
           position: "relative",
+          overflow: "hidden",
         }}
       >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="/flipgymnasticslandingvideo.m4v"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 0,
+          }}
+        />
         <Box
           sx={{
             color: "white",
@@ -52,6 +65,7 @@ export default function HomePage() {
             flexGrow: 1,
             display: "flex",
             alignItems: "center",
+            zIndex: 1,
           }}
         >
           <motion.img
@@ -175,19 +189,19 @@ export default function HomePage() {
             {
               title: t("home.classes"),
               description: t("home.classes-description"),
-              image: "./placeholder.png",
+              image: "./homepage_classes.jpg",
               path: "/classes",
             },
             {
               title: t("home.events"),
               description: t("home.events-description"),
-              image: "./placeholder.png",
+              image: "./homepage_events.jpg",
               path: "./events",
             },
             {
               title: t("home.schedules"),
               description: t("home.schedules-description"),
-              image: "./placeholder.png",
+              image: "./homepage_schedules.jpg",
               path: "./schedules",
             },
           ].map((item, index) => (

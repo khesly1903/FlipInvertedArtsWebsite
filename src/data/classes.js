@@ -41,25 +41,26 @@ import class_6_3 from "../assets/classes/class_6/class_6_3.jpeg";
 import class_6_4 from "../assets/classes/class_6/class_6_4.jpeg";
 
 import class_7_landing from "../assets/classes/class_7/class_7_landing.jpeg";
-import class_7_card from "../assets/classes/class_7/class_7_card.png";
-import class_7_1 from "../assets/classes/class_7/class_7_1.png";
-import class_7_2 from "../assets/classes/class_7/class_7_2.png";
-import class_7_3 from "../assets/classes/class_7/class_7_3.png";
-import class_7_4 from "../assets/classes/class_7/class_7_4.png";
+import class_7_card from "../assets/classes/class_7/class_7_card.jpeg";
+import class_7_1 from "../assets/classes/class_7/class_7_1.jpeg";
+import class_7_2 from "../assets/classes/class_7/class_7_2.jpeg";
+import class_7_3 from "../assets/classes/class_7/class_7_3.jpeg";
+import class_7_4 from "../assets/classes/class_7/class_7_4.jpeg";
 
 
-// import class_8_landing from "../assets/classes/class_8/class_8_landing.png";
-// import class_8_card from "../assets/classes/class_8/class_8_card.png";
-// import class_8_1 from "../assets/classes/class_8/class_8_1.png";
-// import class_8_2 from "../assets/classes/class_8/class_8_2.png";
-// import class_8_3 from "../assets/classes/class_8/class_8_3.png";
-// import class_8_4 from "../assets/classes/class_8/class_8_4.png";
-// import level_8_landing from "../assets/classes/class_8/level_8_landing.jpeg";
+import class_8_landing from "../assets/classes/class_8/class_8_landing.jpeg";
+import class_8_card from "../assets/classes/class_8/class_8_card.jpeg";
+import class_8_1 from "../assets/classes/class_8/class_8_1.jpeg";
+import class_8_2 from "../assets/classes/class_8/class_8_2.jpeg";
+import class_8_3 from "../assets/classes/class_8/class_8_3.jpeg";
+// import class_8_4 from "../assets/classes/class_8/class_8_4.jpeg";
+
+
 
 import class_9_landing from "../assets/classes/class_9/class_9_landing.png";
 import class_9_card from "../assets/classes/class_9/class_9_card.png";
 import class_9_1 from "../assets/classes/class_9/class_9_1.png";
-import class_9_2 from "../assets/classes/class_9/class_9_2.png";
+// import class_9_2 from "../assets/classes/class_9/class_9_2.png";
 import class_9_3 from "../assets/classes/class_9/class_9_3.png";
 import class_9_4 from "../assets/classes/class_9/class_9_4.png";
 import class_9_5 from "../assets/classes/class_9/class_9_5.png";
@@ -195,11 +196,13 @@ export const classes = [
     title: 'classes.adults.adults-2.title',
     description: 'classes.adults.adults-2.description',
     ageRange: 'classes.adults.common.ages-range-1',
-    image: { src: class_5_card, alt: 'classes.adults.adults-2.title' },
-    slugImage: { src: class_5_landing, alt: 'classes.adults.adults-2.title' },
+    image: { src: class_8_card, alt: 'classes.adults.adults-2.title' },
+    slugImage: { src: class_8_landing, alt: 'classes.adults.adults-2.title' },
     detail: [
-      { id: '1', title: "classes.adults.adults-2.image-1.title", description: "classes.adults.adults-2.image-1.description", image: class_5_1 },
-      { id: '2', title: "classes.adults.adults-2.image-2.title", description: "classes.adults.adults-2.image-2.description", image: class_5_2 },
+      { id: '1', title: "classes.adults.adults-2.image-1.title", description: "classes.adults.adults-2.image-1.description", image: class_8_1 },
+      { id: '2', title: "classes.adults.adults-2.image-2.title", description: "classes.adults.adults-2.image-2.description", image: class_8_2 },
+      { id: '3', title: "classes.adults.adults-2.image-3.title", description: "classes.adults.adults-2.image-3.description", image: class_8_3 },
+      // { id: '4', title:  "classes.adults.adults-2.image-4.title", description: "classes.adults.adults-2.image-4.description", image: class_8_4 },
     ]
   },
   {
@@ -214,7 +217,7 @@ export const classes = [
     slugImage: { src: class_9_landing, alt: 'classes.adults.adults-3.title' },
     detail: [
       { id: '1', title: "classes.adults.adults-3.image-1.title", description: "classes.adults.adults-3.image-1.description", image: class_9_1 },
-      { id: '2', title: "classes.adults.adults-3.image-2.title", description: "classes.adults.adults-3.image-2.description", image: class_9_2 },
+      // { id: '2', title: "classes.adults.adults-3.image-2.title", description: "classes.adults.adults-3.image-2.description", image: class_9_2 },
       { id: '3', title: "classes.adults.adults-3.image-3.title", description: "classes.adults.adults-3.image-3.description", image: class_9_3 },
       { id: '4', title: "classes.adults.adults-3.image-4.title", description: "classes.adults.adults-3.image-4.description", image: class_9_4 },
       { id: '5', title: "classes.adults.adults-3.image-5.title", description: "classes.adults.adults-3.image-5.description", image: class_9_5 },

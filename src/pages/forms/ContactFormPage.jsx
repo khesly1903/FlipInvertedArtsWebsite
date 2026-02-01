@@ -97,80 +97,99 @@ export default function ContactFormPage() {
 
       <Container maxWidth="xl" sx={{ py: 8 }}>
         <Container maxWidth="sm">
-          <Box sx={{ mb: 4, textAlign: "center" }}>
-            <Typography
-              variant="h4"
-              component="h1"
-              gutterBottom
-              fontWeight="bold"
-            >
-              {t("forms.titles.contact")}
-            </Typography>
-            <Typography variant="body1" color="text.secondary">
-              {t("forms.subtitles.contact-text")}
-            </Typography>
-          </Box>
-
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-              <TextField
-                name="name"
-                label={t("forms.labels.full-name")}
-                variant="outlined"
-                fullWidth
-                required
-              />
-
-              <TextField
-                name="email"
-                label={t("forms.labels.email")}
-                type="email"
-                variant="outlined"
-                fullWidth
-                required
-              />
-
-              <TextField
-                name="message"
-                label={t("forms.labels.message")}
-                variant="outlined"
-                fullWidth
-                multiline
-                rows={6}
-                required
-              />
-
-              <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
-                <ReCAPTCHA
-                  sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                  onChange={(token) => setCaptchaToken(token)}
-                />
-              </Box>
-
-              <Button
-                type="submit"
-                variant="contained"
-                size="large"
-                disabled={loading}
-                endIcon={
-                  loading ? (
-                    <CircularProgress size={20} color="inherit" />
-                  ) : (
-                    <SendIcon />
-                  )
-                }
-                sx={{
-                  py: 1.5,
-                  mt: 2,
-                  fontWeight: "bold",
-                  borderRadius: 50,
-                  fontSize: "1.1rem",
-                }}
+          <Paper
+            elevation={3}
+            sx={{
+              p: { xs: 3, md: 5 },
+              borderRadius: 4,
+            }}
+          >
+            <Box sx={{ mb: 4, textAlign: "center" }}>
+              <Typography
+                variant="h4"
+                component="h1"
+                gutterBottom
+                fontWeight="bold"
               >
-                {loading ? t("forms.buttons.sending") : t("forms.buttons.send")}
-              </Button>
+                {t("forms.titles.contact")}
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                {t("forms.subtitles.contact-text")}
+              </Typography>
             </Box>
-          </form>
+
+            <form ref={formRef} onSubmit={handleSubmit}>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+                <TextField
+                  name="name"
+                  label={t("forms.labels.full-name")}
+                  variant="outlined"
+                  fullWidth
+                  required
+                />
+
+                <TextField
+                  name="email"
+                  label={t("forms.labels.email")}
+                  type="email"
+                  variant="outlined"
+                  fullWidth
+                  required
+                />
+
+                <TextField
+                  name="phone"
+                  label={t("forms.labels.phone")}
+                  type="tel"
+                  variant="outlined"
+                  fullWidth
+                  required
+                />
+
+                <TextField
+                  name="message"
+                  label={t("forms.labels.message")}
+                  variant="outlined"
+                  fullWidth
+                  multiline
+                  rows={6}
+                  required
+                />
+
+                <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
+                  <ReCAPTCHA
+                    sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                    onChange={(token) => setCaptchaToken(token)}
+                  />
+                </Box>
+
+                <Button
+                  type="submit"
+                  variant="contained"
+                  size="large"
+                  disabled={loading}
+                  endIcon={
+                    loading ? (
+                      <CircularProgress size={20} color="inherit" />
+                    ) : (
+                      <SendIcon />
+                    )
+                  }
+                  sx={{
+                    py: 1.5,
+                    mt: 2,
+                    fontWeight: "bold",
+                    borderRadius: 50,
+                    fontSize: "1.1rem",
+                  }}
+                >
+                  {loading
+                    ? t("forms.buttons.sending")
+                    : t("forms.buttons.send")}
+                </Button>
+              </Box>
+            </form>
+          </Paper>
         </Container>
       </Container>
 

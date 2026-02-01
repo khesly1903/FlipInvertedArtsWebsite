@@ -78,9 +78,9 @@ const verifyRecaptcha = async (token) => {
 
 // 1. Contact Form Endpoint
 app.post('/api/contact', formLimiter, async (req, res) => {
-    const { name, email, message, captchaToken } = req.body;
+    const { name, email, phone, message, captchaToken } = req.body;
 
-    if (!name || !email || !message) {
+    if (!name || !email || !phone || !message) {
         return res.status(400).json({ error: "Missing required fields" });
     }
 
@@ -100,6 +100,7 @@ app.post('/api/contact', formLimiter, async (req, res) => {
                 <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">👤 Contact Details</h3>
                 <p><strong>Name:</strong> ${name}</p>
                 <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
                 
                 <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 25px;">
                     <h3 style="color: #2c3e50; margin-top: 0; font-size: 16px;">💬 Message</h3>

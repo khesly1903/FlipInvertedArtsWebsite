@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SEO from "../components/SEO";
 
+import schedules_landing from "../assets/schedules/schedules_landing.jpeg";
+
 export default function SchedulesPage() {
   const { t } = useTranslation();
   return (
@@ -19,7 +21,7 @@ export default function SchedulesPage() {
       />
       {/* Locations Banner */}
       <HalfPageLanding
-        image={landingImage}
+        image={schedules_landing}
         logo="/logos/flip_logo_half_landing_white_schedule.svg"
       />
 

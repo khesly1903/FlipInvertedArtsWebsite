@@ -17,6 +17,8 @@ import class_1_card from "../assets/classes/class_1/class_1_card.png";
 import class_2_card from "../assets/classes/class_2/class_2_card.png";
 import class_3_card from "../assets/classes/class_3/class_3_card.png";
 
+import classes_landing from "../assets/classes/classes_landing.jpeg";
+
 export default function ClassesPage() {
   const { state } = useLocation();
   const { t } = useTranslation();
@@ -38,7 +40,7 @@ export default function ClassesPage() {
       />
       {/* Classes Banner */}
       <HalfPageLanding
-        image={landingImage}
+        image={classes_landing}
         logo="/logos/flip_logo_half_landing_white_classes.svg"
       />
 
