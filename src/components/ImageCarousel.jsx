@@ -15,7 +15,7 @@ export default function ImageCarousel({ images = [] }) {
         transition={{
           repeat: Infinity,
           ease: "linear",
-          duration: images.length * 5, // for each image, 5sec
+          duration: images.length * 2, // for each image, 2sec
         }}
       >
         {duplicatedImages.map((img, index) => (

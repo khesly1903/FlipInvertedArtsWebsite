@@ -105,7 +105,7 @@ export default function EventRegistrationPage() {
         description="Register for upcoming events at Flip Inverted Arts. Camps, workshops, and more!"
       />
       <HalfPageLanding
-        image={landingImage}
+        image="/landing_reg_events.jpeg"
         title={t("home.events").toUpperCase()}
       />
 
