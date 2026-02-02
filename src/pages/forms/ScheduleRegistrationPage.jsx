@@ -119,7 +119,7 @@ export default function ScheduleRegistrationPage() {
         description="Sign up for our classes and become part of the Flip Inverted Arts family."
       />
       <HalfPageLanding
-        image={landingImage}
+        image="/landing_reg_schedules.jpg"
         title={t("home.schedules").toUpperCase()}
       />
 

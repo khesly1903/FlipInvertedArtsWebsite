@@ -18,6 +18,20 @@ import AnimatedInformation from "../components/AnimatedInformation";
 import ImageCarousel from "../components/ImageCarousel";
 import SEO from "../components/SEO";
 
+import card_diplo from "../assets/schedules/card_diplo.jpeg";
+import card_almaza from "../assets/schedules/card_almaza.jpeg";
+import card_gezira_club_zamalek from "../assets/schedules/card_gezira_club_zamalek.jpeg";
+import class_3_card from "../assets/classes/class_3/class_3_card.png"
+import class_1_3 from "../assets/classes/class_1/class_1_3.jpeg"
+import class_2_3 from "../assets/classes/class_2/class_2_3.jpeg"
+import class_3_1 from "../assets/classes/class_3/class_3_1.jpeg"
+import class_4_1 from "../assets/classes/class_4/class_4_1.jpeg"
+import class_5_4 from "../assets/classes/class_5/class_5_4.jpeg"
+import class_6_2 from "../assets/classes/class_6/class_6_2.jpeg"
+import class_7_2 from "../assets/classes/class_7/class_7_2.jpeg"
+
+
+
 export default function HomePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -167,10 +181,19 @@ export default function HomePage() {
 
       <ImageCarousel
         images={[
-          "/location_maadi.jpeg",
-          "/location_zamalek.jpeg",
-          "/locations_card_gezira_club_october.jpeg",
-          "locations_landing_gezira_club_zamalek.jpeg",
+          card_diplo,
+          class_3_card,
+          "./homepage_events.jpg",
+          class_1_3,
+          class_2_3,
+          card_almaza,
+          class_3_1,
+          class_4_1,
+          class_5_4,
+          class_6_2,
+          card_gezira_club_zamalek,
+          class_7_2,
+          "./homepage_carousel.jpg"
         ]}
       />
       {/* Highlights Section */}

@@ -17,7 +17,7 @@ export default function FooterSafetyPage() {
   return (
     <Box>
       <HalfPageLanding
-        image={landing}
+        image="/landing_safety.jpeg"
         logo="/logos/flip_logo_half_landing_white_safety.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>

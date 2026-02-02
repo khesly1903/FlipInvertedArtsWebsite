@@ -91,7 +91,7 @@ export default function ContactFormPage() {
         description="Get in touch with us for inquiries about our gymnastics, dance, and art classes."
       />
       <HalfPageLanding
-        image={landingImage}
+        image="/landing_contact_us.jpeg"
         title={t("navbar.contact-us").toUpperCase()}
       />
 

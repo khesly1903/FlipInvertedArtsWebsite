@@ -8,7 +8,7 @@ export default function FooterPrivacyPolicy() {
   return (
     <Box>
       <HalfPageLanding
-        image={landing}
+        image="/landing_privacy.jpeg"
         logo="/logos/flip_logo_half_landing_white_privacy.svg"
       />
 

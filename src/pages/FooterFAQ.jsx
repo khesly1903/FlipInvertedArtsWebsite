@@ -93,7 +93,7 @@ export default function FooterFAQ() {
   return (
     <Box>
       <HalfPageLanding
-        image={landing}
+        image={"/landing_faq.jpeg"}
         logo="/logos/flip_logo_half_landing_white_faq.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>

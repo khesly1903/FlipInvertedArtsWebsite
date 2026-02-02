@@ -23,7 +23,12 @@ import landing_diplo from "../assets/schedules/landing_diplo.jpeg";
 
 import landing_zamalek_studio from "../assets/schedules/landing_zamalek_studio.jpeg";
 
+import landing_almaza from "../assets/schedules/landing_almaza.jpeg";
+
+import landing_maadi from "../assets/schedules/landing_maadi.jpeg";
+
 import card_almaza from "../assets/schedules/card_almaza.jpeg";
+import landing_skeikh_zayed from "../assets/schedules/landing_skeikh_zayed.jpeg";
 
 export const schedules = [
     {
@@ -86,7 +91,7 @@ export const schedules = [
         details: {
              description: "schedules.maadi.description",
              formDescription:"schedules.maadi.form-description",
-             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
+             landingImage: landing_maadi,
             images: [
                 maadi1,
                 maadi2,
@@ -105,7 +110,7 @@ export const schedules = [
         details: {
              description: "schedules.sheikh-zayed.description",
              formDescription:"schedules.sheikh-zayed.form-description",
-             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
+             landingImage: landing_skeikh_zayed,
             images: [
                 sheikhZayed1,
                 sheikhZayed1, // Placeholder duplication
@@ -139,7 +144,7 @@ export const schedules = [
         details: {
              description: "schedules.almaza-bay.description",
              formDescription:"schedules.almaza-bay.form-description",
-             landingImage: "/locations_landing_gezira_club_zamalek.jpeg",
+             landingImage: landing_almaza,
             images: [
                  newCairo1,
                  maadi1

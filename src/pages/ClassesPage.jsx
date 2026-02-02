@@ -13,9 +13,16 @@ import { classes } from "../data/classes";
 import ImageCarousel from "../components/ImageCarousel";
 import SEO from "../components/SEO";
 
-import class_1_card from "../assets/classes/class_1/class_1_card.png";
-import class_2_card from "../assets/classes/class_2/class_2_card.png";
-import class_3_card from "../assets/classes/class_3/class_3_card.png";
+import class_1_1 from "../assets/classes/class_1/class_1_1.jpeg";
+import class_2_1 from "../assets/classes/class_2/class_2_1.jpeg";
+import class_3_1 from "../assets/classes/class_3/class_3_1.jpeg";
+import class_4_1 from "../assets/classes/class_4/class_4_1.jpeg";
+import class_5_1 from "../assets/classes/class_5/class_5_1.jpeg";
+import class_6_1 from "../assets/classes/class_6/class_6_1.jpeg";
+import class_7_1 from "../assets/classes/class_7/class_7_1.jpeg";
+import class_8_1 from "../assets/classes/class_8/class_8_1.jpeg";
+import class_3_landing from "../assets/classes/class_3/class_3_landing.png";
+
 
 import classes_landing from "../assets/classes/classes_landing.jpeg";
 
@@ -62,12 +69,16 @@ export default function ClassesPage() {
 
       <ImageCarousel
         images={[
-          class_1_card,
-          class_2_card,
-          class_3_card,
-          // class_4_card,
-          // class_5_card,
-          // class_6_card,
+         class_1_1,
+         class_2_1,
+         class_3_1,
+         class_4_1,
+         class_5_1,
+         class_6_1,
+         class_7_1,
+         class_8_1,
+         class_3_landing
+
         ]}
       />
       {/* Kids Classes Section */}
