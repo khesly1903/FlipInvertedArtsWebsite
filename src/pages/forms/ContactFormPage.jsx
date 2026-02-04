@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -14,11 +15,12 @@ import SendIcon from "@mui/icons-material/Send";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
-import landingImage from "../../assets/landing.webp"; // Using generic landing for now
 import SEO from "../../components/SEO";
+import landing_contact_us from "../../assets/forms/landing_contact_us.jpeg";
 
 export default function ContactFormPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [captchaToken, setCaptchaToken] = useState(null);
@@ -57,12 +59,14 @@ export default function ContactFormPage() {
       const result = await response.json();
 
       if (response.ok) {
-        setSnackbar({
-          open: true,
-          message: "Message sent successfully!",
-          severity: "success",
+        // Redirect to success page
+        navigate("/success", {
+          state: {
+            title: t("forms.titles.contact-success"),
+            text: t("forms.subtitles.contact-success"),
+            backgroundImage: "/landing_contact_us.jpeg",
+          },
         });
-        formRef.current.reset();
         setCaptchaToken(null);
       } else {
         throw new Error(result.error || "Failed to send message");
@@ -91,7 +95,7 @@ export default function ContactFormPage() {
         description="Get in touch with us for inquiries about our gymnastics, dance, and art classes."
       />
       <HalfPageLanding
-        image="/landing_contact_us.jpeg"
+        image={landing_contact_us}
         title={t("navbar.contact-us").toUpperCase()}
       />
 

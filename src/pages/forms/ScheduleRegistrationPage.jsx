@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -16,11 +16,13 @@ import SendIcon from "@mui/icons-material/Send";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
-import landingImage from "../../assets/landing.webp"; // Default landing
 import SEO from "../../components/SEO";
+
+import landing_schedule_registration from "../../assets/forms/landing_schedule_registration.jpeg";
 
 export default function ScheduleRegistrationPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [captchaToken, setCaptchaToken] = useState(null);
@@ -84,13 +86,15 @@ export default function ScheduleRegistrationPage() {
       const result = await response.json();
 
       if (response.ok) {
-        setSnackbar({
-          open: true,
-          message:
-            "Registration sent successfully! We will contact you shortly.",
-          severity: "success",
+        // Redirect to success page
+        navigate("/success", {
+          state: {
+            title: t("forms.titles.schedule-success"),
+            text: t("forms.subtitles.schedule-success"),
+            backgroundImage: landing_schedule_registration,
+          },
         });
-        formRef.current.reset();
+        setCaptchaToken(null);
         setCaptchaToken(null);
       } else {
         throw new Error(result.error || "Failed to register");
@@ -119,7 +123,7 @@ export default function ScheduleRegistrationPage() {
         description="Sign up for our classes and become part of the Flip Inverted Arts family."
       />
       <HalfPageLanding
-        image="/landing_reg_schedules.jpg"
+        image={landing_schedule_registration}
         title={t("home.schedules").toUpperCase()}
       />
 

@@ -15,6 +15,7 @@ import ShopPage from "../pages/ShopPage";
 import ContactFormPage from "../pages/forms/ContactFormPage";
 import EventRegistrationPage from "../pages/forms/EventRegistrationPage";
 import ScheduleRegistrationPage from "../pages/forms/ScheduleRegistrationPage";
+import AfterFormPage from "../pages/AfterFormPage";
 
 const router = createBrowserRouter([
   {
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <ShopPage />,
+      },
+      {
+        path: "success",
+        element: <AfterFormPage />,
       },
     ],
   },

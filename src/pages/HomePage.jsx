@@ -30,6 +30,18 @@ import class_5_4 from "../assets/classes/class_5/class_5_4.jpeg";
 import class_6_2 from "../assets/classes/class_6/class_6_2.jpeg";
 import class_7_2 from "../assets/classes/class_7/class_7_2.jpeg";
 
+import homepage_carousel1 from "../assets/homepage/homepage_carousel1.jpg";
+import homepage_carousel2 from "../assets/homepage/homepage_carousel2.jpg";
+import homepage_carousel3 from "../assets/homepage/homepage_carousel3.jpg";
+import homepage_carousel4 from "../assets/homepage/homepage_carousel4.jpg";
+import homepage_classes from "../assets/homepage/homepage_classes.jpg";
+import homepage_events from "../assets/homepage/homepage_events.jpg";
+import homepage_schedules from "../assets/homepage/homepage_schedules.jpg";
+
+import homepage_video from "../assets/homepage/homepage_video.mp4";
+
+
+
 export default function HomePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -57,7 +69,7 @@ export default function HomePage() {
           loop
           muted
           playsInline
-          src="/flipgymnasticslandingvideo.m4v"
+          src={homepage_video}
           style={{
             position: "absolute",
             top: 0,
@@ -181,19 +193,19 @@ export default function HomePage() {
         images={[
           card_diplo,
           class_3_card,
-          "./homepage_events.jpg",
+          homepage_events,
           class_1_3,
           class_2_3,
-          "./homepage_carousel1.jpg",
+          homepage_carousel1,
           card_almaza,
           class_3_1,
-          "./homepage_carousel2.jpg",
+          homepage_carousel2,
           class_4_1,
           class_5_4,
-          "./homepage_carousel3.jpg",
+          homepage_carousel3,
           class_6_2,
           card_gezira_club_zamalek,
-          "./homepage_carousel4.jpg",
+          homepage_carousel4,
           class_7_2,
         ]}
       />
@@ -213,19 +225,19 @@ export default function HomePage() {
             {
               title: t("home.classes"),
               description: t("home.classes-description"),
-              image: "./homepage_classes.jpg",
+              image: homepage_classes,
               path: "/classes",
             },
             {
               title: t("home.events"),
               description: t("home.events-description"),
-              image: "./homepage_events.jpg",
+              image: homepage_events,
               path: "./events",
             },
             {
               title: t("home.schedules"),
               description: t("home.schedules-description"),
-              image: "./homepage_schedules.jpg",
+              image: homepage_schedules,
               path: "./schedules",
             },
           ].map((item, index) => (

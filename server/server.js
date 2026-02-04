@@ -76,6 +76,8 @@ const verifyRecaptcha = async (token) => {
     }
 };
 
+const { appendToSheet } = require('./sheets');
+
 // 1. Contact Form Endpoint
 app.post('/api/contact', formLimiter, async (req, res) => {
     const { name, email, phone, message, captchaToken } = req.body;
@@ -114,11 +116,25 @@ app.post('/api/contact', formLimiter, async (req, res) => {
         </div>
     `;
 
-    // Send to admin (using same email for now, or add EMAIL_ADMIN to .env)
-    const result = await sendMail(process.env.EMAIL_USER, `Contact Request from ${name}`, html);
+    // 1. Send Email
+    const emailResult = await sendMail(process.env.EMAIL_USER, `Contact Request from ${name}`, html);
 
-    if (result.success) {
-        res.json({ message: "Contact email sent successfully" });
+    // 2. Save to Google Sheet
+    // Columns: ['Timestamp', 'Form Type', 'Name', 'Email', 'Phone', 'Message']
+    const sheetResult = await appendToSheet('CONTACT', [
+        new Date().toLocaleString('en-GB', { timeZone: 'Africa/Cairo' }), 
+        name, 
+        email, 
+        `'${phone}`, 
+        message
+    ]);
+    
+    // Check email result primarily, but log sheet result
+    if (emailResult.success) {
+        res.json({ 
+            message: "Contact email sent successfully",
+            sheetSaved: sheetResult.success
+        });
     } else {
         res.status(500).json({ error: "Failed to send email" });
     }
@@ -175,10 +191,27 @@ app.post('/api/register-event', formLimiter, async (req, res) => {
         </div>
     `;
 
-    const result = await sendMail(process.env.EMAIL_USER, `Event Registration: ${childName}`, html);
+    const emailResult = await sendMail(process.env.EMAIL_USER, `Event Registration: ${childName}`, html);
 
-    if (result.success) {
-        res.json({ message: "Event registration email sent successfully" });
+    // Columns: ['DATE', 'P NAME', 'PHONE', 'MAIL', 'C NAME', 'C DOB', 'COLOR 1', 'COLOR 2', 'FLIP BRANCH', 'GUESTS']
+    const sheetResult = await appendToSheet('EVENT', [
+        new Date().toLocaleString('en-GB', { timeZone: 'Africa/Cairo' }),
+        parentName,
+        `'${parentPhone}`,
+        parentEmail,
+        childName,
+        childDOB,
+        favoriteColor1,
+        favoriteColor2 || '',
+        flipBranch,
+        guests || ''
+    ]);
+
+    if (emailResult.success) {
+        res.json({ 
+            message: "Event registration email sent successfully",
+            sheetSaved: sheetResult.success
+        });
     } else {
         res.status(500).json({ error: "Failed to send email" });
     }
@@ -235,10 +268,28 @@ app.post('/api/register-schedule', formLimiter, async (req, res) => {
         </div>
     `;
 
-    const result = await sendMail(process.env.EMAIL_USER, `Schedule Registration [${locationName}]: ${childName}`, html);
+    const emailResult = await sendMail(process.env.EMAIL_USER, `Schedule Registration [${locationName}]: ${childName}`, html);
+    
+    // Columns: ['DATE', 'P NAME', 'PHONE', 'MAIL', 'MEMBERSHIP', 'C NAME', 'C DOB', 'C SCHOOL', 'EM CONTACT NAME', 'EC PHONE', 'MESSAGE']
+    const sheetResult = await appendToSheet('SCHEDULE', [
+        new Date().toLocaleString('en-GB', { timeZone: 'Africa/Cairo' }),
+        parentName,
+        `'${parentPhone}`,
+        parentEmail,
+        geziraMembership || '',
+        childName,
+        childDOB,
+        childSchool,
+        emergencyName,
+        `'${emergencyPhone}`,
+        message || ''
+    ]);
 
-    if (result.success) {
-        res.json({ message: "Schedule registration email sent successfully" });
+    if (emailResult.success) {
+        res.json({ 
+            message: "Schedule registration email sent successfully",
+            sheetSaved: sheetResult.success
+        });
     } else {
         res.status(500).json({ error: "Failed to send email" });
     }

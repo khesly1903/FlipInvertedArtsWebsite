@@ -3,7 +3,7 @@
     "home-title": "Our Mission",
     "home-text": "Our Mission (instead of Hospitality & Residence): Flip Inverted ArtsAcademy is one of the first academies to bring recreational gymnastics for kids and adults to Egypt. Flip’s founder, Julia Alexan, is certified by USA Gymnastics and brings in many new concepts on how to teach and train gymnastics, different from what is typically found in Egypt. At Flip, we believe that you can instill athletics in kids at a young age through gymnastics by building their progress in a fun and friendly way that leaves them loving the sport, and it will leave a long-lasting positive effect on their lifelong concept of gymnastics, fitness and sports in general.",
     "classes": "Classes",
-    "classes-description": "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+    "classes-description": "It is working",
     "events": "Events",
     "events-description": "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
     "schedules": "Schedules",
@@ -201,7 +201,6 @@
           "title": "Beginning Handstands",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
         }
-        
       },
       "adults-3": {
         "title": "Personal Training",
@@ -399,11 +398,17 @@
       "text": "Safety is important, take care <3"
     }
   },
+  "buttons": {
+    "back-home": "Back to Home"
+  },
   "forms": {
     "titles": {
       "contact": "Contact Us",
       "event-registration": "Event Registration",
-      "schedule-registration": "Schedule Registration"
+      "schedule-registration": "Schedule Registration",
+      "contact-success": "Message Sent!",
+      "event-success": "Registration Successful!",
+      "schedule-success": "Class Registration Successful!"
     },
     "subtitles": {
       "contact-text": "We'd love to hear from you. Send us a message!",
@@ -411,7 +416,10 @@
       "schedule-text": "Secure your spot by filling out the registration form below.",
       "parent-info": "Parent Information",
       "child-info": "Child Information",
-      "emergency-contact": "Emergency Contact"
+      "emergency-contact": "Emergency Contact",
+      "contact-success": "Thank you for reaching out. We will get back to you as soon as possible.",
+      "event-success": "We have received your registration. We will contact you shortly.",
+      "schedule-success": "We have received your registration. We will contact you shortly."
     },
     "labels": {
       "full-name": "Your Full Name",

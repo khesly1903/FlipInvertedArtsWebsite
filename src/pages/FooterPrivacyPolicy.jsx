@@ -1,14 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { Container, Typography, Box } from "@mui/material";
 import HalfPageLanding from "../components/HalfPageLanding";
-import landing from "../assets/landing.webp";
+
+import landing_privacy from "../assets/footer/landing_privacy.jpeg";
 
 export default function FooterPrivacyPolicy() {
   const { t } = useTranslation();
   return (
     <Box>
       <HalfPageLanding
-        image="/landing_privacy.jpeg"
+        image={landing_privacy}
         logo="/logos/flip_logo_half_landing_white_privacy.svg"
       />
 

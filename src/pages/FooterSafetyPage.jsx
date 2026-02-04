@@ -3,21 +3,16 @@ import {
   Container,
   Typography,
   Box,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
 } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HalfPageLanding from "../components/HalfPageLanding";
-import landing from "../assets/landing.webp";
+import landing_safety from "../assets/footer/landing_safety.jpeg";
 
 export default function FooterSafetyPage() {
   const { t } = useTranslation();
   return (
     <Box>
       <HalfPageLanding
-        image="/landing_safety.jpeg"
+        image={landing_safety}
         logo="/logos/flip_logo_half_landing_white_safety.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>

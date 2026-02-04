@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -15,11 +16,15 @@ import SendIcon from "@mui/icons-material/Send";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
-import landingImage from "../../assets/landing.webp"; // Using generic or specific event image
 import SEO from "../../components/SEO";
+
+
+import afterFormLanding from "../../assets/events/after_form_landing.jpeg";
+import landing_event_registration from "../../assets/forms/landing_event_registration.jpeg";
 
 export default function EventRegistrationPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [captchaToken, setCaptchaToken] = useState(null);
@@ -59,13 +64,15 @@ export default function EventRegistrationPage() {
       const result = await response.json();
 
       if (response.ok) {
-        setSnackbar({
-          open: true,
-          message:
-            "Registration sent successfully! We will contact you shortly.",
-          severity: "success",
+        // Redirect to success page
+        navigate("/success", {
+          state: {
+            title: t("forms.titles.event-success"),
+            text: t("forms.subtitles.event-success"),
+            backgroundImage: afterFormLanding,
+          },
         });
-        formRef.current.reset();
+        setCaptchaToken(null);
         setCaptchaToken(null);
       } else {
         throw new Error(result.error || "Failed to register");
@@ -105,7 +112,7 @@ export default function EventRegistrationPage() {
         description="Register for upcoming events at Flip Inverted Arts. Camps, workshops, and more!"
       />
       <HalfPageLanding
-        image="/landing_reg_events.jpeg"
+        image={landing_event_registration}
         title={t("home.events").toUpperCase()}
       />
 

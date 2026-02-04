@@ -30,6 +30,9 @@ import landing_maadi from "../assets/schedules/landing_maadi.jpeg";
 import card_almaza from "../assets/schedules/card_almaza.jpeg";
 import landing_skeikh_zayed from "../assets/schedules/landing_skeikh_zayed.jpeg";
 
+import card_maadi from "../assets/schedules/card_maadi.jpeg";
+import card_zamalek_studio from "../assets/schedules/card_zamalek_studio.jpeg";
+
 export const schedules = [
     {
         id: "1",
@@ -68,7 +71,7 @@ export const schedules = [
     {
         id: "3",
         location: "schedules.zamalek-studio.title",
-        image: "/location_zamalek.jpeg",
+        image: card_zamalek_studio,
         path: "zamalek",
         details: {
              description: "schedules.zamalek-studio.description",
@@ -86,7 +89,7 @@ export const schedules = [
     {
         id: "4",
         location: "schedules.maadi.title",
-        image: "/location_maadi.jpeg",
+        image: card_maadi,
         path: "maadi",
         details: {
              description: "schedules.maadi.description",

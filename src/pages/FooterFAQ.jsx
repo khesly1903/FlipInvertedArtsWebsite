@@ -4,6 +4,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import landing from "../assets/landing.webp";
 import HalfPageLanding from "../components/HalfPageLanding";
 import { useMemo } from "react";
+import landing_faq from "../assets/footer/landing_faq.jpeg";
 
 function FAQuestion({ title, text }) {
   return (
@@ -93,7 +94,7 @@ export default function FooterFAQ() {
   return (
     <Box>
       <HalfPageLanding
-        image={"/landing_faq.jpeg"}
+        image={landing_faq}
         logo="/logos/flip_logo_half_landing_white_faq.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>

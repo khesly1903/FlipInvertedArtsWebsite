@@ -398,11 +398,17 @@
       "text": "Arabic way to say take care <3"
     }
   },
+  "buttons": {
+    "back-home": "العودة للرئيسية"
+  },
   "forms": {
     "titles": {
       "contact": "اتصل بنا",
       "event-registration": "تسجيل الحدث",
-      "schedule-registration": "تسجيل الجدول"
+      "schedule-registration": "تسجيل الجدول",
+      "contact-success": "تم إرسال الرسالة!",
+      "event-success": "تم التسجيل بنجاح!",
+      "schedule-success": "تم تسجيل الفصل بنجاح!"
     },
     "subtitles": {
       "contact-text": "نود أن نسمع منك. أرسل لنا رسالة!",
@@ -410,7 +416,10 @@
       "schedule-text": "قم بتأمين مكانك عن طريق ملء نموذج التسجيل أدناه.",
       "parent-info": "معلومات الوالدين",
       "child-info": "معلومات الطفل",
-      "emergency-contact": "جهة الاتصال في حالات الطوارئ"
+      "emergency-contact": "جهة الاتصال في حالات الطوارئ",
+      "contact-success": "شكراً لتواصلكم معنا. سنعود إليكم في أقرب وقت ممكن.",
+      "event-success": "لقد تلقينا تسجيلك. سنتصل بك قريبا.",
+      "schedule-success": "لقد تلقينا تسجيلك. سنتصل بك قريبا."
     },
     "labels": {
       "full-name": "اسمك الكامل",
