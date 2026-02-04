@@ -16,7 +16,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import SEO from "../../components/SEO";
-import landing_contact_us from "../../assets/forms/landing_contact_us.jpeg";
+import landing_contact_us from "../../assets/forms/landing_contact_us.webp";
 
 export default function ContactFormPage() {
   const { t } = useTranslation();
@@ -64,7 +64,7 @@ export default function ContactFormPage() {
           state: {
             title: t("forms.titles.contact-success"),
             text: t("forms.subtitles.contact-success"),
-            backgroundImage: "/landing_contact_us.jpeg",
+            backgroundImage: landing_contact_us,
           },
         });
         setCaptchaToken(null);

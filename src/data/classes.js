@@ -1,70 +1,70 @@
-import class_1_landing from "../assets/classes/class_1/class_1_landing.png";
-import class_1_card from "../assets/classes/class_1/class_1_card.png";
-import class_1_1 from "../assets/classes/class_1/class_1_1.jpeg";
-import class_1_2 from "../assets/classes/class_1/class_1_2.png";
-import class_1_3 from "../assets/classes/class_1/class_1_3.jpeg";
-import class_1_4 from "../assets/classes/class_1/class_1_4.png";
+import class_1_landing from "../assets/classes/class_1/class_1_landing.webp";
+import class_1_card from "../assets/classes/class_1/class_1_card.webp";
+import class_1_1 from "../assets/classes/class_1/class_1_1.webp";
+import class_1_2 from "../assets/classes/class_1/class_1_2.webp";
+import class_1_3 from "../assets/classes/class_1/class_1_3.webp";
+import class_1_4 from "../assets/classes/class_1/class_1_4.webp";
 
-import class_2_landing from "../assets/classes/class_2/class_2_landing.jpeg";
-import class_2_card from "../assets/classes/class_2/class_2_card.png";
-import class_2_1 from "../assets/classes/class_2/class_2_1.jpeg";
-import class_2_2 from "../assets/classes/class_2/class_2_2.jpeg";
-import class_2_3 from "../assets/classes/class_2/class_2_3.jpeg";
-import class_2_4 from "../assets/classes/class_2/class_2_4.jpeg";
+import class_2_landing from "../assets/classes/class_2/class_2_landing.webp";
+import class_2_card from "../assets/classes/class_2/class_2_card.webp";
+import class_2_1 from "../assets/classes/class_2/class_2_1.webp";
+import class_2_2 from "../assets/classes/class_2/class_2_2.webp";
+import class_2_3 from "../assets/classes/class_2/class_2_3.webp";
+import class_2_4 from "../assets/classes/class_2/class_2_4.webp";
 
-import class_3_landing from "../assets/classes/class_3/class_3_landing.png";
-import class_3_card from "../assets/classes/class_3/class_3_card.png";
-import class_3_1 from "../assets/classes/class_3/class_3_1.jpeg";
-import class_3_2 from "../assets/classes/class_3/class_3_2.jpeg";
-import class_3_3 from "../assets/classes/class_3/class_3_3.jpeg";
-import class_3_4 from "../assets/classes/class_3/class_3_4.jpeg";
+import class_3_landing from "../assets/classes/class_3/class_3_landing.webp";
+import class_3_card from "../assets/classes/class_3/class_3_card.webp";
+import class_3_1 from "../assets/classes/class_3/class_3_1.webp";
+import class_3_2 from "../assets/classes/class_3/class_3_2.webp";
+import class_3_3 from "../assets/classes/class_3/class_3_3.webp";
+import class_3_4 from "../assets/classes/class_3/class_3_4.webp";
 
-import class_4_landing from "../assets/classes/class_4/class_4_landing.jpeg";
-import class_4_card from "../assets/classes/class_4/class_4_card.jpeg";
-import class_4_1 from "../assets/classes/class_4/class_4_1.jpeg";
-import class_4_2 from "../assets/classes/class_4/class_4_2.jpeg";
-import class_4_3 from "../assets/classes/class_4/class_4_3.jpeg";
-import class_4_4 from "../assets/classes/class_4/class_4_4.jpeg";
+import class_4_landing from "../assets/classes/class_4/class_4_landing.webp";
+import class_4_card from "../assets/classes/class_4/class_4_card.webp";
+import class_4_1 from "../assets/classes/class_4/class_4_1.webp";
+import class_4_2 from "../assets/classes/class_4/class_4_2.webp";
+import class_4_3 from "../assets/classes/class_4/class_4_3.webp";
+import class_4_4 from "../assets/classes/class_4/class_4_4.webp";
 
-import class_5_landing from "../assets/classes/class_5/class_5_landing.jpeg";
-import class_5_card from "../assets/classes/class_5/class_5_card.jpeg";
-import class_5_1 from "../assets/classes/class_5/class_5_1.jpeg";
-import class_5_2 from "../assets/classes/class_5/class_5_2.jpeg";
-import class_5_3 from "../assets/classes/class_5/class_5_3.jpeg";
-import class_5_4 from "../assets/classes/class_5/class_5_4.jpeg";
+import class_5_landing from "../assets/classes/class_5/class_5_landing.webp";
+import class_5_card from "../assets/classes/class_5/class_5_card.webp";
+import class_5_1 from "../assets/classes/class_5/class_5_1.webp";
+import class_5_2 from "../assets/classes/class_5/class_5_2.webp";
+import class_5_3 from "../assets/classes/class_5/class_5_3.webp";
+import class_5_4 from "../assets/classes/class_5/class_5_4.webp";
 
-import class_6_landing from "../assets/classes/class_6/class_6_landing.jpeg";
-import class_6_card from "../assets/classes/class_6/class_6_card.jpeg";
-import class_6_1 from "../assets/classes/class_6/class_6_1.jpeg";
-import class_6_2 from "../assets/classes/class_6/class_6_2.jpeg";
-import class_6_3 from "../assets/classes/class_6/class_6_3.jpeg";
-import class_6_4 from "../assets/classes/class_6/class_6_4.jpeg";
+import class_6_landing from "../assets/classes/class_6/class_6_landing.webp";
+import class_6_card from "../assets/classes/class_6/class_6_card.webp";
+import class_6_1 from "../assets/classes/class_6/class_6_1.webp";
+import class_6_2 from "../assets/classes/class_6/class_6_2.webp";
+import class_6_3 from "../assets/classes/class_6/class_6_3.webp";
+import class_6_4 from "../assets/classes/class_6/class_6_4.webp";
 
-import class_7_landing from "../assets/classes/class_7/class_7_landing.jpeg";
-import class_7_card from "../assets/classes/class_7/class_7_card.jpeg";
-import class_7_1 from "../assets/classes/class_7/class_7_1.jpeg";
-import class_7_2 from "../assets/classes/class_7/class_7_2.jpeg";
-import class_7_3 from "../assets/classes/class_7/class_7_3.jpeg";
-import class_7_4 from "../assets/classes/class_7/class_7_4.jpeg";
+import class_7_landing from "../assets/classes/class_7/class_7_landing.webp";
+import class_7_card from "../assets/classes/class_7/class_7_card.webp";
+import class_7_1 from "../assets/classes/class_7/class_7_1.webp";
+import class_7_2 from "../assets/classes/class_7/class_7_2.webp";
+import class_7_3 from "../assets/classes/class_7/class_7_3.webp";
+import class_7_4 from "../assets/classes/class_7/class_7_4.webp";
 
 
-import class_8_landing from "../assets/classes/class_8/class_8_landing.jpeg";
-import class_8_card from "../assets/classes/class_8/class_8_card.jpeg";
-import class_8_1 from "../assets/classes/class_8/class_8_1.jpeg";
-import class_8_2 from "../assets/classes/class_8/class_8_2.jpeg";
-import class_8_3 from "../assets/classes/class_8/class_8_3.jpeg";
+import class_8_landing from "../assets/classes/class_8/class_8_landing.webp";
+import class_8_card from "../assets/classes/class_8/class_8_card.webp";
+import class_8_1 from "../assets/classes/class_8/class_8_1.webp";
+import class_8_2 from "../assets/classes/class_8/class_8_2.webp";
+import class_8_3 from "../assets/classes/class_8/class_8_3.webp";
 // import class_8_4 from "../assets/classes/class_8/class_8_4.jpeg";
 
 
 
-import class_9_landing from "../assets/classes/class_9/class_9_landing.png";
-import class_9_card from "../assets/classes/class_9/class_9_card.png";
-import class_9_1 from "../assets/classes/class_9/class_9_1.png";
+import class_9_landing from "../assets/classes/class_9/class_9_landing.webp";
+import class_9_card from "../assets/classes/class_9/class_9_card.webp";
+import class_9_1 from "../assets/classes/class_9/class_9_1.webp";
 // import class_9_2 from "../assets/classes/class_9/class_9_2.png";
-import class_9_3 from "../assets/classes/class_9/class_9_3.png";
-import class_9_4 from "../assets/classes/class_9/class_9_4.png";
-import class_9_5 from "../assets/classes/class_9/class_9_5.png";
-import class_9_6 from "../assets/classes/class_9/class_9_6.png";
+import class_9_3 from "../assets/classes/class_9/class_9_3.webp";
+import class_9_4 from "../assets/classes/class_9/class_9_4.webp";
+import class_9_5 from "../assets/classes/class_9/class_9_5.webp";
+import class_9_6 from "../assets/classes/class_9/class_9_6.webp";
 
 
 

@@ -18,7 +18,7 @@ import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import SEO from "../../components/SEO";
 
-import landing_schedule_registration from "../../assets/forms/landing_schedule_registration.jpeg";
+import landing_schedule_registration from "../../assets/forms/landing_schedule_registration.webp";
 
 export default function ScheduleRegistrationPage() {
   const { t } = useTranslation();

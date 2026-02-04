@@ -1,37 +1,37 @@
 
-import lyceeZamalek1 from '../assets/schedules/lycee_zamalek_1.png';
-import maadi1 from '../assets/schedules/maadi_1.png';
-import maadi2 from '../assets/schedules/maadi_2.png';
-import maadi3 from '../assets/schedules/maadi_3.png';
-import newCairo1 from '../assets/schedules/new_cairo_1.png';
-import sheikhZayed1 from '../assets/schedules/skeikh_zayed_1.png';
-import zamalekClub1 from '../assets/schedules/zamalek_club_1.png';
-import zamalekStudio1 from '../assets/schedules/zamalek_studio_1.png';
+import lyceeZamalek1 from '../assets/schedules/lycee_zamalek_1.webp';
+import maadi1 from '../assets/schedules/maadi_1.webp';
+import maadi2 from '../assets/schedules/maadi_2.webp';
+import maadi3 from '../assets/schedules/maadi_3.webp';
+import newCairo1 from '../assets/schedules/new_cairo_1.webp';
+import sheikhZayed1 from '../assets/schedules/skeikh_zayed_1.webp';
+import zamalekClub1 from '../assets/schedules/zamalek_club_1.webp';
+import zamalekStudio1 from '../assets/schedules/zamalek_studio_1.webp';
 
-import location_october from "../assets/schedules/location_october.jpeg";
-import location_zayed from "../assets/schedules/location_zayed.jpeg";
-import landing_gezira_club_october from "../assets/schedules/landing_gezira_club_october.jpeg";
+import location_october from "../assets/schedules/location_october.webp";
+import location_zayed from "../assets/schedules/location_zayed.webp";
+import landing_gezira_club_october from "../assets/schedules/landing_gezira_club_october.webp";
 
-import card_new_cairo from "../assets/schedules/card_new_cairo.jpeg";
-import landing_new_cairo from "../assets/schedules/landing_new_cairo.jpeg";
+import card_new_cairo from "../assets/schedules/card_new_cairo.webp";
+import landing_new_cairo from "../assets/schedules/landing_new_cairo.webp";
 
-import card_gezira_club_zamalek from "../assets/schedules/card_gezira_club_zamalek.jpeg";
-import landing_gezira_club_zamalek from "../assets/schedules/landing_gezira_club_zamalek.jpeg";
+import card_gezira_club_zamalek from "../assets/schedules/card_gezira_club_zamalek.webp";
+import landing_gezira_club_zamalek from "../assets/schedules/landing_gezira_club_zamalek.webp";
 
-import card_diplo from "../assets/schedules/card_diplo.jpeg";
-import landing_diplo from "../assets/schedules/landing_diplo.jpeg";
+import card_diplo from "../assets/schedules/card_diplo.webp";
+import landing_diplo from "../assets/schedules/landing_diplo.webp";
 
-import landing_zamalek_studio from "../assets/schedules/landing_zamalek_studio.jpeg";
+import landing_zamalek_studio from "../assets/schedules/landing_zamalek_studio.webp";
 
-import landing_almaza from "../assets/schedules/landing_almaza.jpeg";
+import landing_almaza from "../assets/schedules/landing_almaza.webp";
 
-import landing_maadi from "../assets/schedules/landing_maadi.jpeg";
+import landing_maadi from "../assets/schedules/landing_maadi.webp";
 
-import card_almaza from "../assets/schedules/card_almaza.jpeg";
-import landing_skeikh_zayed from "../assets/schedules/landing_skeikh_zayed.jpeg";
+import card_almaza from "../assets/schedules/card_almaza.webp";
+import landing_skeikh_zayed from "../assets/schedules/landing_skeikh_zayed.webp";
 
-import card_maadi from "../assets/schedules/card_maadi.jpeg";
-import card_zamalek_studio from "../assets/schedules/card_zamalek_studio.jpeg";
+import card_maadi from "../assets/schedules/card_maadi.webp";
+import card_zamalek_studio from "../assets/schedules/card_zamalek_studio.webp";
 
 export const schedules = [
     {

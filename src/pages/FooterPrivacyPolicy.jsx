@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Container, Typography, Box } from "@mui/material";
 import HalfPageLanding from "../components/HalfPageLanding";
 
-import landing_privacy from "../assets/footer/landing_privacy.jpeg";
+import landing_privacy from "../assets/footer/landing_privacy.webp";
 
 export default function FooterPrivacyPolicy() {
   const { t } = useTranslation();

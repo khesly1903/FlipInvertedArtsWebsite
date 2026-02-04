@@ -17,8 +17,8 @@ import landingImage from "../assets/landing.webp";
 import AnimatedTitle from "../components/AnimatedTitle";
 import eventSummerVideo from "../assets/events/event_summer.mp4";
 import eventSpringVideo from "../assets/events/event_spring.mp4";
-import eventWinterVideo from "../assets/events/winter_coming_soon.jpeg";
-import eventLanding from "../assets/events/events_landing.jpeg";
+import eventWinterVideo from "../assets/events/winter_coming_soon.webp";
+import eventLanding from "../assets/events/events_landing.webp";
 import SEO from "../components/SEO";
 
 import { useTranslation } from "react-i18next";

@@ -1,11 +1,7 @@
 import { useTranslation } from "react-i18next";
-import {
-  Container,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 import HalfPageLanding from "../components/HalfPageLanding";
-import landing_safety from "../assets/footer/landing_safety.jpeg";
+import landing_safety from "../assets/footer/landing_safety.webp";
 
 export default function FooterSafetyPage() {
   const { t } = useTranslation();
@@ -19,8 +15,6 @@ export default function FooterSafetyPage() {
         <Typography variant="body1" paragraph>
           {t("footer-pages.safety.text")}
         </Typography>
-        
-       
       </Container>
     </Box>
   );

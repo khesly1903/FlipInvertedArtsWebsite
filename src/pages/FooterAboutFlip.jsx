@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Container, Typography, Box } from "@mui/material";
 import HalfPageLanding from "../components/HalfPageLanding";
 
-import landing_about_flip from "../assets/footer/landing_about_flip.jpeg";
+import landing_about_flip from "../assets/footer/landing_about_flip.webp";
 
 export default function FooterAboutFlip() {
   const { t } = useTranslation();

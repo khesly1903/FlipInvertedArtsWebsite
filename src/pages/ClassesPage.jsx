@@ -13,18 +13,17 @@ import { classes } from "../data/classes";
 import ImageCarousel from "../components/ImageCarousel";
 import SEO from "../components/SEO";
 
-import class_1_1 from "../assets/classes/class_1/class_1_1.jpeg";
-import class_2_1 from "../assets/classes/class_2/class_2_1.jpeg";
-import class_3_1 from "../assets/classes/class_3/class_3_1.jpeg";
-import class_4_1 from "../assets/classes/class_4/class_4_1.jpeg";
-import class_5_1 from "../assets/classes/class_5/class_5_1.jpeg";
-import class_6_1 from "../assets/classes/class_6/class_6_1.jpeg";
-import class_7_1 from "../assets/classes/class_7/class_7_1.jpeg";
-import class_8_1 from "../assets/classes/class_8/class_8_1.jpeg";
-import class_3_landing from "../assets/classes/class_3/class_3_landing.png";
+import class_1_1 from "../assets/classes/class_1/class_1_1.webp";
+import class_2_1 from "../assets/classes/class_2/class_2_1.webp";
+import class_3_1 from "../assets/classes/class_3/class_3_1.webp";
+import class_4_1 from "../assets/classes/class_4/class_4_1.webp";
+import class_5_1 from "../assets/classes/class_5/class_5_1.webp";
+import class_6_1 from "../assets/classes/class_6/class_6_1.webp";
+import class_7_1 from "../assets/classes/class_7/class_7_1.webp";
+import class_8_1 from "../assets/classes/class_8/class_8_1.webp";
+import class_3_landing from "../assets/classes/class_3/class_3_landing.webp";
 
-
-import classes_landing from "../assets/classes/classes_landing.jpeg";
+import classes_landing from "../assets/classes/classes_landing.webp";
 
 export default function ClassesPage() {
   const { state } = useLocation();
@@ -69,16 +68,15 @@ export default function ClassesPage() {
 
       <ImageCarousel
         images={[
-         class_1_1,
-         class_2_1,
-         class_3_1,
-         class_4_1,
-         class_5_1,
-         class_6_1,
-         class_7_1,
-         class_8_1,
-         class_3_landing
-
+          class_1_1,
+          class_2_1,
+          class_3_1,
+          class_4_1,
+          class_5_1,
+          class_6_1,
+          class_7_1,
+          class_8_1,
+          class_3_landing,
         ]}
       />
       {/* Kids Classes Section */}

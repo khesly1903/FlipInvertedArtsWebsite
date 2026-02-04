@@ -1,13 +1,13 @@
 
-import event1 from '../assets/events/event_1.png';
-import event2 from '../assets/events/event_2.png';
-import event3 from '../assets/events/event_3.png';
-import event4 from '../assets/events/event_4.png';
-import event5 from '../assets/events/event_5.png';
-import event6 from '../assets/events/event_6.png';
-import event7 from '../assets/events/event_7.png';
-import event10 from '../assets/events/event_10.png';
-import event12 from '../assets/events/event_12.jpg';
+import event1 from '../assets/events/event_1.webp';
+import event2 from '../assets/events/event_2.webp';
+import event3 from '../assets/events/event_3.webp';
+import event4 from '../assets/events/event_4.webp';
+import event5 from '../assets/events/event_5.webp';
+import event6 from '../assets/events/event_6.webp';
+import event7 from '../assets/events/event_7.webp';
+import event10 from '../assets/events/event_10.webp';
+import event12 from '../assets/events/event_12.webp';
 
 /**
  * @typedef {'unavailable' | 'available' | 'upcoming'} Availability

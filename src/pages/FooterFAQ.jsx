@@ -4,7 +4,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import landing from "../assets/landing.webp";
 import HalfPageLanding from "../components/HalfPageLanding";
 import { useMemo } from "react";
-import landing_faq from "../assets/footer/landing_faq.jpeg";
+import landing_faq from "../assets/footer/landing_faq.webp";
 
 function FAQuestion({ title, text }) {
   return (
@@ -99,7 +99,13 @@ export default function FooterFAQ() {
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>
         <Grid container spacing={2}>
-          <Typography width="100%" variant="h4" fontWeight="bold" gutterBottom textAlign="center">
+          <Typography
+            width="100%"
+            variant="h4"
+            fontWeight="bold"
+            gutterBottom
+            textAlign="center"
+          >
             {t("footer-pages.faq.flexibility-flow.title").toUpperCase()}
           </Typography>
           {faqData1.map((item) => (

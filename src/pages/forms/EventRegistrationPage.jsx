@@ -18,9 +18,8 @@ import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import SEO from "../../components/SEO";
 
-
-import afterFormLanding from "../../assets/events/after_form_landing.jpeg";
-import landing_event_registration from "../../assets/forms/landing_event_registration.jpeg";
+import afterFormLanding from "../../assets/events/after_form_landing.webp";
+import landing_event_registration from "../../assets/forms/landing_event_registration.webp";
 
 export default function EventRegistrationPage() {
   const { t } = useTranslation();
