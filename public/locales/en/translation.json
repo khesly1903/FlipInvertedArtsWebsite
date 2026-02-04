@@ -1,18 +1,18 @@
 {
   "home": {
     "home-title": "Our Mission",
-    "home-text": "Our Mission (instead of Hospitality & Residence): Flip Inverted ArtsAcademy is one of the first academies to bring recreational gymnastics for kids and adults to Egypt. Flip’s founder, Julia Alexan, is certified by USA Gymnastics and brings in many new concepts on how to teach and train gymnastics, different from what is typically found in Egypt. At Flip, we believe that you can instill athletics in kids at a young age through gymnastics by building their progress in a fun and friendly way that leaves them loving the sport, and it will leave a long-lasting positive effect on their lifelong concept of gymnastics, fitness and sports in general.",
+    "home-text": "Flip Inverted ArtsAcademy is one of the first academies to bring recreational gymnastics for kids and adults to Egypt. Flip’s founder, Julia Alexan, is certified by USA Gymnastics and brings in many new concepts on how to teach and train gymnastics, different from what is typically found in Egypt. At Flip, we believe that you can instill athletics in kids at a young age through gymnastics by building their progress in a fun and friendly way that leaves them loving the sport, and it will leave a long-lasting positive effect on their lifelong concept of gymnastics, fitness and sports in general.",
     "classes": "Classes",
-    "classes-description": "It is working",
+    "classes-description": "Our programs build self-confidence, determination and dedication in addition to strength, flexibility coordination and balance required to be a great gymnast.",
     "events": "Events",
-    "events-description": "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+    "events-description": "We have three annual events. Our Spring Show, Winter Meet Games and Summer Show are end-of-season performances for everyone to show off the skills learned throughout the year.",
     "schedules": "Schedules",
-    "schedules-description": "We need spesific explanations abaout classes, events and schedules so that parents can choose what they want. As a first visitor (like me) it is a bit hard that seperate classes events and schedules from each other.",
+    "schedules-description": "Our Gymnastics Program is open in Maadi, Zamalek, 6 October, New Cairo and Sheikh Zayed, with classes offered 2-3 days per week, ongoing all year round.",
     "shop": "Shop",
     "what-we-offer": "What we offer",
     "contact-section": {
       "title": "Start Your Flippin' Journey Today!",
-      "text": "Write something for 'do you need help' or 'wanna contact with us'. Dont say register with this form bcz we have different forms for registration.",
+      "text": "Ask us about our classes, events, or locations and we'll be happy to help you find the perfect class for you.",
       "button": "Contact Us"
     },
     "reviews": "Reviews"
@@ -395,7 +395,7 @@
     "safety": {
       "title": "Safety",
       "subtitle": "Safety",
-      "text": "Safety is important, take care <3"
+      "text": "We prioritize the safety of our kids not only through upkeep and maintenance of our equipment, , but also by taking them through proper progressions according to their current level of trainingrequiring annual training for our certified instructors."
     }
   },
   "buttons": {
@@ -411,8 +411,8 @@
       "schedule-success": "Class Registration Successful!"
     },
     "subtitles": {
-      "contact-text": "We'd love to hear from you. Send us a message!",
-      "event-text": "Please fill out the form below to register for our upcoming events.",
+      "contact-text": "We'd love to hear from you! Let us know what questions do you have.",
+      "event-text": "Please fill out the form below to register for our upcoming event.",
       "schedule-text": "Secure your spot by filling out the registration form below.",
       "parent-info": "Parent Information",
       "child-info": "Child Information",
@@ -455,4 +455,5 @@
       "recaptcha": "Please complete the reCAPTCHA verification."
     }
   }
+
 }
