@@ -116,8 +116,11 @@ app.post('/api/contact', formLimiter, async (req, res) => {
         </div>
     `;
 
-    // 1. Send Email
-    const emailResult = await sendMail(process.env.EMAIL_USER, `Contact Request from ${name}`, html);
+    // Send emails in parallel (Same content to both)
+    const [adminResult, userResult] = await Promise.all([
+        sendMail(process.env.EMAIL_USER, `Contact Request from ${name}`, html),
+        sendMail(email, `Contact Request Received - Flip Inverted Arts`, html)
+    ]);
 
     // 2. Save to Google Sheet
     // Columns: ['Timestamp', 'Form Type', 'Name', 'Email', 'Phone', 'Message']
@@ -130,7 +133,7 @@ app.post('/api/contact', formLimiter, async (req, res) => {
     ]);
     
     // Check email result primarily, but log sheet result
-    if (emailResult.success) {
+    if (adminResult.success) {
         res.json({ 
             message: "Contact email sent successfully",
             sheetSaved: sheetResult.success
@@ -191,7 +194,11 @@ app.post('/api/register-event', formLimiter, async (req, res) => {
         </div>
     `;
 
-    const emailResult = await sendMail(process.env.EMAIL_USER, `Event Registration: ${childName}`, html);
+    // Send emails in parallel (Same content to both)
+    const [adminResult, userResult] = await Promise.all([
+        sendMail(process.env.EMAIL_USER, `Event Registration: ${childName}`, html),
+        sendMail(parentEmail, `Event Registration Received - Flip Inverted Arts`, html)
+    ]);
 
     // Columns: ['DATE', 'P NAME', 'PHONE', 'MAIL', 'C NAME', 'C DOB', 'COLOR 1', 'COLOR 2', 'FLIP BRANCH', 'GUESTS']
     const sheetResult = await appendToSheet('EVENT', [
@@ -207,7 +214,7 @@ app.post('/api/register-event', formLimiter, async (req, res) => {
         guests || ''
     ]);
 
-    if (emailResult.success) {
+    if (adminResult.success) {
         res.json({ 
             message: "Event registration email sent successfully",
             sheetSaved: sheetResult.success
@@ -268,7 +275,11 @@ app.post('/api/register-schedule', formLimiter, async (req, res) => {
         </div>
     `;
 
-    const emailResult = await sendMail(process.env.EMAIL_USER, `Schedule Registration [${locationName}]: ${childName}`, html);
+    // Send emails in parallel (Same content to both)
+    const [adminResult, userResult] = await Promise.all([
+        sendMail(process.env.EMAIL_USER, `Schedule Registration [${locationName}]: ${childName}`, html),
+        sendMail(parentEmail, `Class Registration Received - Flip Inverted Arts`, html)
+    ]);
     
     // Columns: ['DATE', 'P NAME', 'PHONE', 'MAIL', 'MEMBERSHIP', 'C NAME', 'C DOB', 'C SCHOOL', 'EM CONTACT NAME', 'EC PHONE', 'MESSAGE']
     const sheetResult = await appendToSheet('SCHEDULE', [
@@ -285,7 +296,7 @@ app.post('/api/register-schedule', formLimiter, async (req, res) => {
         message || ''
     ]);
 
-    if (emailResult.success) {
+    if (adminResult.success) {
         res.json({ 
             message: "Schedule registration email sent successfully",
             sheetSaved: sheetResult.success
@@ -298,5 +309,3 @@ app.post('/api/register-schedule', formLimiter, async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
-
