@@ -11,7 +11,6 @@ import AnimatedInformation from "../components/AnimatedInformation";
 import HalfPageLanding from "../components/HalfPageLanding";
 import { classes } from "../data/classes";
 import ImageCarousel from "../components/ImageCarousel";
-import SEO from "../components/SEO";
 
 import class_1_1 from "../assets/classes/class_1/class_1_1.webp";
 import class_2_1 from "../assets/classes/class_2/class_2_1.webp";
@@ -40,10 +39,6 @@ export default function ClassesPage() {
 
   return (
     <Box>
-      <SEO
-        title="Classes | Flip Inverted Arts"
-        description="Discover our diverse range of classes including gymnastics, dance, and arts. Suitable for all ages and skill levels."
-      />
       {/* Classes Banner */}
       <HalfPageLanding
         image={classes_landing}

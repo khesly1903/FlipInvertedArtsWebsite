@@ -15,7 +15,7 @@ import SendIcon from "@mui/icons-material/Send";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
-import SEO from "../../components/SEO";
+
 import landing_contact_us from "../../assets/forms/landing_contact_us.webp";
 
 export default function ContactFormPage() {
@@ -90,10 +90,6 @@ export default function ContactFormPage() {
 
   return (
     <Box>
-      <SEO
-        title="Contact Us | Flip Inverted Arts"
-        description="Get in touch with us for inquiries about our gymnastics, dance, and art classes."
-      />
       <HalfPageLanding
         image={landing_contact_us}
         title={t("navbar.contact-us").toUpperCase()}

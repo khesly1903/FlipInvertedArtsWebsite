@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Masonry from "@mui/lab/Masonry";
 
-const MasonryGrid = ({ images = [] }) => {
+const MasonryGrid = ({ images = [], onImageClick }) => {
   if (images.length === 1) {
     const image = images[0];
     return (
@@ -11,7 +11,14 @@ const MasonryGrid = ({ images = [] }) => {
         maxWidth="lg"
         sx={{ py: 4, display: "flex", justifyContent: "center" }}
       >
-        <Box sx={{ width: "100%", maxWidth: { md: "50%" } }}>
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: { md: "50%" },
+            cursor: onImageClick ? "pointer" : "default",
+          }}
+          onClick={() => onImageClick && onImageClick(image)}
+        >
           <img
             src={typeof image === "string" ? image : image.src}
             alt={typeof image === "string" ? "single-img" : image.alt}
@@ -34,7 +41,11 @@ const MasonryGrid = ({ images = [] }) => {
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Masonry columns={{ xs: 2, md: 2 }} spacing={2}>
         {images.map((image, index) => (
-          <Box key={index} sx={{ width: "100%" }}>
+          <Box
+            key={index}
+            sx={{ width: "100%", cursor: onImageClick ? "pointer" : "default" }}
+            onClick={() => onImageClick && onImageClick(image)}
+          >
             <img
               src={typeof image === "string" ? image : image.src}
               alt={

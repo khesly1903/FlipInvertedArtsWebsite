@@ -19,7 +19,6 @@ import eventSummerVideo from "../assets/events/event_summer.mp4";
 import eventSpringVideo from "../assets/events/event_spring.mp4";
 import eventWinterVideo from "../assets/events/winter_coming_soon.webp";
 import eventLanding from "../assets/events/events_landing.webp";
-import SEO from "../components/SEO";
 
 import { useTranslation } from "react-i18next";
 
@@ -44,10 +43,6 @@ const EventsPage = () => {
 
   return (
     <Box>
-      <SEO
-        title="Events | Flip Inverted Arts"
-        description="Stay updated with our latest events, workshops, and seasonal activities at Flip Inverted Arts."
-      />
       <HalfPageLanding
         image={eventLanding}
         logo="/logos/flip_logo_half_landing_white_events.svg"
@@ -66,7 +61,10 @@ const EventsPage = () => {
         {/* Available Events */}
         {availableEvents.length > 0 && (
           <Box sx={{ mb: 8 }}>
-            <MasonryGrid images={availableEvents.map((e) => e.image)} />
+            <MasonryGrid
+              images={availableEvents.map((e) => e.image)}
+              onImageClick={() => navigate("/register-event")}
+            />
           </Box>
         )}
         <Paper

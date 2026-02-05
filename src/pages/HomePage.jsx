@@ -16,7 +16,6 @@ import HomePageCard from "../components/HomePageCard";
 import { reviews } from "../data/review";
 import AnimatedInformation from "../components/AnimatedInformation";
 import ImageCarousel from "../components/ImageCarousel";
-import SEO from "../components/SEO";
 
 import card_diplo from "../assets/schedules/card_diplo.webp";
 import card_almaza from "../assets/schedules/card_almaza.webp";
@@ -45,10 +44,6 @@ export default function HomePage() {
   const navigate = useNavigate();
   return (
     <Box>
-      <SEO
-        title="Flip Inverted Arts | Gymnastics & Arts in Cairo"
-        description="Join Flip Inverted Arts for top-tier gymnastics, dance, and arts classes in Cairo. Schedule your class today!"
-      />
       {/* Hero Section */}
       <Box
         sx={{

@@ -7,7 +7,6 @@ import { schedules } from "../data/schedules";
 import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
-import SEO from "../components/SEO";
 
 import schedules_landing from "../assets/schedules/schedules_landing.webp";
 
@@ -15,10 +14,6 @@ export default function SchedulesPage() {
   const { t } = useTranslation();
   return (
     <Box>
-      <SEO
-        title="Schedules | Flip Inverted Arts"
-        description="Check our class schedules and locations across Cairo. Find a gym near you!"
-      />
       {/* Locations Banner */}
       <HalfPageLanding
         image={schedules_landing}

@@ -16,7 +16,6 @@ import SendIcon from "@mui/icons-material/Send";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
-import SEO from "../../components/SEO";
 
 import landing_schedule_registration from "../../assets/forms/landing_schedule_registration.webp";
 
@@ -118,10 +117,6 @@ export default function ScheduleRegistrationPage() {
 
   return (
     <Box>
-      <SEO
-        title="Class Registration | Flip Inverted Arts"
-        description="Sign up for our classes and become part of the Flip Inverted Arts family."
-      />
       <HalfPageLanding
         image={landing_schedule_registration}
         title={t("home.schedules").toUpperCase()}

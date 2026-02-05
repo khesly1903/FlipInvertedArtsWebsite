@@ -18,7 +18,6 @@ import { schedules } from "../data/schedules";
 import landing from "../assets/landing.webp";
 import { useTranslation } from "react-i18next";
 import AnimatedInformation from "../components/AnimatedInformation";
-import SEO from "../components/SEO";
 
 export default function ScheduleDetailPage() {
   const { t } = useTranslation();
@@ -36,10 +35,6 @@ export default function ScheduleDetailPage() {
 
   return (
     <Box>
-      <SEO
-        title={`${t(schedule.location)} | Flip Inverted Arts`}
-        description={`Schedule details for ${t(schedule.location)}. Join us for gymnastics and arts classes.`}
-      />
       {/* 1. Header with Location Name */}
       <HalfPageLanding
         image={schedule.details.landingImage}
