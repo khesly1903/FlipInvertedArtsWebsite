@@ -1,8 +1,10 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
-const cors = require('cors');
-const rateLimit = require('express-rate-limit');
-require('dotenv').config();
+import express from 'express';
+import nodemailer from 'nodemailer';
+import cors from 'cors';
+import rateLimit from 'express-rate-limit';
+import dotenv from 'dotenv';
+// Load environment variables immediately
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -64,7 +66,7 @@ const verifyRecaptcha = async (token) => {
     if (!token) return false;
     
     try {
-        // Native fetch available in Node 18+
+        // Native fetch available in Node 18+ (which supports ESM)
         const response = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`, {
             method: 'POST'
         });
@@ -76,7 +78,7 @@ const verifyRecaptcha = async (token) => {
     }
 };
 
-const { appendToSheet } = require('./sheets');
+import { appendToSheet } from './sheets.js';
 
 // 1. Contact Form Endpoint
 app.post('/api/contact', formLimiter, async (req, res) => {
@@ -306,10 +308,12 @@ app.post('/api/register-schedule', formLimiter, async (req, res) => {
     }
 });
 
-if (require.main === module) {
+// For ESM (import.meta.url) equivalent of require.main === module
+import { fileURLToPath } from 'url';
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
     });
 }
 
-module.exports = app;
+export default app;

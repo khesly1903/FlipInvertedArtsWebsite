@@ -5,6 +5,7 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test jest"
   },
+  "type": "module",
   "jest": {
     "testEnvironment": "node"
   },

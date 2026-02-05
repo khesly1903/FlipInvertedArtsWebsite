@@ -1,7 +1,12 @@
-const { GoogleSpreadsheet } = require('google-spreadsheet');
-const { JWT } = require('google-auth-library');
-const path = require('path');
-const fs = require('fs');
+import { GoogleSpreadsheet } from 'google-spreadsheet';
+import { JWT } from 'google-auth-library';
+import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+
+// Fix for __dirname in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Load service account from file if it exists
 const SERVICE_ACCOUNT_FILE = path.join(__dirname, 'service-account.json');
@@ -10,7 +15,9 @@ const getAuth = () => {
     // Priority 1: Service Account File
     if (fs.existsSync(SERVICE_ACCOUNT_FILE)) {
         try {
-            const creds = require(SERVICE_ACCOUNT_FILE);
+            // ESM dynamic import is async, but we need sync here or await init
+            // For simplicity in refactoring, we'll read JSON directly
+            const creds = JSON.parse(fs.readFileSync(SERVICE_ACCOUNT_FILE, 'utf8'));
             return new JWT({
                 email: creds.client_email,
                 key: creds.private_key,
@@ -37,7 +44,7 @@ const getAuth = () => {
     return null;
 };
 
-const appendToSheet = async (sheetKey, rowData) => {
+export const appendToSheet = async (sheetKey, rowData) => {
     const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
     
     if (!spreadsheetId) {
@@ -106,5 +113,3 @@ const appendToSheet = async (sheetKey, rowData) => {
         return { success: false, error: error.message };
     }
 };
-
-module.exports = { appendToSheet };

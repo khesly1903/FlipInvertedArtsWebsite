@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import YoutubeIcon from "@mui/icons-material/Youtube";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -128,7 +128,7 @@ export default function Footer() {
               target="_blank"
               aria-label="Youtube"
             >
-              <YoutubeIcon sx={{ fontSize: 40 }} />
+              <YouTubeIcon sx={{ fontSize: 40 }} />
             </IconButton>
           </Stack>
         </Stack>
