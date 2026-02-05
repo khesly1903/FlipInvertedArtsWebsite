@@ -18,12 +18,12 @@
     "reviews": "Reviews"
   },
   "classes": {
-    "classes-title": "About Classes",
-    "classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-    "about-kids-classes": "About Kids Classes",
-    "about-kids-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
-    "about-adults-classes": "About Adults Classes",
-    "about-adults-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
+    "classes-title": "About Our Classes",
+    "classes-text": "We specialize in classes for ages 2.5–14, as well as juniors and adults. Our signature non-competitive gymnastics and parkour programs guide kids from Toddlers and Level 1 through Level 6 in a fun, progressive environment. For juniors and adults, we offer handstand training, adult gymnastics, and parkour—helping you build strength, flexibility, and skills like flips, splits, and bridges at any age.",
+    "about-kids-classes": "Kids Classes",
+    "about-kids-classes-text": "Build their confidence, develop strength and keep them stretchy as we build tricks upon tricks. The real fun starts when they learn to flip in level 4..after that, the sky's the limit!  We'll keep teaching as long as they keep learning!",
+    "about-adults-classes": "Adults Classes",
+    "about-adults-classes-text": "Juniors and adults aim to get as far as possible on our Parkour and Handstand programs.  Private lessons are also availble. ",
     "kids": {
       "common": {
         "competitive": "competitive",
@@ -38,122 +38,122 @@
       },
       "kids-1": {
         "title": "Gymnastics Level 1",
-        "description": "Learn front and back rolls, basic jumps and build strength for handstands and cartwheels.",
+        "description": "Learn front rolls, basic jumps and build strength for handstands and more.",
         "image-1": {
-          "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Splits",
+          "description": "They'll slowly increase their flexibility they'll need for great asthetics in their tricks."
         },
         "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Build Strength & Flexilibity",
+          "description": "Building a good base of stregth and flexibility will make upstream tricks much easier for them."
         },
         "image-3": {
           "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "description": "The shapes learned in this level are the basic building blocks of all gymnastics shapes they'll use in the higher levels."
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Bridges",
+          "description": "A good, clean bridge is so important in gymnastics, as many other tricks depend on it."
         }
       },
       "kids-2": {
         "title": "Gymnastics Level 2",
-        "description": "Strengthen handstand holds, cartwheels and learn front and back walkovers.",
+        "description": "Strengthen handstand holds and learn cartwheels, front and back walkovers.",
         "image-1": {
-          "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Bridge Holds",
+          "description": "Once we've built up their endurance in longer holds in bridge, they'll be able to walk, hop, kick in bridge and more."
         },
         "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Safe Stretches",
+          "description": "Without adding force or extra unneccesary pressure, safely stretch to relax the muscles at the end of training."
         },
         "image-3": {
-          "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Back Flexibility",
+          "description": "Increasing back flexibility one step further makes front and back walkovers that much easier for them to acheive."
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Building Community",
+          "description": "Make new friends at one of our funnest Halloween dress-up events, where our whole practice is in costume!"
         }
       },
       "kids-3": {
         "title": "Gymnastics Level 3 - 4",
-        "description": "With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.",
+        "description": "With increased strength and flexibilty, your child will be ready to flip.",
         "image-1": {
-          "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Advanced Flexiblity",
+          "description": "Being dedicated to flexibility required for gymnastics opens up new moves like the needle and catching your leg."
         },
         "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Challenging the Basics",
+          "description": "After holding, walking, and hopping in bridge, learn how to jump in and out of it. "
         },
         "image-3": {
-          "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Beginning Flips",
+          "description": "Backhandspring and Fronthandspring are the first flips that open the way up to level 4."
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Aerial Flips",
+          "description": "Front and back aerials come next in Level 5."
         }
       },
       "kids-4": {
         "title": "Boys Gymnastics",
-        "description": "Strengthen handstand holds, cartwheels and learn front and back walkovers.",
+        "description": "Our boys program requires persistance to learn bars, rings and floor routines.",
         "image-1": {
-          "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Rings",
+          "description": "Learn swings and build stregnth for holds on the rings."
         },
         "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Parallel Bars",
+          "description": "Build up their upper body and core with pull-up holds, support walks and hanging tuck and pike holds on the p-bars."
         },
         "image-3": {
-          "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Handstand Alignment",
+          "description": "Use different handstand shapes to help them build awareness of their alignment."
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Parallettes",
+          "description": "Compression exersizes build core strength in pike position."
         }
       },
       "kids-5": {
         "title": "Parkour",
-        "description": "With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.",
+        "description": "Precision, rolls, landing, jumping and passing through obstacles with style.",
         "image-1": {
-          "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Jumps",
+          "description": "Precision jumps teach them how to aim and land their jumps properly."
         },
         "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Vaults",
+          "description": "Learn dash, speed, monkey as different ways to vault and continue your run."
         },
         "image-3": {
-          "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Speed Run",
+          "description": "This is one of the funnest challenges where you can try to beat your time or someone else's best time to see how long it takes for you to pass through all the obstacles in front of you on your run to ring the finishing bell!"
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Landing & Rolls",
+          "description": "We'll teach them how to decide to land, and how to use a parkour roll to break the impact of the landing."
         }
       },
       "kids-6": {
         "title": "Toddlers",
-        "description": "With increased strength and flexibilty, your child will learn front and back handsprings and round-offs.",
+        "description": "A guided exploration of gymnastics starts at age 2.5.",
         "image-1": {
           "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "description": "Tuck and roll safely with our experienced coaches and safe environemnt."
         },
         "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Baby Handstands",
+          "description": "Bunny hops turn into baby handstands as they rediscover the fun of going upside down."
         },
         "image-3": {
-          "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Strength",
+          "description": "They'll use the wall and a pike shape to learn their first type of handstand, a box handstand."
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Coordination",
+          "description": "Exersizing right and left parts introduces them to coordinated movement which they'll need to be graceful in gymnastics, and also in life."
         }
       }
     },
@@ -168,73 +168,69 @@
       },
       "adults-1": {
         "title": "Handstands",
-        "description": "Start your handstand journey learning the basics of hand balancing, other inversions and handstands.",
+        "description": "Start your handstand journey using drills for shapes and endurance to stay inverted longer.",
         "image-1": {
-          "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Shapes",
+          "description": "Learn fun shapes and find your balance in each one.  Then transition from one to the other."
         },
         "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Shoulder Strenth & Endurance",
+          "description": "The shoulders carry your weight when standing on your hands much like the hips carrey your weight when standing right side up.  We'll build the strength and endurance you need to support your handstand."
         },
         "image-3": {
-          "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Balance",
+          "description": "Work with our coaches to help you use every part of your hand to find your balance upside-down."
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Free Handstand",
+          "description": "With the strength, endurance and balance that you've built, you can now stand without the wall in a free standing handstand, and join our group handstand pics! Always a blast of fun!"
         }
       },
       "adults-2": {
         "title": "Adult Gymnastics & Parkour",
-        "description": "Learn the basics of handstands, flips, climbing, jumping and vaulting with style.",
+        "description": "Learn the basics of flips, climbing, jumping and vaulting with style.",
         "image-1": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Landing & Precision",
+          "description": "First learn how to land with precision and stability coming out of any jump."
         },
         "image-2": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Freerunning",
+          "description": "It's up to you to add your own style and spin to the flips you will learn and make them your own!"
         },
         "image-3": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Strength",
+          "description": "Build the strength it takes to hold your favorite gymnastics trick."
         }
       },
       "adults-3": {
-        "title": "Personal Training",
-        "description": "Personalize your workout and train in anything we offer. Send us your goals and we will accomodate.",
+        "title": "Private Lessons",
+        "description": "Personalize training for your sport's requirements and focus 1-on-1 with a coach.",
         "image-1": {
-          "title": "Learn Forward Rolls",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-2": {
-          "title": "Build Strength & Balance",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Gymnastics",
+          "description": "When the focus is on you, you'll master your gymnastics trick quicker."
         },
         "image-3": {
-          "title": "Basic Gymnastics Shapes",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Flexibility & Mobility",
+          "description": "Get to your target level of mobility & flexibility with a program that includes myofascial release, PNF stretching techniques and active and passsafe, guided method that combines light muscle engagement with stretching—to help students improve flexibility, control, and body awareness. "
         },
         "image-4": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Calisthenics, Body Weight Training",
+          "description": "Use your own body weight to reach the level of strength you need for your fitness goals."
         },
         "image-5": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Yoga",
+          "description": "Use yoga to re-center yourself, increase your flexilibity and relax your mind at your next event."
         },
         "image-6": {
-          "title": "Beginning Handstands",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "Mother Daughter Training",
+          "description": "You and your child might currently be in the same place on your fitness journey..or not! Customize a training plan for both of you to bond while training."
         }
       }
     }
   },
   "events": {
     "events-title": "Events",
-    "events-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "events-text": "Be sure not to miss out on the fun at our annual events! Our Spring Show is a themed, stage show where our gymnasts perform solos and group dances to music in May/June. Our Summer Shows take place in sahel in Diplo.  At our Winter Meet Games event, everyone is welcome to join individual and team gymnastics challenges in a friendly environment where everyone wins at the end!",
     "current-event": "Current Event",
     "current-event-description": "Bla Bla for registration form",
     "annual-event": "Upcoming Event",
@@ -242,21 +238,21 @@
     "annual": {
       "summer": {
         "title": "Summer Show",
-        "description": " lorem ipsum"
+        "description": "Sign up early to join our summer show to make the most of our summer training programs and put on an exciting show for the parents!  Registration opens in July."
       },
       "winter": {
         "title": "Winter Meet Games",
-        "description": " lorem ipsum"
+        "description": "Our Winter Meet Games event is a great opportunity for everyone to show off the skills they've learned during training, join in some friendly challenges and have a great time! We'll have individual and team challenges and a speed run for our parkour classes.  Registration opens in September."
       },
       "spring": {
         "title": "Spring Shows",
-        "description": " lorem ipsum"
+        "description": "Our Spring Show is our themed stage show where they dress in costume/leatord and coordinate a routine with music to perform in front of the parents. Bring them early to give them the most time to train and get a great show together!  Registration opens in February."
       }
     }
   },
   "schedules": {
     "schedules-title": "Schedules",
-    "schedules-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
+    "schedules-text": "Find the closest location for you and check out our latest schedules and avilable programs.  All locations are invited to join our annual events!",
     "common": {
       "find-us": "Find Us",
       "interested": "Are you interested?",
@@ -267,49 +263,49 @@
     },
     "gezira-club-october": {
       "title": "Gezira Club October",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "We currently have Toddlers (starting age 2.5), Girls and Boys gymnastics non-competitive (Flip Program) and Competitive (Aerobic Gymnastics Program) as well as Parkour for all ages and Hanstands for Adults.",
+      "form-description": "Sign up to join us in GSC October Branch"
     },
     "gezira-club-zamalek": {
       "title": "Gezira Club Zamalek",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "For Zamalek Gezira club members, we currently have classes for toddlers (starting 2.5 years old) and non-competitive (Flip Program) gymnastics.",
+      "form-description": "Sign up to join us in GSC Zamalek"
     },
     "zamalek-studio": {
       "title": "Zamalek Studio",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "At our exclusive gymnastics studio where we have limited spots available, we have classes for non-competitive (Flip Program) gymnastics for toddlers (starting at age 2.5) and Gymnastics for kids aged 3.5 - 12.",
+      "form-description": "Sign up to join us in Zamalek Studio"
     },
     "maadi": {
       "title": "Maadi",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "We currently have Toddlers (starting age 2.5), Girls and Boys gymnastics non-competitive (Flip Program), Parkour for all ages and Hanstands for Adults.",
+      "form-description": "Sign up to join us in Maadi"
     },
     "sheikh-zayed": {
       "title": "Sheikh Zayed",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Inside of Beverly Hills Compound, you'll find us currently at Garnet Gym.  We have classes for non-competitive (Flip Program) gymnastics for toddlers (starting at age 2.5) and Gymnastics for kids aged 3.5 - 12.  If you'd interested in a class not yet offered, contact us and let us know.",
+      "form-description": "Sign up to join us in Sheikh Zayed"
     },
     "new-cairo": {
       "title": "New Cairo",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "In Tagamo, you'll find us currently at Aerial Grace studios.  We have classes for non-competitive (Flip Program) gymnastics for Gymnastics for kids aged 3.5 - 12.  If you'd interested in a class not yet offered, contact us and let us know.",
+      "form-description": "Sign up to join us in New Cairo"
     },
     "almaza-bay": {
       "title": "Almaza Bay",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Don't miss the fun of flipping on the beach! Stay tuned for our annual announcement of when we start Gymnastics at Almaza Bay in July.  We teach toddlers (starting age 2.5), non-competitive gymnastics and private lessons to help you keep up your athletes' fitness level and tricks while enjoying your summer under the sun.",
+      "form-description": "Sign up to join us in Almaza Bay"
     },
     "diplo": {
       "title": "Diplo",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Don't miss the fun of flipping on the beach! Stay tuned for our annual announcement of when we start Gymnastics in Diplo in July.  We teach toddlers (starting age 2.5), non-competitive gymnastics and private lessons to help you keep up your athletes' fitness level and tricks while enjoying your summer under the sun.",
+      "form-description": "Sign up to join us in Diplo"
     }
   },
 
   "shop": {
     "comingSoon": "Coming Soon",
-    "message": "We are currently working on this page. Thank you for your patience.",
+    "message": "More flippin' fun coming soon! Thank you for your patience.",
     "returnHome": "Return to Home"
   },
   "navbar": {

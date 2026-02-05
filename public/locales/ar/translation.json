@@ -1,458 +1,128 @@
 {
   "home": {
-    "home-title": "مهمتنا",
-    "home-text": "مهمتنا (بدلاً من الضيافة والإقامة): أكاديمية فليب للفنون المقلوبة هي واحدة من أوائل الأكاديميات التي تقدم الجمباز الترفيهي للأطفال والكبار إلى مصر. مؤسسة فليب، جوليا أليكسان، معتمدة من الاتحاد الأمريكي للجمباز وتجلب العديد من المفاهيم الجديدة حول كيفية تدريس وتدريب الجمباز، تختلف عما هو موجود عادة في مصر. في فليب، نؤمن بأنه يمكنك غرس الرياضة في الأطفال في سن مبكرة من خلال الجمباز عن طريق بناء تقدمهم بطريقة ممتعة وودية تجعلهم يحبون الرياضة، وسيتركون تأثيرًا إيجابيًا طويل الأمد على مفهومهم مدى الحياة للجمباز واللياقة البدنية والرياضة بشكل عام.",
-    "classes": "الدورات",
-    "classes-description": "نحن بحاجة إلى تفسيرات محددة حول الدورات والفعاليات والجداول حتى يتمكن الآباء من اختيار ما يريدون. كزائر أول (مثلي) من الصعب قليلاً فصل الدورات والفعاليات والجداول عن بعضها البعض.",
+    "home-title": "رسالتنا",
+    "home-text": "Flip Inverted Arts Academy من أوائل الأكاديميات اللي قدمت جمباز ترفيهي للأطفال والكبار في مصر. مؤسسة Flip، جوليا ألكسان، معتمدة من USA Gymnastics وبتقدم طرق حديثة ومختلفة لتعليم وتدريب الجمباز عن اللي متعارف عليه في مصر. في Flip بنؤمن إن الرياضة ممكن تبدأ من سن صغير عن طريق الجمباز، بأسلوب ممتع وبسيط يخلي الأطفال يحبوا الرياضة، وده بيأثر بشكل إيجابي وطويل المدى على مفهومهم عن اللياقة والرياضة بشكل عام.",
+    "classes": "الكلاسات",
+    "classes-description": "برامجنا بتبني الثقة بالنفس، الإصرار والالتزام، وكمان القوة والمرونة والتوازن والتناسق اللي أي لاعب جمباز محتاجهم.",
     "events": "الفعاليات",
-    "events-description": "نحن بحاجة إلى تفسيرات محددة حول الدورات والفعاليات والجداول حتى يتمكن الآباء من اختيار ما يريدون. كزائر أول (مثلي) من الصعب قليلاً فصل الدورات والفعاليات والجداول عن بعضها البعض.",
+    "events-description": "عندنا ٣ فعاليات سنوية: عرض الربيع، ألعاب الشتاء، وعرض الصيف. كلهم عروض نهاية الموسم علشان كل المشتركين يورّوا اللي اتعلموه طول السنة.",
     "schedules": "الجداول",
-    "schedules-description": "نحن بحاجة إلى تفسيرات محددة حول الدورات والفعاليات والجداول حتى يتمكن الآباء من اختيار ما يريدون. كزائر أول (مثلي) من الصعب قليلاً فصل الدورات والفعاليات والجداول عن بعضها البعض.",
+    "schedules-description": "برنامج الجمباز بتاعنا متاح في المعادي، الزمالك، 6 أكتوبر، القاهرة الجديدة، والشيخ زايد، والكلاسات بتكون من 2 لـ3 أيام في الأسبوع طول السنة.",
     "shop": "المتجر",
-    "what-we-offer": "ماذا نقدم",
+    "what-we-offer": "بنقدّم إيه",
     "contact-section": {
-      "title": "ابدأ رحلتك في فليب اليوم!",
-      "text": "سواء كنت تبحث عن بناء الثقة، أو تحسين اللياقة البدنية، أو مجرد الاستمتاع، لدينا فصل دراسي مناسب لك. اتصل بنا لمعرفة المزيد أو جدولة جلستك الأولى.",
-      "button": "تواصل معنا"
+      "title": "ابدأ رحلة الفليب بتاعتك النهارده!",
+      "text": "اسألنا عن الكلاسات أو الفعاليات أو الفروع، وهنساعدك تختار أنسب كلاس ليك.",
+      "button": "اتواصل معانا"
     },
     "reviews": "آراء العملاء"
   },
 
   "classes": {
-    "classes-title": "عن الدورات",
-    "classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-    "about-kids-classes": "عن دورات الأطفال",
-    "about-kids-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
-    "about-adults-classes": "عن دورات الكبار",
-    "about-adults-classes-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita.",
+    "classes-title": "عن الكلاسات",
+    "classes-text": "إحنا متخصصين في كلاسات من سن 2.5 لحد 14 سنة، وكمان للشباب والكبار. برامجنا الأساسية غير التنافسية في الجمباز والباركور بتمشي بالأطفال من التودلرز وليفل 1 لحد ليفل 6 في بيئة ممتعة ومتدرجة. وللشباب والكبار بنقدّم تدريبات هاندستاند، جمباز للكبار، وباركور علشان تبني قوة ومرونة وتتعلم مهارات زي الفليب، السبليت، والبريدج في أي سن. الجمباز غير التنافسي قريب من التمبلينج أو اللعب الأرضي في الجمباز الفني.",
+    "about-kids-classes": "كلاسات الأطفال",
+    "about-kids-classes-text": "بنقوي ثقتهم بنفسهم، ونبني القوة والمرونة خطوة خطوة، لحد ما المهارات تتراكم. المتعة الحقيقية بتبدأ لما يتعلموا الفليب في ليفل 4… وبعد كده مفيش حدود! هنفضل نعلّم طول ما هما حابين يتعلموا.",
+    "about-adults-classes": "كلاسات الكبار",
+    "about-adults-classes-text": "الشباب والكبار هدفهم يوصلوا لأعلى مستوى ممكن في برامج الباركور والهاندستاند. وكمان متاح حصص خاصة.",
+
     "kids": {
       "common": {
         "competitive": "تنافسي",
         "non-competitive": "غير تنافسي",
         "type": "أطفال",
-        "age-range-1": "الأعمار: 3.5 - 4.5",
-        "age-range-2": "الأعمار: 5 - 7",
-        "age-range-3": "الأعمار: 5 - 13",
-        "age-range-4": "الأعمار: 8 - 10",
-        "ages-range-5": "الأعمار: 14 +",
+        "age-range-1": "السن: 3.5 - 4.5",
+        "age-range-2": "السن: 5 - 7",
+        "age-range-3": "السن: 5 - 13",
+        "age-range-4": "السن: 8 - 10",
+        "ages-range-5": "السن: 14+",
         "ages-range-6": "كل الأعمار"
       },
+
       "kids-1": {
-        "title": "الجمباز المستوى 1",
-        "description": "تعلم التدحرج الأمامي والخلفي، القفزات الأساسية وبناء القوة للوقوف على اليدين والعجلات.",
+        "title": "جمباز ليفل 1",
+        "description": "تعلم الدحرجة الأمامية، القفزات الأساسية، وبناء القوة للهاندستاند وغيره.",
         "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "سبليت",
+          "description": "المرونة بتزيد واحدة واحدة علشان شكل الحركات يبقى أحسن."
         },
         "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "بناء القوة والمرونة",
+          "description": "الأساس القوي من القوة والمرونة بيخلي الحركات الأصعب أسهل بعد كده."
         },
         "image-3": {
           "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "description": "الأشكال دي هي أساس كل حركات الجمباز في المستويات الأعلى."
         },
         "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "بريدج",
+          "description": "البريدج النضيف مهم جدًا في الجمباز لأن حركات كتير بتعتمد عليه."
         }
       },
+
       "kids-2": {
-        "title": "الجمباز المستوى 2",
-        "description": "تقوية الوقوف على اليدين، العجلات وتعلم الشقلبات الأمامية والخلفية.",
+        "title": "جمباز ليفل 2",
+        "description": "تقوية الثبات في الهاندستاند وتعلّم الكارت ويل والفورورد والباك ووك أوفر.",
         "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "ثبات البريدج",
+          "description": "بعد ما نطوّل وقت الثبات في البريدج، يقدروا يمشوا ويقفزوا ويشوطوا فيه."
         },
         "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "إطالات آمنة",
+          "description": "إطالات من غير ضغط زيادة علشان العضلات ترتاح بعد التمرين."
         },
         "image-3": {
-          "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "مرونة الظهر",
+          "description": "زيادة مرونة الظهر بتسهّل حركات الووك أوفر الأمامية والخلفية."
         },
         "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "روح الفريق",
+          "description": "تكوين صداقات جديدة في فعاليات ممتعة زي تمرين الهالووين بالملابس التنكرية."
         }
       },
+
       "kids-3": {
-        "title": "الجمباز المستوى 3 - 4",
-        "description": "مع زيادة القوة والمرونة، سيتعلم طفلك الشقلبات الأمامية والخلفية والعجلات الجانبية.",
+        "title": "جمباز ليفل 3 - 4",
+        "description": "مع زيادة القوة والمرونة، الطفل يبقى جاهز للفليب.",
         "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "مرونة متقدمة",
+          "description": "الالتزام بالمرونة بيفتح حركات جديدة زي النيدل ومسكة الرجل."
         },
         "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "تحدي الأساسيات",
+          "description": "بعد المشي والقفز في البريدج، يتعلموا القفز فيه ومنه."
         },
         "image-3": {
-          "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "بداية الفليبات",
+          "description": "الباك هاند سبرينج والفورنت هاند سبرينج أول فليبات ليفل 4."
         },
         "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "الفليبات الهوائية",
+          "description": "الأيريل الأمامي والخلفي بييجوا بعد كده في ليفل 5."
         }
       },
-      "kids-4": {
-        "title": "جمباز الأولاد",
-        "description": "تقوية الوقوف على اليدين، العجلات وتعلم الشقلبات الأمامية والخلفية.",
-        "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-3": {
-          "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        }
-      },
-      "kids-5": {
-        "title": "باركور",
-        "description": "مع زيادة القوة والمرونة، سيتعلم طفلك الشقلبات الأمامية والخلفية والعجلات الجانبية.",
-        "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-3": {
-          "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        }
-      },
+
       "kids-6": {
-        "title": "الأطفال الصغار",
-        "description": "مع زيادة القوة والمرونة، سيتعلم طفلك الشقلبات الأمامية والخلفية والعجلات الجانبية.",
+        "title": "تودلرز",
+        "description": "اكتشاف موجّه للجمباز بيبدأ من سن 2.5.",
         "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "الدحرجة الأمامية",
+          "description": "يتعلموا اللف والدحرجة بأمان مع مدربين محترفين وبيئة آمنة."
         },
         "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "هاندستاند أطفال",
+          "description": "قفزات الأرنب بتتحول لهاندستاند بسيط، وهم بيستمتعوا بالإحساس إنهم مقلوبين تاني."
         },
         "image-3": {
-          "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "قوة",
+          "description": "باستخدام الحيطة وشكل البايك، يتعلموا أول نوع هاندستاند."
         },
         "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
+          "title": "التناسق",
+          "description": "التمرين على اليمين والشمال بيعلّمهم الحركة المتناسقة في الجمباز والحياة."
         }
       }
-    },
-    "adults": {
-      "common": {
-        "competitive": "تنافسي",
-        "non-competitive": "غير تنافسي",
-        "type": "كبار",
-        "ages-range-1": "الأعمار: 14 +",
-        "ages-range-2": "الأعمار: كل الأعمار",
-        "ages-range-3": "كل الأعمار"
-      },
-      "adults-1": {
-        "title": "الوقوف على اليدين",
-        "description": "ابدأ رحلة الوقوف على اليدين بتعلم أساسيات توازن اليدين والانقلابات الأخرى والوقوف على اليدين.",
-        "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-3": {
-          "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        }
-      },
-      "adults-2": {
-        "title": "جمباز الكبار والباركور",
-        "description": "تعلم أساسيات الوقوف على اليدين، الشقلبات، التسلق، القفز والوثب بأسلوب مميز.",
-        "image-1": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-2": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-3": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        }
-      },
-      "adults-3": {
-        "title": "تدريب شخصي",
-        "description": "خصص تمرينك وتدرب في أي شيء نقدمه. أرسل لنا أهدافك وسنتكيف معها.",
-        "image-1": {
-          "title": "تعلم الدحروجة الأمامية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-2": {
-          "title": "بناء القوة والتوازن",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-3": {
-          "title": "أشكال الجمباز الأساسية",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-4": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-5": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        },
-        "image-6": {
-          "title": "بداية الوقوف على اليدين",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae at exercitationem quam quos ullam delectus deleniti voluptatibus totam voluptatum."
-        }
-      }
-    }
-  },
-  "events": {
-    "events-title": "الفعاليات",
-    "events-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-    "current-event": "الحدث الحالي",
-    "current-event-description": "نص تجريبي لاستمارة التسجيل",
-    "annual-event": "الأحداث القادمة",
-    "past-event": "الحدث الماضي",
-    "annual": {
-      "summer": {
-        "title": "عرض الصيف",
-        "description": " lorem ipsum"
-      },
-      "winter": {
-        "title": "ألعاب الشتاء",
-        "description": " lorem ipsum"
-      },
-      "spring": {
-        "title": "عروض الربيع",
-        "description": " lorem ipsum"
-      }
-    }
-  },
-  "schedules": {
-    "schedules-title": "الجداول",
-    "schedules-text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-    "common": {
-      "find-us": "تجدنا",
-      "interested": "هل أنت مهتم؟",
-      "register-now": "سجل الآن",
-      "contact-us": "اتصل بنا",
-      "contact-us-text": "هل لديك أسئلة حول الدروس؟ تواصل معنا مباشرة!",
-      "chat-on-whatsapp": "الدردشة على الواتساب"
-    },
-    "gezira-club-october": {
-      "title": "نادي الجزيرة أكتوبر",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "gazira-club-zamalek": {
-      "title": "نادي الجزيرة الزمالك",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "zamalek-studio": {
-      "title": "استوديو الزمالك",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "maadi": {
-      "title": "المعادي",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "sheikh-zayed": {
-      "title": "الشيخ زايد",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "new-cairo": {
-      "title": "القاهرة الجديدة",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "almaza-bay": {
-      "title": "ألماظة باي",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "diplo": {
-      "title": "ديبلو",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur ea assumenda reprehenderit ipsum tempora fugit harum, quasi distinctio eligendi odio cupiditate commodi quaerat corrupti porro, dicta quod earum voluptatum aliquam excepturi! Assumenda rerum temporibus ab soluta, inventore doloremque sed exercitationem expedita. Voluptate perferendis culpa est doloremque expedita minus nihil.",
-      "form-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    }
-  },
-  "shop": {
-    "comingSoon": "قريباً",
-    "message": "نحن نعمل حالياً على هذه الصفحة. شكراً لصبركم.",
-    "returnHome": "العودة للرئيسية"
-  },
-  "navbar": {
-    "classes": "الدورات",
-    "events": "الفعاليات",
-    "schedules": "الجداول",
-    "about": "عن فليب",
-    "faq": "الأسئلة الشائعة",
-    "kidsClasses": "دورات الأطفال",
-    "adultsClasses": "دورات الكبار",
-    "currentEvents": "الفعاليات الحالية",
-    "upcomingEvents": "الفعاليات القادمة",
-    "pastEvents": "الفعاليات السابقة",
-    "viewPage": "عرض صفحة {{page}}",
-    "contact-us": "اتصل بنا"
-  },
-  "footer": {
-    "classes": "الدورات",
-    "events": "الفعاليات",
-    "schedules": "الجداول",
-    "about-flip": "عن فليب",
-    "faq": "الأسئلة الشائعة",
-    "privacy-policy": "سياسة الخصوصية",
-    "safety": "السلامة",
-    "contact-us": "اتصل بنا"
-  },
-  "footer-pages": {
-    "about-flip": {
-      "title": "جزء من تاريخ فليب",
-      "subtitle": "عن فليب",
-      "text": "مدربو فليب موهوبون في تحفيز كل من الأطفال والكبار لتحديهم للتغلب على أفضل رقم شخصي تالي لهم. مدربونا موثوقون وودودون وذوو خبرة ونوفر بيئة آمنة يمكنك فيها النمو والأداء بأفضل ما لديك والشعور بالإنجاز دون ضغوط المنافسة. نتطلع إلى تحديات جديدة مع عملاء جدد ونتطلع لرؤيتك تنضم إلينا قريبًا! شكرًا مقدمًا لاختيارك لنا للعب دور مهم في تطويرك و/أو تطوير طفلك!"
-    },
-    "faq": {
-      "title": "الأسئلة الشائعة",
-      "subtitle": "الكثير من الأسئلة!",
-      "flexibility-flow": {
-        "title": "تدفق المرونة",
-        "q1": {
-          "question": "ماذا لو لم أستطع القيام بفتح الحوض؟",
-          "answer": "لا مشكلة! لهذا نحن هنا لنتعلم كيفية الاقتراب بأمان بمقدار 1 سم فقط، والاستمرار في التقدم من هناك."
-        },
-        "q2": {
-          "question": "أنا لست مرنًا على الإطلاق. هل لا يزال بإمكاني الانضمام؟",
-          "answer": "بالطبع!! الهدف من الدورة هو زيادة مرونتك بغض النظر عن المستوى الذي أنت فيه حاليًا. لذا دعونا نعمل على ذلك معًا!"
-        },
-        "q3": {
-          "question": "هل أنا كبير جدًا في السن لأصبح أكثر مرونة؟",
-          "answer": "عندما يتعلق الأمر بالمرونة، فإن حدودك الجسدية الوحيدة هي عظامك ومفاصلك. العضلات هي ما نعمل معه لإطالة وتمديد لتعطيك مساحة أكبر للتحرك حول مفاصلك. لذا، طالما أن عضلاتك في حالة طبيعية، سنكون قادرين على زيادة مرونتك وبالتالي حركتك أيضًا. التزم بالدورة، واتبع التقنيات، وستحصل على التقدم الذي تبحث عنه بغض النظر عن عمرك. يمكنك الوصول إلى هناك بالتفاني حتى لو كان عمرك أكثر من 70 عامًا."
-        },
-        "q4": {
-          "question": "ماذا لو كان لدي إصابة؟",
-          "answer": "إذا كانت إصابة حديثة، لا نوصي ببرنامج مرونة ما لم يصفه لك طبيبك بالتحديد. إذا كانت إصابة قديمة، فهذا هو أفضل برنامج لك! الإصابات القديمة التي تترك دون علاج تبني أنسجة ندبية في العضلات تحتاج إلى تحريرها من خلال التدخل المباشر."
-        },
-        "q5": {
-          "question": "ماذا لو كان لدي قرص مثل الانزلاق الغضروفي في عمودي الفقري؟",
-          "answer": "بالنسبة لمعظم الحالات التي ليست شديدة، يمكن إصلاح ذلك بسهولة تامة من خلال المرونة والقوة الموجهة. يمكننا تغطية ذلك في خطتك الشخصية عند التسجيل في باقة."
-        },
-        "q6": {
-          "question": "كيف تساعد المرونة الرياضيين المحترفين؟",
-          "answer": "المرونة عنصر مهم جدًا للعب رياضتك بشكل جيد. أولاً لزيادة أو الحفاظ على نطاق الحركة الذي تحتاجه لسباحة الظهر الأكثر كفاءة، على سبيل المثال، للسباح؛ أو، لضرب ضربة أمامية/خلفية رائعة للاعب الاسكواش أو التنس؛ أو لتجنب شد في أوتار الركبة للاعب كرة قدم يركل الكرة لمسافة طويلة. وثانيًا، لتقليل وقت التعافي حتى تتمكن من العودة إلى الملعب مرة أخرى في اليوم التالي وأنت تشعر بالانتعاش! عملت جوليا مع لاعبي اسكواش محترفين من الرجال والنساء المصنفين في أفضل 20 في العالم، ولاعبي التنس، ولاعبي الجمباز ولاعبي كرة القدم المحترفين على تنفيذ برنامج مرونة لمنع الإصابات، وزيادة حركتهم الخاصة برياضتهم، والتعافي من إصاباتهم."
-        }
-      },
-      "kids-gymnastics": {
-        "title": "جمباز الأطفال",
-        "q1": {
-          "question": "هل لا يزال بإمكان طفلي الانضمام إلى الجمباز بدون تدريب مسبق؟",
-          "answer": "نعم، بالطبع! نحن نقدم برنامجًا ترفيهيًا يستوعب الجميع في مستوى التدريب الحالي. التسجيل مستمر لذا يمكنك الانضمام في أي وقت!"
-        }
-      },
-      "general-questions": {
-        "title": "أسئلة عامة",
-        "q1": {
-          "question": "ماذا لو انقطع اتصال الإنترنت الخاص بي؟",
-          "answer": "حسنًا، بالنسبة للفصول الدراسية عبر الإنترنت، تقع على عاتقك مسؤولية التأكد من أن لديك اتصال إنترنت قوي ومستقر قبل البدء. لا توجد فصول تعويضية أو استرداد أموال للفصول الدراسية عبر الإنترنت."
-        }
-      }
-    },
-    "privacy-policy": {
-      "title": "معلوماتك",
-      "subtitle": "سياسة الخصوصية",
-      "text": "خصوصيتك مهمة بالنسبة لنا. المعلومات التي ترسلها إلينا تستخدم لنجد لك الجلسة الأكثر ملاءمة لك. نحن لا نشارك أو نبيع معلوماتك أبدًا."
-    },
-    "safety": {
-      "title": "اتخاذ الاحتياطات",
-      "subtitle": "السلامة أولاً!",
-      "text": "Arabic way to say take care <3"
-    }
-  },
-  "buttons": {
-    "back-home": "العودة للرئيسية"
-  },
-  "forms": {
-    "titles": {
-      "contact": "اتصل بنا",
-      "event-registration": "تسجيل الحدث",
-      "schedule-registration": "تسجيل الجدول",
-      "contact-success": "تم إرسال الرسالة!",
-      "event-success": "تم التسجيل بنجاح!",
-      "schedule-success": "تم تسجيل الفصل بنجاح!"
-    },
-    "subtitles": {
-      "contact-text": "نود أن نسمع منك. أرسل لنا رسالة!",
-      "event-text": "يرجى ملء النموذج أدناه للتسجيل في أحداثنا القادمة.",
-      "schedule-text": "قم بتأمين مكانك عن طريق ملء نموذج التسجيل أدناه.",
-      "parent-info": "معلومات الوالدين",
-      "child-info": "معلومات الطفل",
-      "emergency-contact": "جهة الاتصال في حالات الطوارئ",
-      "contact-success": "شكراً لتواصلكم معنا. سنعود إليكم في أقرب وقت ممكن.",
-      "event-success": "لقد تلقينا تسجيلك. سنتصل بك قريبا.",
-      "schedule-success": "لقد تلقينا تسجيلك. سنتصل بك قريبا."
-    },
-    "labels": {
-      "full-name": "اسمك الكامل",
-      "email": "بريدك الالكتروني",
-      "message": "رسالة",
-      "parent-name": "الاسم الكامل للوالد",
-      "child-name": "اسم الطفل الكامل",
-      "phone": "رقم الهاتف",
-      "dob": "تاريخ الولادة",
-      "school": "مدرسة الطفل",
-      "fav-color-1": "اللون المفضل",
-      "fav-color-2": "اللون المفضل الثاني",
-      "preferred-branch": "فرع فليب المفضل",
-      "guests": "أسماء الضيوف (مفصولة بفاصلة)",
-      "additional-notes": "رسالة / ملاحظات إضافية",
-      "gezira-membership": "رقم عضوية الجزيرة",
-      "emergency-name": "اسم جهة الاتصال في حالات الطوارئ",
-      "emergency-phone": "هاتف جهة الاتصال في حالات الطوارئ"
-    },
-    "placeholders": {
-      "dob": "يوم/شهر/سنة",
-      "guests": "اختياري"
-    },
-    "buttons": {
-      "send": "إرسال النموذج",
-      "sending": "جاري الإرسال...",
-      "register": "إتمام التسجيل"
-    },
-    "messages": {
-      "success": "تم الإرسال بنجاح!",
-      "registration-success": "تم إرسال التسجيل بنجاح! سنقوم بالاتصال بك قريبا.",
-      "error": "فشل في إرسال. الرجاء معاودة المحاولة في وقت لاحق.",
-      "recaptcha": "يرجى إكمال التحقق من reCAPTCHA."
     }
   }
 }
+
