@@ -11,6 +11,7 @@ const __dirname = path.dirname(__filename);
 // Load service account from file if it exists
 const SERVICE_ACCOUNT_FILE = path.join(__dirname, 'service-account.json');
 
+
 const getAuth = () => {
     // Priority 1: Service Account File
     if (fs.existsSync(SERVICE_ACCOUNT_FILE)) {
@@ -32,9 +33,23 @@ const getAuth = () => {
 
     // Priority 2: Environment Variables
     if (process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
+        let privateKey = process.env.GOOGLE_PRIVATE_KEY;
+        
+        // Remove surrounding quotes if user pasted them
+        if (privateKey.startsWith('"') && privateKey.endsWith('"')) {
+            privateKey = privateKey.slice(1, -1);
+        }
+        
+        // Replace literal \n with actual newlines
+        privateKey = privateKey.replace(/\\n/g, '\n');
+
+        // Debug logging (Safe)
+        console.log(`[Auth] Private Key loaded. Length: ${privateKey.length}`);
+        console.log(`[Auth] Starts with header: ${privateKey.includes('-----BEGIN PRIVATE KEY-----')}`);
+        
         return new JWT({
             email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-            key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+            key: privateKey,
             scopes: [
                 'https://www.googleapis.com/auth/spreadsheets',
             ],
