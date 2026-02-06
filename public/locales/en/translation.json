@@ -18,32 +18,32 @@
     "reviews": "Reviews",
     "reviews-data": {
       "review-1": {
-        "name": "Sarah Jenkins",
-        "text": "My daughter absolutely loves the gymnastics classes! The instructors are so patient and encouraging."
+        "name": "E. Diab",
+        "text": "Thank you so muchs dearest Miss Julia for all your effort, love dedication and passion!  you are one of a kind and we are truly lucky to have you.  Thanks you for inpiring the kids and making them love gymnastics!"
       },
       "review-2": {
-        "name": "Michael Chen",
-        "text": "Great atmosphere and top-notch equipment. I started the adult parkour classes and it's been a game changer for my fitness."
+        "name": "H. Heikal",
+        "text": "Thank you! The kids have improved so much over this summer!"
       },
       "review-3": {
-        "name": "Emily Rodriguez",
-        "text": "The flexible schedule fits perfectly with our busy lives. Highly recommend Flip Inverted Arts to everyone."
+        "name": "Z. Sallam",
+        "text": "My daughter is loving her time at Flip!  She's learning so much and having fun."
       },
       "review-4": {
-        "name": "David Smith",
-        "text": "Professional coaches and a safe environment for kids to learn and grow. We've seen so much progress in just a few months."
+        "name": "A. Abdallah",
+        "text": "It was great seeing the hard work of all the girls solos and groups paying off, and the pride they had in their performances! Thanks again!"
       },
       "review-5": {
-        "name": "Jessica Lee",
-        "text": "Fun, energetic, and supportive! The best place in town for gymnastics and tumbling."
+        "name": "B. Elsherif",
+        "text": "Thank you Julia for everything! I was so happy seeing my daughter stepping out of her comfort zone and learning new things every day! All your efforts and hard work really made a difference."
       },
       "review-6": {
-        "name": "Alex Johnson",
-        "text": "The coaches are incredibly skilled and create a very positive learning environment. My confidence has soared!"
+        "name": "S. Osman",
+        "text": "Thanks to the great effortts and patience of you and the coaches. Malak has been waiting for it since last summer. We enjoyed every bit of it!"
       },
       "review-7": {
-        "name": "Maria Garcia",
-        "text": "We love the variety of classes offered. There's something for everyone in the family to enjoy."
+        "name": "N. Elashiry",
+        "text": "Thank you Julia and Flip team for everything! We had a blast and kids did an outstanding performance. So so proud!"
       }
     }
   },
@@ -332,7 +332,6 @@
       "form-description": "Sign up to join us in Diplo"
     }
   },
-
   "shop": {
     "comingSoon": "Coming Soon",
     "message": "More flippin' fun coming soon! Thank you for your patience.",
