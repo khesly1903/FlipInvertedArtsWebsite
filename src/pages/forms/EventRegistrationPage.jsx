@@ -17,7 +17,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 
-import afterFormLanding from "../../assets/events/after_form_landing.webp";
+import afterFormLanding from "../../assets/forms/after_events_form_landing.webp";
 import landing_event_registration from "../../assets/forms/landing_event_registration.webp";
 
 export default function EventRegistrationPage() {

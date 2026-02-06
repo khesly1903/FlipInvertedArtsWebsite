@@ -78,7 +78,16 @@ const verifyRecaptcha = async (token) => {
     }
 };
 
-import { appendToSheet } from './sheets.js';
+import { appendToSheet, checkSheetsConnection } from './sheets.js';
+
+// Verify Sheets Connection on Startup
+checkSheetsConnection().then(result => {
+    if (result.success) {
+        console.log("✅ Google Sheets connected successfully");
+    } else {
+        console.warn("⚠️ Google Sheets connection failed:", result.error);
+    }
+});
 
 // 1. Contact Form Endpoint
 app.post('/api/contact', formLimiter, async (req, res) => {

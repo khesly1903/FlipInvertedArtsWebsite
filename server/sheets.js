@@ -13,12 +13,30 @@ const SERVICE_ACCOUNT_FILE = path.join(__dirname, 'service-account.json');
 
 
 const getAuth = () => {
-    // Priority 1: Service Account File
+    // Priority 1: Service Account JSON from Env Variable (Most reliable)
+    if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON) {
+        try {
+            const creds = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+            console.log('[Auth] Loaded credentials from GOOGLE_SERVICE_ACCOUNT_JSON');
+            return new JWT({
+                email: creds.client_email,
+                key: creds.private_key,
+                scopes: [
+                    'https://www.googleapis.com/auth/spreadsheets',
+                ],
+            });
+        } catch (error) {
+            console.error("Error parsing GOOGLE_SERVICE_ACCOUNT_JSON:", error);
+        }
+    }
+
+    // Priority 2: Service Account File
     if (fs.existsSync(SERVICE_ACCOUNT_FILE)) {
         try {
             // ESM dynamic import is async, but we need sync here or await init
             // For simplicity in refactoring, we'll read JSON directly
             const creds = JSON.parse(fs.readFileSync(SERVICE_ACCOUNT_FILE, 'utf8'));
+            console.log('[Auth] Loaded credentials from service-account.json');
             return new JWT({
                 email: creds.client_email,
                 key: creds.private_key,
@@ -31,7 +49,7 @@ const getAuth = () => {
         }
     }
 
-    // Priority 2: Environment Variables
+    // Priority 3: Legacy Environment Variables
     if (process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
         let privateKey = process.env.GOOGLE_PRIVATE_KEY;
         
@@ -43,9 +61,7 @@ const getAuth = () => {
         // Replace literal \n with actual newlines
         privateKey = privateKey.replace(/\\n/g, '\n');
 
-        // Debug logging (Safe)
-        console.log(`[Auth] Private Key loaded. Length: ${privateKey.length}`);
-        console.log(`[Auth] Starts with header: ${privateKey.includes('-----BEGIN PRIVATE KEY-----')}`);
+        console.log(`[Auth] Loaded credentials from legacy env vars. Key length: ${privateKey.length}`);
         
         return new JWT({
             email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
@@ -57,6 +73,28 @@ const getAuth = () => {
     }
 
     return null;
+};
+
+export const checkSheetsConnection = async () => {
+    const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
+    if (!spreadsheetId) {
+        return { success: false, error: "GOOGLE_SPREADSHEET_ID missing" };
+    }
+
+    const serviceAccountAuth = getAuth();
+    if (!serviceAccountAuth) {
+        return { success: false, error: "No valid credentials found" };
+    }
+
+    try {
+        const doc = new GoogleSpreadsheet(spreadsheetId, serviceAccountAuth);
+        await doc.loadInfo();
+        console.log(`[Sheets] Successfully connected to: ${doc.title}`);
+        return { success: true, title: doc.title };
+    } catch (error) {
+        console.error("[Sheets] Connection failed:", error.message);
+        return { success: false, error: error.message };
+    }
 };
 
 export const appendToSheet = async (sheetKey, rowData) => {

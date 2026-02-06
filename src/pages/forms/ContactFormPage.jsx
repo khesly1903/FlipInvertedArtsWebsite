@@ -17,6 +17,7 @@ import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 
 import landing_contact_us from "../../assets/forms/landing_contact_us.webp";
+import afterFormLanding from "../../assets/forms/after_contact_form_landing.webp";
 
 export default function ContactFormPage() {
   const { t } = useTranslation();
@@ -65,7 +66,7 @@ export default function ContactFormPage() {
           state: {
             title: t("forms.titles.contact-success"),
             text: t("forms.subtitles.contact-success"),
-            backgroundImage: landing_contact_us,
+            backgroundImage: afterFormLanding,
           },
         });
         setCaptchaToken(null);
