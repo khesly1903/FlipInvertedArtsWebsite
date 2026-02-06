@@ -341,45 +341,49 @@
     "faq": {
       "title": "FAQ",
       "subtitle": "So many Questions!",
-      "flexibility-flow": {
-        "title": "Flexibility Flow",
-        "q1": {
-          "question": "What if I can’t do the splits?",
-          "answer": "No problem!  That’s what we’re here for is to learn how to safely get just 1 cm closer, and keep progressing from there."
-        },
-        "q2": {
-          "question": "I’m not flexible at all. Can I still join?",
-          "answer": "Of course!!  The point of the course is to increase your flexibility no matter what level you’re currently at.  So let’s work on it together!"
-        },
-        "q3": {
-          "question": "Am I too old to become more flexible?",
-          "answer": "When it comes to flexibility, your only physical limits are your bones and joints.  The muscles are what we work with to lengthen and extend to give you more room to move about your joints.  So, as long as your muscles are in normal condition, then we will be able to increase your flexibility and therefore mobility as well.  Stick to the course, follow the techniques, and you’ll get the progress you’re looking for no matter what age you are.  You can get there with dedication even if you’re over 70 years old."
-        },
-        "q4": {
-          "question": "What if I have an injury?",
-          "answer": "If it’s a recent injury, we don’t recommend a flexibility program unless specifically prescribed to you by your doctor.  If it’s an old injury, this is the best program for you! Old injuries left unattended build scar tissues in the muscles that you need to release through direct intervention."
-        },
-        "q5": {
-          "question": "What if I have a disc like a bulging or herniated disc in my spine?",
-          "answer": "For most cases that are not severe, this can be quite easily fixed with directed flexibility & strength. We can cover this in your personalized plan when you register for a package."
-        },
-        "q6": {
-          "question": "How does flexibility help professional athletes?",
-          "answer": "Flexibility is a very important element to playing your sport well.  First to increase or maintain the range the motion you need for your most efficient backstroke, for example, for a swimmer; or, to hit a great forehand/backhand for a squash or tennis player; or to avoid pulling a hamstring for a soccer player kicking the ball a long distance.  And secondly, to decrease your recovery time so you can hit the court again the next day feeling fresh!  Julia has worked with Professional Men’s Women’s Squash players seated in the top 20 in the world, tennis athletes, gymnasts and professional soccer players on implementing a flexibility program to prevent injuries, increase their mobility specific to their sport, and recovering from their injuries."
-        }
-      },
       "kids-gymnastics": {
         "title": "Kids Gymnastics",
         "q1": {
           "question": "Can my child still join gymnastics with no prior training?",
           "answer": "Yes, of course! We offer a recreational program that accomodates everyone at the current training level. Registration is ongoing so you can join anytime!"
+        },
+        "q2": {
+          "question": "What if they can’t do the splits?",
+          "answer": "No problem!  That’s what we’re here for is to learn how to safely get just 1 cm closer, and keep progressing from there."
+        },
+        "q3": {
+          "question": "Is there an age limit?",
+          "answer": "For our non-competitive programs, there are no age limits.  When we offer toddlers classes we start at 2.5 years old.  General non-competitive gymnastics classes start at 3.5 years old.  Around 13 years old, they are welcome to join our classes for juniors / adults."
+        }
+      },
+      "flexibility-flow": {
+        "title": "Adults Classes",
+        "q1": {
+          "question": "I’m not flexible at all. Can I still join?",
+          "answer": "Of course!!  The point of the course is to increase your flexibility no matter what level you’re currently at.  So let’s work on it together!"
+        },
+        "q2": {
+          "question": "Am I too old to become more flexible?",
+          "answer": "When it comes to flexibility, your only physical limits are your bones and joints.  The muscles are what we work with to lengthen and extend to give you more room to move about your joints.  So, as long as your muscles are in normal condition, then we will be able to increase your flexibility and therefore mobility as well.  Stick to the course, follow the techniques, and you’ll get the progress you’re looking for no matter what age you are.  You can get there with dedication even if you’re over 70 years old."
+        },
+        "q3": {
+          "question": "What if I have an injury?",
+          "answer": "If it’s a recent injury, we don’t recommend a flexibility program unless specifically prescribed to you by your doctor.  If it’s an old injury, this is the best program for you! Old injuries left unattended build scar tissues in the muscles that you need to release through direct intervention."
+        },
+        "q4": {
+          "question": "What if I have a disc like a bulging or herniated disc in my spine?",
+          "answer": "For most cases that are not severe, this can be quite easily fixed with directed flexibility & strength. We can cover this in your personalized plan when you register for a package."
+        },
+        "q5": {
+          "question": "How does flexibility help professional athletes?",
+          "answer": "Flexibility is a very important element to playing your sport well.  First to increase or maintain the range the motion you need for your most efficient backstroke, for example, for a swimmer; or, to hit a great forehand/backhand for a squash or tennis player; or to avoid pulling a hamstring for a soccer player kicking the ball a long distance.  And secondly, to decrease your recovery time so you can hit the court again the next day feeling fresh!  Julia has worked with Professional Men’s Women’s Squash players seated in the top 20 in the world, tennis athletes, gymnasts and professional soccer players on implementing a flexibility program to prevent injuries, increase their mobility specific to their sport, and recovering from their injuries."
         }
       },
       "general-questions": {
         "title": "General Questions",
         "q1": {
-          "question": "What if my internet connection drops?",
-          "answer": "Well, for online classes, it's your responsibility to make sure you have a strong and stable internet connection before you start. There are no make up classes or refunds for online classes."
+          "question": "How can I reach you for more questions?",
+          "answer": "We are reachable via instagram or click Contact Us at the bottom of the page."
         }
       }
     },

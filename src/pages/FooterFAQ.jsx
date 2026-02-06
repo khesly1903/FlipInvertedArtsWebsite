@@ -33,7 +33,29 @@ function FAQuestion({ title, text }) {
 export default function FooterFAQ() {
   const { t } = useTranslation();
 
+
   const faqData1 = useMemo(
+    () => [
+      {
+        id: 1,
+        question: t("footer-pages.faq.kids-gymnastics.q1.question"),
+        answer: t("footer-pages.faq.kids-gymnastics.q1.answer"),
+      },
+      {
+        id: 2,
+        question: t("footer-pages.faq.kids-gymnastics.q2.question"),
+        answer: t("footer-pages.faq.kids-gymnastics.q2.answer"),
+      },
+      {
+        id: 3,
+        question: t("footer-pages.faq.kids-gymnastics.q3.question"),
+        answer: t("footer-pages.faq.kids-gymnastics.q3.answer"),
+      }
+    ],
+    [t],
+  );
+
+  const faqData2 = useMemo(
     () => [
       {
         id: 1,
@@ -59,22 +81,6 @@ export default function FooterFAQ() {
         id: 5,
         question: t("footer-pages.faq.flexibility-flow.q5.question"),
         answer: t("footer-pages.faq.flexibility-flow.q5.answer"),
-      },
-      {
-        id: 6,
-        question: t("footer-pages.faq.flexibility-flow.q6.question"),
-        answer: t("footer-pages.faq.flexibility-flow.q6.answer"),
-      },
-    ],
-    [t],
-  );
-
-  const faqData2 = useMemo(
-    () => [
-      {
-        id: 1,
-        question: t("footer-pages.faq.kids-gymnastics.q1.question"),
-        answer: t("footer-pages.faq.kids-gymnastics.q1.answer"),
       },
     ],
     [t],
@@ -106,7 +112,7 @@ export default function FooterFAQ() {
             gutterBottom
             textAlign="center"
           >
-            {t("footer-pages.faq.flexibility-flow.title").toUpperCase()}
+            {t("footer-pages.faq.kids-gymnastics.title")}
           </Typography>
           {faqData1.map((item) => (
             <Grid item xs={12} md={6} key={item.id}>
@@ -117,7 +123,7 @@ export default function FooterFAQ() {
 
         <Grid container spacing={2}>
           <Typography width="100%" variant="h4" gutterBottom textAlign="center">
-            {t("footer-pages.faq.kids-gymnastics.title")}
+            {t("footer-pages.faq.flexibility-flow.title")}
           </Typography>
           {faqData2.map((item) => (
             <Grid item xs={12} md={6} key={item.id}>
