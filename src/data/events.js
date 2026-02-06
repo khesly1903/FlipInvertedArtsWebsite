@@ -95,13 +95,14 @@ export const events = [
         availability: "unavailable",
         image: { src: event12, alt: "Event 9" },
     },
-     {
+    {
         id: "9",
         title: "Event 9",
         text: "Event 9 Text",
         availability: "available",
         description: "events.current-event-description",
         image: { src: event12, alt: "Event 9" },
+        price: "2850 LE",
     },
 
 ];

@@ -112,7 +112,7 @@ const EventsPage = () => {
                 letterSpacing: -2,
               }}
             >
-              2850 LE
+              {availableEvents[0].price}
             </Typography>
           </Box>
           <Box>
