@@ -20,9 +20,13 @@ const getAuth = () => {
         try {
             const creds = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
             console.log('[Auth] Loaded credentials from GOOGLE_SERVICE_ACCOUNT_JSON');
+            
+            // Fix: Handle escaped newlines in private_key
+            const privateKey = creds.private_key ? creds.private_key.replace(/\\n/g, '\n') : creds.private_key;
+
             return new JWT({
                 email: creds.client_email,
-                key: creds.private_key,
+                key: privateKey,
                 scopes: [
                     'https://www.googleapis.com/auth/spreadsheets',
                 ],
