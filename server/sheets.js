@@ -9,8 +9,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Load service account from file if it exists
-const SERVICE_ACCOUNT_FILE = path.join(__dirname, 'service-account.json');
-
+// const SERVICE_ACCOUNT_FILE = path.join(__dirname, 'service-account.json');
+// const SERVICE_ACCOUNT_FILE = path.join(process.cwd(), 'service-account.json');
+// Prod ve local için çalışacak:
+const SERVICE_ACCOUNT_FILE = process.env.GOOGLE_SERVICE_ACCOUNT_FILE || path.join(__dirname, 'service-account.json');
 
 const getAuth = () => {
     // Priority 1: Service Account JSON from Env Variable (Most reliable)
