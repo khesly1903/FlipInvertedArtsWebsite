@@ -38,6 +38,7 @@ import homepage_events from "../assets/homepage/homepage_events.webp";
 import homepage_schedules from "../assets/homepage/homepage_schedules.webp";
 
 import homepage_video from "../assets/homepage/homepage_video.mp4";
+import homepage_video_poster from "../assets/homepage/homepage_video_poster.webp";
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -63,6 +64,8 @@ export default function HomePage() {
           muted
           playsInline
           src={homepage_video}
+          preload="auto"
+          poster={homepage_video_poster}
           style={{
             position: "absolute",
             top: 0,
@@ -92,7 +95,7 @@ export default function HomePage() {
             animate={{ rotateX: 360, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             style={{
-              width: "500px",
+              width: "min(500px, 80vw)",
               height: "auto",
               filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.5))",
             }}
@@ -113,39 +116,43 @@ export default function HomePage() {
         >
           <Grid
             container
-            spacing={4}
+            spacing={{ xs: 1, md: 4 }}
             justifyContent="space-around"
+            alignItems="flex-start" // Ensures items align to top if content varies
             sx={{ width: "100%", m: 0 }}
           >
             {[
               {
                 label: t("home.classes"),
                 path: "/classes",
-                icon: <SchoolIcon sx={{ fontSize: 60 }} />,
+                icon: <SchoolIcon sx={{ fontSize: { xs: 35, md: 60 } }} />,
               },
               {
                 label: t("home.events"),
                 path: "/events",
-                icon: <EventIcon sx={{ fontSize: 60 }} />,
+                icon: <EventIcon sx={{ fontSize: { xs: 35, md: 60 } }} />,
               },
               {
                 label: t("home.schedules"),
                 path: "/schedules",
-                icon: <LocationOnIcon sx={{ fontSize: 60 }} />,
+                icon: <LocationOnIcon sx={{ fontSize: { xs: 35, md: 60 } }} />,
               },
               {
                 label: t("home.shop"),
                 path: "/shop",
-                icon: <StorefrontIcon sx={{ fontSize: 60 }} />,
+                icon: <StorefrontIcon sx={{ fontSize: { xs: 35, md: 60 } }} />,
               },
             ].map((item) => (
               <Grid
                 item
-                // responsive grid problem
-                xs={4}
-                md={2}
+                xs={3} // Force 4 items per row (12 columns / 4 items = 3 cols each)
+                mb={3}
                 key={item.label}
-                sx={{ display: "flex", justifyContent: "center" }}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  p: "0 !important",
+                }} // Remove default grid padding on xs if needed or handle via spacing
               >
                 <Box
                   component={RouterLink}
@@ -154,7 +161,7 @@ export default function HomePage() {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    justifyContent: "center",
+                    justifyContent: "flex-start",
                     color: "white",
                     textDecoration: "none",
                     width: "100%",
@@ -165,7 +172,12 @@ export default function HomePage() {
                   }}
                 >
                   {item.icon}
-                  <Typography variant="h6" fontWeight={600} sx={{ mt: 1 }}>
+                  <Typography
+                    variant="h6"
+                    fontWeight={600}
+                    sx={{ mt: 0.5, textAlign: "center", lineHeight: 1.2 }}
+                    fontSize={{ xs: "0.75rem", md: "1.5rem" }}
+                  >
                     {item.label.toUpperCase()}
                   </Typography>
                 </Box>
