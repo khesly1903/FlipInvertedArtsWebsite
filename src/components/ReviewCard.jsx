@@ -8,7 +8,11 @@ import {
   Rating,
 } from "@mui/material";
 
+import { useTranslation } from "react-i18next";
+
 export default function ReviewCard({ image, name, text }) {
+  const { t } = useTranslation();
+
   return (
     <Card
       sx={{
@@ -36,9 +40,9 @@ export default function ReviewCard({ image, name, text }) {
       >
         {/* Header: Avatar and Name */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-          <Avatar src={image} alt={name} sx={{ width: 56, height: 56 }} />
+          <Avatar src={image} alt={t(name)} sx={{ width: 56, height: 56 }} />
           <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
-            {name}
+            {t(name)}
           </Typography>
         </Box>
 
@@ -48,7 +52,7 @@ export default function ReviewCard({ image, name, text }) {
           color="text.secondary"
           sx={{ fontStyle: "italic", flexGrow: 1 }} // Grow to push stars down
         >
-          "{text}"
+          "{t(text)}"
         </Typography>
 
         {/* 5 Star Rating */}

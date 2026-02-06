@@ -15,7 +15,37 @@
       "text": "Ask us about our classes, events, or locations and we'll be happy to help you find the perfect class for you.",
       "button": "Contact Us"
     },
-    "reviews": "Reviews"
+    "reviews": "Reviews",
+    "reviews-data": {
+      "review-1": {
+        "name": "Sarah Jenkins",
+        "text": "My daughter absolutely loves the gymnastics classes! The instructors are so patient and encouraging."
+      },
+      "review-2": {
+        "name": "Michael Chen",
+        "text": "Great atmosphere and top-notch equipment. I started the adult parkour classes and it's been a game changer for my fitness."
+      },
+      "review-3": {
+        "name": "Emily Rodriguez",
+        "text": "The flexible schedule fits perfectly with our busy lives. Highly recommend Flip Inverted Arts to everyone."
+      },
+      "review-4": {
+        "name": "David Smith",
+        "text": "Professional coaches and a safe environment for kids to learn and grow. We've seen so much progress in just a few months."
+      },
+      "review-5": {
+        "name": "Jessica Lee",
+        "text": "Fun, energetic, and supportive! The best place in town for gymnastics and tumbling."
+      },
+      "review-6": {
+        "name": "Alex Johnson",
+        "text": "The coaches are incredibly skilled and create a very positive learning environment. My confidence has soared!"
+      },
+      "review-7": {
+        "name": "Maria Garcia",
+        "text": "We love the variety of classes offered. There's something for everyone in the family to enjoy."
+      }
+    }
   },
   "classes": {
     "classes-title": "About Our Classes",
@@ -455,5 +485,4 @@
       "recaptcha": "Please complete the reCAPTCHA verification."
     }
   }
-
 }
