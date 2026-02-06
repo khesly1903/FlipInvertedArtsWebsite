@@ -112,7 +112,7 @@ const EventsPage = () => {
                 letterSpacing: -2,
               }}
             >
-              $150
+              2850 LE
             </Typography>
           </Box>
           <Box>
