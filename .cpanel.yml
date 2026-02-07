@@ -1,9 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/ttm87d594aro/public_html/flip_test_isa
-    - npm install
-    - npm run build
-    - /bin/cp -R dist/* $DEPLOYPATH
-    - echo "DEPLOY TEST" > /home/ttm87d594aro/public_html/flip_test_isa/deploy_test_OUTPUT.txt
-
