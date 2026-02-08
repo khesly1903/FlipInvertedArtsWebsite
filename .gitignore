@@ -26,8 +26,5 @@ package-lock.json
 
 .env
 service-account.json
+service-account.json.bak
 AGENT.md
-
-# For Deployment
-Archive.zip
-server/Archive.zip
