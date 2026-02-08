@@ -162,6 +162,7 @@ export default function ContactFormPage() {
                   <ReCAPTCHA
                     sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
                     onChange={(token) => setCaptchaToken(token)}
+                    explicit
                   />
                 </Box>
 
