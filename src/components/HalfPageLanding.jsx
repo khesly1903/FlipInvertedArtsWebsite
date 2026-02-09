@@ -1,15 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Box, Typography, CircularProgress } from "@mui/material";
 import { motion } from "framer-motion";
 
 export default function HalfPageLanding({ image, title, logo }) {
   const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = image;
-    img.onload = () => setIsLoaded(true);
-  }, [image]);
 
   return (
     <Box
@@ -21,21 +15,25 @@ export default function HalfPageLanding({ image, title, logo }) {
         overflow: "hidden",
       }}
     >
-      {/* Background Image with Fade In */}
+      {/* Background Image with Fade In - using native img for better LCP */}
       <Box
-        component={motion.div}
+        component={motion.img}
+        src={image}
+        alt={title || "Cover Image"}
         initial={{ opacity: 0 }}
         animate={{ opacity: isLoaded ? 1 : 0 }}
         transition={{ duration: 0.8 }}
+        onLoad={() => setIsLoaded(true)}
+        fetchPriority="high"
+        loading="eager"
         sx={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          objectFit: "cover",
+          objectPosition: "center",
           zIndex: 0,
         }}
       />
