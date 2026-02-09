@@ -13,9 +13,9 @@ import {
   MenuItem,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
-import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
+import SimpleCaptcha from "../../components/SimpleCaptcha";
 
 import afterFormLanding from "../../assets/forms/after_events_form_landing.webp";
 import landing_event_registration from "../../assets/forms/landing_event_registration.webp";
@@ -25,7 +25,7 @@ export default function EventRegistrationPage() {
   const navigate = useNavigate();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState(null);
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
   const [dobError, setDobError] = useState(false);
   const [snackbar, setSnackbar] = useState({
     open: false,
@@ -36,10 +36,10 @@ export default function EventRegistrationPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!captchaToken) {
+    if (!isCaptchaValid) {
       setSnackbar({
         open: true,
-        message: "Please complete the reCAPTCHA verification.",
+        message: "Please solve the math problem correctly.",
         severity: "error",
       });
       return;
@@ -48,7 +48,6 @@ export default function EventRegistrationPage() {
     setLoading(true);
     const formData = new FormData(formRef.current);
     const data = Object.fromEntries(formData.entries());
-    data.captchaToken = captchaToken;
 
     try {
       const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3001";
@@ -71,8 +70,6 @@ export default function EventRegistrationPage() {
             backgroundImage: afterFormLanding,
           },
         });
-        setCaptchaToken(null);
-        setCaptchaToken(null);
       } else {
         throw new Error(result.error || "Failed to register");
       }
@@ -285,19 +282,13 @@ export default function EventRegistrationPage() {
                 rows={3}
               />
 
-              <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
-                <ReCAPTCHA
-                  sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                  onChange={(token) => setCaptchaToken(token)}
-                  explicit
-                />
-              </Box>
+              <SimpleCaptcha onValidate={setIsCaptchaValid} />
 
               <Button
                 type="submit"
                 variant="contained"
                 size="large"
-                disabled={loading}
+                disabled={loading || !isCaptchaValid}
                 endIcon={
                   loading ? (
                     <CircularProgress size={20} color="inherit" />

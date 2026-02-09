@@ -61,32 +61,6 @@ const sendMail = async (to, subject, html) => {
   }
 };
 
-// Helper to verify ReCAPTCHA
-const verifyRecaptcha = async (token) => {
-  if (!token) return false;
-
-  try {
-    const response = await fetch(
-      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`,
-      {
-        method: "POST",
-      },
-    );
-    const data = await response.json();
-
-    if (data.success) {
-      console.log("✅ ReCAPTCHA verification passed:", data);
-    } else {
-      console.warn("⚠️ ReCAPTCHA verification failed:", data);
-    }
-
-    return data.success;
-  } catch (error) {
-    console.error("❌ ReCAPTCHA verification error:", error);
-    return false;
-  }
-};
-
 import { appendToSheet, checkSheetsConnection } from "./sheets.js";
 
 // Verify Sheets Connection on Startup
@@ -100,15 +74,10 @@ checkSheetsConnection().then((result) => {
 
 // 1. Contact Form Endpoint
 app.post("/api/contact", formLimiter, async (req, res) => {
-  const { name, email, phone, message, captchaToken } = req.body;
+  const { name, email, phone, message } = req.body;
 
   if (!name || !email || !phone || !message) {
     return res.status(400).json({ error: "Missing required fields" });
-  }
-
-  const isHuman = await verifyRecaptcha(captchaToken);
-  if (!isHuman) {
-    return res.status(400).json({ error: "ReCAPTCHA verification failed." });
   }
 
   const html = `
@@ -177,13 +146,7 @@ app.post("/api/register-event", formLimiter, async (req, res) => {
     flipBranch,
     guests,
     message,
-    captchaToken,
   } = req.body;
-
-  const isHuman = await verifyRecaptcha(captchaToken);
-  if (!isHuman) {
-    return res.status(400).json({ error: "ReCAPTCHA verification failed." });
-  }
 
   const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
@@ -267,13 +230,7 @@ app.post("/api/register-schedule", formLimiter, async (req, res) => {
     emergencyName,
     emergencyPhone,
     message,
-    captchaToken,
   } = req.body;
-
-  const isHuman = await verifyRecaptcha(captchaToken);
-  if (!isHuman) {
-    return res.status(400).json({ error: "ReCAPTCHA verification failed." });
-  }
 
   const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
