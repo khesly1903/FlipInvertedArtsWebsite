@@ -82,13 +82,13 @@ app.post("/api/contact", formLimiter, async (req, res) => {
 
   const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
-            <div style="background-color: #2c3e50; color: white; padding: 20px; text-align: center;">
+            <div style="background-color: #000000ff; color: white; padding: 20px; text-align: center;">             
                 <h2 style="margin: 0;">Contact Message</h2>
                 <p style="margin: 5px 0 0;">New inquiry received</p>
             </div>
             
             <div style="padding: 20px;">
-                <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">👤 Contact Details</h3>
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px;">👤 Contact Details</h3>
                 <p><strong>Name:</strong> ${name}</p>
                 <p><strong>Email:</strong> ${email}</p>
                 <p><strong>Phone:</strong> ${phone}</p>
@@ -150,24 +150,25 @@ app.post("/api/register-event", formLimiter, async (req, res) => {
 
   const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
-            <div style="background-color: #2c3e50; color: white; padding: 20px; text-align: center;">
+            <div style="background-color: #000000ff; color: white; padding: 20px; text-align: center;">
+                <img src="https://flipinvertedarts.xyz/flip_logo.svg" alt="Flip Inverted Arts" style="max-width: 150px; height: auto;" />
                 <h2 style="margin: 0;">Event Registration</h2>
                 <p style="margin: 5px 0 0;">New registration received</p>
             </div>
             
             <div style="padding: 20px;">
-                <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">👨‍👩‍👧 Parent Information</h3>
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px;">👨‍👩‍👧 Parent Information</h3>
                 <p><strong>Name:</strong> ${parentName}</p>
                 <p><strong>Email:</strong> ${parentEmail}</p>
                 <p><strong>Phone:</strong> ${parentPhone}</p>
                 
-                <h3 style="color: #2c3e50; border-bottom: 2px solid #e74c3c; padding-bottom: 5px; margin-top: 25px;">👶 Child Information</h3>
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px; margin-top: 25px;">👶 Child Information</h3>
                 <p><strong>Name:</strong> ${childName}</p>
                 <p><strong>Date of Birth:</strong> ${childDOB}</p>
                 <p><strong>Favorite Color 1:</strong> ${favoriteColor1}</p>
                 <p><strong>Favorite Color 2:</strong> ${favoriteColor2 || "N/A"}</p>
                 
-                <h3 style="color: #2c3e50; border-bottom: 2px solid #f1c40f; padding-bottom: 5px; margin-top: 25px;">📝 Additional Details</h3>
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px; margin-top: 25px;">📝 Additional Details</h3>
                 <p><strong>Preferred Branch:</strong> ${flipBranch}</p>
                 <p><strong>Guests:</strong> ${guests || "None"}</p>
                 <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-top: 10px;">
@@ -234,24 +235,27 @@ app.post("/api/register-schedule", formLimiter, async (req, res) => {
 
   const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
-            <div style="background-color: #2c3e50; color: white; padding: 20px; text-align: center;">
+            <div style="background-color: #000000ff; color: white; padding: 20px; text-align: center;">
                 <h2 style="margin: 0;">Schedule Registration</h2>
                 <h3 style="margin: 5px 0 0; color: #ecf0f1; font-weight: normal;">${locationName || "General Location"}</h3>
             </div>
             
             <div style="padding: 20px;">
-                <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">👨‍👩‍👧 Parent Information</h3>
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px;">📍 Registration Details</h3>
+                <p><strong>Location:</strong> ${locationName || "General Location"}</p>
+
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px;">👨‍👩‍👧 Parent Information</h3>
                 <p><strong>Name:</strong> ${parentName}</p>
                 <p><strong>Email:</strong> ${parentEmail}</p>
                 <p><strong>Phone:</strong> ${parentPhone}</p>
                 ${geziraMembership ? `<p><strong>Gezira Membership #:</strong> ${geziraMembership}</p>` : ""}
                 
-                <h3 style="color: #2c3e50; border-bottom: 2px solid #e74c3c; padding-bottom: 5px; margin-top: 25px;">👶 Child Information</h3>
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px; margin-top: 25px;">👶 Child Information</h3>
                 <p><strong>Name:</strong> ${childName}</p>
                 <p><strong>Date of Birth:</strong> ${childDOB}</p>
                 <p><strong>School:</strong> ${childSchool}</p>
                 
-                <h3 style="color: #2c3e50; border-bottom: 2px solid #e67e22; padding-bottom: 5px; margin-top: 25px;">🚨 Emergency Contact</h3>
+                <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px; margin-top: 25px;">🚨 Emergency Contact</h3>
                 <p><strong>Name:</strong> ${emergencyName}</p>
                 <p><strong>Phone:</strong> ${emergencyPhone}</p>
 
@@ -294,6 +298,7 @@ app.post("/api/register-schedule", formLimiter, async (req, res) => {
     emergencyName,
     `'${emergencyPhone}`,
     message || "",
+    locationName || "",
   ]);
 
   if (adminResult.success) {

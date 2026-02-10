@@ -157,6 +157,7 @@ export const appendToSheet = async (sheetKey, rowData) => {
           "EM CONTACT NAME",
           "EC PHONE",
           "MESSAGE",
+          "LOCATION",
         ],
       };
 

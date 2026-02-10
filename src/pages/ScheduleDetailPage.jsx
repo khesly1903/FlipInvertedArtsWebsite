@@ -57,6 +57,7 @@ export default function ScheduleDetailPage() {
                   alt={`Gallery ${index}`}
                   sx={{
                     width: "100%",
+                    maxWidth:"30rem",
                     aspectRatio: "1/1",
                     objectFit: "cover",
                     borderRadius: 2,
