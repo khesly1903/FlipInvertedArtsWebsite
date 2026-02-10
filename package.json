@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite\" \"cd server && node server.js\"",
+    "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --port ${PORT:-3000} --host",
     "lint": "eslint .",
     "preview": "vite preview"
   },
