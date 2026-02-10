@@ -19,7 +19,7 @@
     "reviews-data": {
       "review-1": {
         "name": "E. Diab",
-        "text": "Thank you so muchs dearest Miss Julia for all your effort, love dedication and passion!  you are one of a kind and we are truly lucky to have you.  Thanks you for inpiring the kids and making them love gymnastics!"
+        "text": "Thank you so much dearest Miss Julia for all your effort, love dedication and passion!  you are one of a kind and we are truly lucky to have you.  Thanks you for inspiring the kids and making them love gymnastics!"
       },
       "review-2": {
         "name": "H. Heikal",
@@ -39,7 +39,7 @@
       },
       "review-6": {
         "name": "S. Osman",
-        "text": "Thanks to the great effortts and patience of you and the coaches. Malak has been waiting for it since last summer. We enjoyed every bit of it!"
+        "text": "Thanks to the great efforts and patience of you and the coaches. Malak has been waiting for it since last summer. We enjoyed every bit of it!"
       },
       "review-7": {
         "name": "N. Elashiry",
@@ -53,7 +53,7 @@
     "about-kids-classes": "Kids Classes",
     "about-kids-classes-text": "Build their confidence, develop strength and keep them stretchy as we build tricks upon tricks. The real fun starts when they learn to flip in level 4..after that, the sky's the limit!  We'll keep teaching as long as they keep learning!",
     "about-adults-classes": "Adults Classes",
-    "about-adults-classes-text": "Juniors and adults aim to get as far as possible on our Parkour and Handstand programs.  Private lessons are also availble. ",
+    "about-adults-classes-text": "Juniors and adults aim to get as far as possible in our Parkour and Handstand programs.  Private lessons are also available. ",
     "kids": {
       "common": {
         "competitive": "competitive",
@@ -71,11 +71,11 @@
         "description": "Learn front rolls, basic jumps and build strength for handstands and more.",
         "image-1": {
           "title": "Splits",
-          "description": "They'll slowly increase their flexibility they'll need for great asthetics in their tricks."
+          "description": "They'll slowly increase their flexibility they'll need for great aesthetics in their tricks."
         },
         "image-2": {
-          "title": "Build Strength & Flexilibity",
-          "description": "Building a good base of stregth and flexibility will make upstream tricks much easier for them."
+          "title": "Build Strength & Flexibility",
+          "description": "Building a good base of strength and flexibility will make upstream tricks much easier for them."
         },
         "image-3": {
           "title": "Basic Gymnastics Shapes",
@@ -95,11 +95,11 @@
         },
         "image-2": {
           "title": "Safe Stretches",
-          "description": "Without adding force or extra unneccesary pressure, safely stretch to relax the muscles at the end of training."
+          "description": "Without adding force or extra unnecessary pressure, safely stretch to relax the muscles at the end of training."
         },
         "image-3": {
           "title": "Back Flexibility",
-          "description": "Increasing back flexibility one step further makes front and back walkovers that much easier for them to acheive."
+          "description": "Increasing back flexibility one step further makes front and back walkovers that much easier for them to achieve."
         },
         "image-4": {
           "title": "Building Community",
@@ -108,9 +108,9 @@
       },
       "kids-3": {
         "title": "Gymnastics Level 3 - 4",
-        "description": "With increased strength and flexibilty, your child will be ready to flip.",
+        "description": "With increased strength and flexibility, your child will be ready to flip.",
         "image-1": {
-          "title": "Advanced Flexiblity",
+          "title": "Advanced Flexibility",
           "description": "Being dedicated to flexibility required for gymnastics opens up new moves like the needle and catching your leg."
         },
         "image-2": {
@@ -119,7 +119,7 @@
         },
         "image-3": {
           "title": "Beginning Flips",
-          "description": "Backhandspring and Fronthandspring are the first flips that open the way up to level 4."
+          "description": "Back-handspring and Front-handspring are the first flips that open the way up to level 4."
         },
         "image-4": {
           "title": "Aerial Flips",
@@ -128,10 +128,10 @@
       },
       "kids-4": {
         "title": "Boys Gymnastics",
-        "description": "Our boys program requires persistance to learn bars, rings and floor routines.",
+        "description": "Our boys program requires persistence to learn bars, rings and floor routines.",
         "image-1": {
           "title": "Rings",
-          "description": "Learn swings and build stregnth for holds on the rings."
+          "description": "Learn swings and build strength for holds on the rings."
         },
         "image-2": {
           "title": "Parallel Bars",
@@ -143,7 +143,7 @@
         },
         "image-4": {
           "title": "Parallettes",
-          "description": "Compression exersizes build core strength in pike position."
+          "description": "Compression exercises build core strength in pike position."
         }
       },
       "kids-5": {
@@ -171,7 +171,7 @@
         "description": "A guided exploration of gymnastics starts at age 2.5.",
         "image-1": {
           "title": "Learn Forward Rolls",
-          "description": "Tuck and roll safely with our experienced coaches and safe environemnt."
+          "description": "Tuck and roll safely with our experienced coaches and safe environment."
         },
         "image-2": {
           "title": "Baby Handstands",
@@ -183,7 +183,7 @@
         },
         "image-4": {
           "title": "Coordination",
-          "description": "Exersizing right and left parts introduces them to coordinated movement which they'll need to be graceful in gymnastics, and also in life."
+          "description": "Exercising right and left parts introduces them to coordinated movement which they'll need to be graceful in gymnastics, and also in life."
         }
       }
     },
@@ -204,8 +204,8 @@
           "description": "Learn fun shapes and find your balance in each one.  Then transition from one to the other."
         },
         "image-2": {
-          "title": "Shoulder Strenth & Endurance",
-          "description": "The shoulders carry your weight when standing on your hands much like the hips carrey your weight when standing right side up.  We'll build the strength and endurance you need to support your handstand."
+          "title": "Shoulder Strength & Endurance",
+          "description": "The shoulders carry your weight when standing on your hands much like the hips carry your weight when standing right side up.  We'll build the strength and endurance you need to support your handstand."
         },
         "image-3": {
           "title": "Balance",
@@ -241,7 +241,7 @@
         },
         "image-3": {
           "title": "Flexibility & Mobility",
-          "description": "Get to your target level of mobility & flexibility with a program that includes myofascial release, PNF stretching techniques and active and passsafe, guided method that combines light muscle engagement with stretching—to help students improve flexibility, control, and body awareness. "
+          "description": "Get to your target level of mobility & flexibility with a program that includes myofascial release, PNF stretching techniques and active and passive, guided method that combines light muscle engagement with stretching—to help students improve flexibility, control, and body awareness. "
         },
         "image-4": {
           "title": "Calisthenics, Body Weight Training",
@@ -249,7 +249,7 @@
         },
         "image-5": {
           "title": "Yoga",
-          "description": "Use yoga to re-center yourself, increase your flexilibity and relax your mind at your next event."
+          "description": "Use yoga to re-center yourself, increase your flexibility and relax your mind.”
         },
         "image-6": {
           "title": "Mother Daughter Training",
@@ -262,7 +262,7 @@
     "events-title": "Events",
     "events-text": "Be sure not to miss out on the fun at our annual events! Our Spring Show is a themed, stage show where our gymnasts perform solos and group dances to music in May/June. Our Summer Shows take place in sahel in Diplo.  At our Winter Meet Games event, everyone is welcome to join individual and team gymnastics challenges in a friendly environment where everyone wins at the end!",
     "current-event": "Current Event",
-    "current-event-description": "Bla Bla for registration form",
+    "current-event-description": “Register for our next event early to secure your spot before prices go up!”,
     "annual-event": "Upcoming Event",
     "past-event": "Past Event",
     "annual": {
@@ -276,13 +276,13 @@
       },
       "spring": {
         "title": "Spring Shows",
-        "description": "Our Spring Show is our themed stage show where they dress in costume/leatord and coordinate a routine with music to perform in front of the parents. Bring them early to give them the most time to train and get a great show together!  Registration opens in February."
+        "description": "Our Spring Show is our themed stage show where they dress in costume/leotard and coordinate a routine with music to perform in front of the parents. Bring them early to give them the most time to train and get a great show together!  Registration opens in February."
       }
     }
   },
   "schedules": {
     "schedules-title": "Schedules",
-    "schedules-text": "Find the closest location for you and check out our latest schedules and avilable programs.  All locations are invited to join our annual events!",
+    "schedules-text": "Find the closest location for you and check out our latest schedules and available programs.  All locations are invited to join our annual events!",
     "common": {
       "find-us": "Find Us",
       "interested": "Are you interested?",
@@ -293,7 +293,7 @@
     },
     "gezira-club-october": {
       "title": "Gezira Club October",
-      "description": "We currently have Toddlers (starting age 2.5), Girls and Boys gymnastics non-competitive (Flip Program) and Competitive (Aerobic Gymnastics Program) as well as Parkour for all ages and Hanstands for Adults.",
+      "description": "We currently have Toddlers (starting age 2.5), Girls and Boys gymnastics non-competitive (Flip Program) and Competitive (Aerobic Gymnastics Program) as well as Parkour for all ages and Handstands for Adults.",
       "form-description": "Sign up to join us in GSC October Branch"
     },
     "gezira-club-zamalek": {
@@ -308,7 +308,7 @@
     },
     "maadi": {
       "title": "Maadi",
-      "description": "We currently have Toddlers (starting age 2.5), Girls and Boys gymnastics non-competitive (Flip Program), Parkour for all ages and Hanstands for Adults.",
+      "description": "We currently have Toddlers (starting age 2.5), Girls and Boys gymnastics non-competitive (Flip Program), Parkour for all ages and Handstands for Adults.",
       "form-description": "Sign up to join us in Maadi"
     },
     "sheikh-zayed": {
@@ -374,7 +374,7 @@
         "title": "Kids Gymnastics",
         "q1": {
           "question": "Can my child still join gymnastics with no prior training?",
-          "answer": "Yes, of course! We offer a recreational program that accomodates everyone at the current training level. Registration is ongoing so you can join anytime!"
+          "answer": "Yes, of course! We offer a recreational program that accommodates everyone at the current training level. Registration is ongoing so you can join anytime!"
         },
         "q2": {
           "question": "What if they can’t do the splits?",
@@ -424,7 +424,7 @@
     "safety": {
       "title": "Safety",
       "subtitle": "Safety",
-      "text": "We prioritize the safety of our kids not only through upkeep and maintenance of our equipment, , but also by taking them through proper progressions according to their current level of trainingrequiring annual training for our certified instructors."
+      "text": "We prioritize the safety of our kids not only through upkeep and maintenance of our equipment, but also by taking them through proper progressions according to their current level of training.  We also require annual training for our certified instructors.”
     }
   },
   "buttons": {
@@ -462,7 +462,7 @@
       "fav-color-1": "Favorite Color",
       "fav-color-2": "Second Favorite Color",
       "preferred-branch": "Preferred Flip Branch",
-      "guests": "Names of Guests (comma separated)",
+      "guests": "Names of Guests written in Arabic if possible (comma separated)",
       "additional-notes": "Additional Message / Notes",
       "gezira-membership": "Gezira Membership Number",
       "emergency-name": "Emergency Contact Name",
