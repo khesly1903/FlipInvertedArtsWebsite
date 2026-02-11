@@ -99,7 +99,7 @@ const EventsPage = () => {
                 fontStyle: "italic",
               }}
             >
-              Before April
+              Before March 7th
             </Typography>
             <Typography
               variant="h2"
