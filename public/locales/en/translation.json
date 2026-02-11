@@ -335,7 +335,120 @@
   "shop": {
     "comingSoon": "Coming Soon",
     "message": "More flippin' fun coming soon! Thank you for your patience.",
-    "returnHome": "Return to Home"
+    "returnHome": "Return to Home",
+    "detailsLabel": "Details",
+    "productNotFound": "Product not found",
+    "backToShop": "Back to Shop",
+    "orderViaWhatsapp": "Order via WhatsApp",
+    "mat": {
+      "title": "Flip Mat",
+      "description": "High-quality gymnastics mat for home practice.",
+      "details": {
+        "1": "Durable and non-slip surface",
+        "2": "Easy to clean and maintain",
+        "3": "Perfect for tumbling and exercises",
+        "4": "Available in multiple colors"
+      }
+    },
+    "categories": {
+      "long-sleeve": "Long Sleeve",
+      "short-sleeve": "Short Sleeve",
+      "tank-tops": "Tank Tops",
+      "pants": "Pants",
+      "crop-set-shorts": "Crop Set (Shorts)",
+      "crop-set-skort": "Crop Set (Skort)",
+      "training-leotards": "Training Leotards",
+      "jackets": "Jackets",
+      "mats": "Mats"
+    },
+    "long-sleeve": {
+      "title": "Long Sleeve Top",
+      "description": "Comfortable long sleeve top perfect for warm-ups and training.",
+      "details": {
+        "1": "Moisture-wicking fabric to keep you dry",
+        "2": "Four-way stretch for maximum mobility",
+        "3": "Soft and breathable material",
+        "4": "Available in various sizes and colors"
+      }
+    },
+    "short-sleeve": {
+      "title": "Short Sleeve Tee",
+      "description": "Classic short sleeve tee designed for everyday gymnastics practice.",
+      "details": {
+        "1": "Lightweight and airy design",
+        "2": "Durable fabric that withstands wash and wear",
+        "3": "Comfortable fit for all-day wear",
+        "4": "Stylish Flip logo print"
+      }
+    },
+    "tank-tops": {
+      "title": "Training Tank Top",
+      "description": "Sleeveless tank top for maximum freedom of movement during flips.",
+      "details": {
+        "1": "Racerback design for shoulder mobility",
+        "2": "Breathable mesh panels",
+        "3": "Quick-drying material",
+        "4": "Perfect for hot summer training"
+      }
+    },
+    "pants": {
+      "title": "Gymnastics Pants",
+      "description": "Flexible and comfortable pants for warming up or cool weather training.",
+      "details": {
+        "1": "Elastic waistband for a secure fit",
+        "2": "Tapered leg design",
+        "3": "Soft fleece lining for warmth",
+        "4": "Side pockets for convenience"
+      }
+    },
+    "crop-set-shorts": {
+      "title": "Crop Top & Shorts Set",
+      "description": "Matching crop top and shorts set for a stylish and functional look.",
+      "details": {
+        "1": "Coordinated design",
+        "2": "High-waisted shorts for coverage",
+        "3": "Secure fit crop top",
+        "4": "Great for tumbling and conditioning"
+      }
+    },
+    "crop-set-skort": {
+      "title": "Crop Top & Skort Set",
+      "description": "Cute and sporty crop top with a matching skort.",
+      "details": {
+        "1": "Built-in shorts under the skirt",
+        "2": "Feminine and athletic style",
+        "3": "Flexible fabric for movement",
+        "4": "Moisture-wicking technology"
+      }
+    },
+    "training-leotards": {
+      "title": "Training Leotard",
+      "description": "Essential training leotard for daily gymnastics practice.",
+      "details": {
+        "1": "Classic gymnastics cut",
+        "2": "Soft and stretchy fabric",
+        "3": "Durable construction",
+        "4": "Available in fun prints and colors"
+      }
+    },
+    "jackets": {
+      "title": "Flip Team Jacket",
+      "description": "Zip-up jacket to show your team spirit and stay warm.",
+      "details": {
+        "1": "Warm and cozy interior",
+        "2": "Full-zip front for easy on/off",
+        "3": "Embroidered Flip logo",
+        "4": "Ribbed cuffs and hem"
+      }
+    },
+    "tags": {
+      "all": "All",
+      "apparel": "Apparel",
+      "equipment": "Equipment",
+      "tops": "Tops",
+      "bottoms": "Bottoms",
+      "sets": "Sets"
+    }
   },
   "navbar": {
     "classes": "Classes",

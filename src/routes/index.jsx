@@ -12,6 +12,7 @@ import FooterPrivacyPolicy from "../pages/FooterPrivacyPolicy";
 import FooterSafetyPage from "../pages/FooterSafetyPage";
 
 import ShopPage from "../pages/ShopPage";
+import ShopDetailPage from "../pages/ShopDetailPage";
 import ContactFormPage from "../pages/forms/ContactFormPage";
 import EventRegistrationPage from "../pages/forms/EventRegistrationPage";
 import ScheduleRegistrationPage from "../pages/forms/ScheduleRegistrationPage";
@@ -91,7 +92,16 @@ const router = createBrowserRouter([
       },
       {
         path: "shop",
-        element: <ShopPage />,
+        children: [
+          {
+            index: true,
+            element: <ShopPage />,
+          },
+          {
+            path: ":slug",
+            element: <ShopDetailPage />,
+          },
+        ],
       },
       {
         path: "success",

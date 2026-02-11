@@ -19,7 +19,7 @@ import landing_maadi from "../assets/schedules/landing/landing_maadi.webp";
 import landing_zamalek_studio from "../assets/schedules/landing/landing_zamalek_studio.webp";
 
 // current schedule images
-import october_1 from "../assets/schedules/6oct_1.webp";
+import october_1 from "../assets/schedules/october_1.webp";
 // import october_2 from "../assets/schedules/6oct_2.webp";
 // import october_3 from "../assets/schedules/6oct_3.webp";
 
