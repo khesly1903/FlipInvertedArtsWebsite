@@ -14,8 +14,6 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import HalfPageLanding from "../components/HalfPageLanding";
 import MasonryGrid from "../components/Masonry";
 import { schedules } from "../data/schedules";
-
-import landing from "../assets/landing.webp";
 import { useTranslation } from "react-i18next";
 import AnimatedInformation from "../components/AnimatedInformation";
 

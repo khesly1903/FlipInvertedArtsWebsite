@@ -13,7 +13,6 @@ import HalfPageLanding from "../components/HalfPageLanding";
 import AnimatedInformation from "../components/AnimatedInformation";
 import MasonryGrid from "../components/Masonry";
 import { events } from "../data/events";
-import landingImage from "../assets/landing.webp";
 import AnimatedTitle from "../components/AnimatedTitle";
 import eventSummerVideo from "../assets/events/event_summer.mp4";
 import eventSpringVideo from "../assets/events/event_spring.mp4";

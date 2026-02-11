@@ -17,9 +17,9 @@ import { reviews } from "../data/review";
 import AnimatedInformation from "../components/AnimatedInformation";
 import ImageCarousel from "../components/ImageCarousel";
 
-import card_diplo from "../assets/schedules/card_diplo.webp";
-import card_almaza from "../assets/schedules/card_almaza.webp";
-import card_gezira_club_zamalek from "../assets/schedules/card_gezira_club_zamalek.webp";
+import card_diplo from "../assets/schedules/card/card_diplo.webp";
+import card_almaza from "../assets/schedules/card/card_almaza.webp";
+import card_gezira_club_zamalek from "../assets/schedules/card/card_gezira_club_zamalek.webp";
 import class_3_card from "../assets/classes/class_3/class_3_card.webp";
 import class_1_3 from "../assets/classes/class_1/class_1_3.webp";
 import class_2_3 from "../assets/classes/class_2/class_2_3.webp";

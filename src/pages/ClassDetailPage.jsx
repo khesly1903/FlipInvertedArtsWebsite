@@ -6,8 +6,6 @@ import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../components/HalfPageLanding";
 import { classes } from "../data/classes";
 
-import landing from "../assets/landing.webp";
-
 const ClassDetailItem = ({ item, isEven, t }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });

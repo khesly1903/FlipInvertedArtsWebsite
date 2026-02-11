@@ -2,10 +2,7 @@ import { Typography, Container, Box, Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
-import { useTranslation } from "react-i18next";
-
-import landingImage from "../assets/landing.webp";
+import { useTranslation } from "react-i18next";;
 import ClassCard from "../components/ClassCard";
 import AnimatedInformation from "../components/AnimatedInformation";
 import HalfPageLanding from "../components/HalfPageLanding";

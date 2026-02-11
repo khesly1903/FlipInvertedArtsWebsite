@@ -1,6 +1,5 @@
 import { Typography, Container, Grid, Box } from "@mui/material";
 import LocationCard from "../components/LocationCard";
-import landingImage from "../assets/landing.webp";
 import HalfPageLanding from "../components/HalfPageLanding";
 import AnimatedInformation from "../components/AnimatedInformation";
 import { schedules } from "../data/schedules";

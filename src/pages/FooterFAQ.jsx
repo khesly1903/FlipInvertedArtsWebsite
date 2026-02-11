@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Container, Typography, Box, Grid } from "@mui/material";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import landing from "../assets/landing.webp";
 import HalfPageLanding from "../components/HalfPageLanding";
 import { useMemo } from "react";
 import landing_faq from "../assets/footer/landing_faq.webp";

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Box, Typography, Button, Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import landingImage from "../assets/landing.webp"; // Default fallback
+
 
 
 
