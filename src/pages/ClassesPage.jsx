@@ -48,16 +48,7 @@ export default function ClassesPage() {
         text={t("classes.classes-text")}
       />
 
-      {/* idk.png */}
-      {/* <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        width={"100%"}
-      >
-        <img src="/idk.png" alt="idk" />
-      </Box> */}
-
+      
       <ImageCarousel
         images={[
           class_1_1,
