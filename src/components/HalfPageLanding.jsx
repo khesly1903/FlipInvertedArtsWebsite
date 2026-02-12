@@ -1,29 +1,22 @@
-import { useState } from "react";
-import { Box, Typography, CircularProgress } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
 export default function HalfPageLanding({ image, title, logo }) {
-  const [isLoaded, setIsLoaded] = useState(false);
-
   return (
     <Box
       sx={{
         height: "70vh",
         width: "100%",
         position: "relative",
-        bgcolor: "black", // Fallback/Loading background
+        bgcolor: "black", // Dark background for better contrast while loading
         overflow: "hidden",
       }}
     >
-      {/* Background Image with Fade In - using native img for better LCP */}
+      {/* Background Image - Immediate Render */}
       <Box
-        component={motion.img}
+        component="img"
         src={image}
         alt={title || "Cover Image"}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isLoaded ? 1 : 0 }}
-        transition={{ duration: 0.8 }}
-        onLoad={() => setIsLoaded(true)}
         fetchPriority="high"
         loading="eager"
         sx={{
@@ -35,27 +28,9 @@ export default function HalfPageLanding({ image, title, logo }) {
           objectFit: "cover",
           objectPosition: "center",
           zIndex: 0,
+          opacity: 0.8, // Slight overlay effect
         }}
       />
-
-      {/* Loading Spinner */}
-      {!isLoaded && (
-        <Box
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 1,
-          }}
-        >
-          <CircularProgress sx={{ color: "white" }} />
-        </Box>
-      )}
 
       {/* Content Overlay */}
       <Box
@@ -74,11 +49,7 @@ export default function HalfPageLanding({ image, title, logo }) {
             src={logo}
             alt="Logo"
             initial={{ rotateX: 90, opacity: 0 }}
-            animate={
-              isLoaded
-                ? { rotateX: 360, opacity: 1 }
-                : { rotateX: 90, opacity: 0 }
-            }
+            animate={{ rotateX: 360, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             style={{
               width: "500px",
@@ -89,7 +60,7 @@ export default function HalfPageLanding({ image, title, logo }) {
         ) : (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={isLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <Typography
