@@ -228,7 +228,7 @@ const ShopDetailPage = () => {
                 variant="contained"
                 size="large"
                 fullWidth
-                href={`https://wa.me/905052725402?text=I'm interested in ${t(
+                href={`https://wa.me/201210754286?text=I'm interested in ${t(
                   product.title,
                 )}`}
                 target="_blank"
