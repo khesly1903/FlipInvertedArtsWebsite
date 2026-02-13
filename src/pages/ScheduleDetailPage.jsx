@@ -55,7 +55,7 @@ export default function ScheduleDetailPage() {
                   alt={`Gallery ${index}`}
                   sx={{
                     width: "100%",
-                    maxWidth:"30rem",
+                    maxWidth: "30rem",
                     aspectRatio: "1/1",
                     objectFit: "cover",
                     borderRadius: 2,
@@ -185,7 +185,7 @@ export default function ScheduleDetailPage() {
 
                   <IconButton
                     component="a"
-                    href={schedule.details.contact}
+                    href={`${schedule.details.contact}?text=I'm interested in ${t(schedule.location)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{
