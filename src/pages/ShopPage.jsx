@@ -24,7 +24,7 @@ const ShopPage = () => {
     <>
       <HalfPageLanding
         image={shopLanding}
-        logo="/flip_logo.svg"
+        logo="/logos/flip_logo_half_landing_white_shop.svg"
         title={t("home.shop")}
       />
       <Container maxWidth="xl" sx={{ mt: 8, mb: 8 }}>
