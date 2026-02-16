@@ -3,7 +3,7 @@ import { Box, Container, Grid, Button, Stack } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import ShopCard from "../components/ShopCard";
 import { shopItems, shopTags } from "../data/shop";
-import AnimatedTitle from "../components/AnimatedTitle";
+
 
 import HalfPageLanding from "../components/HalfPageLanding";
 import shopLanding from "../assets/shop/landing_shop.webp";
