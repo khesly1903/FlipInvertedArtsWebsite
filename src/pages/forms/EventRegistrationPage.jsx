@@ -92,7 +92,7 @@ export default function EventRegistrationPage() {
 
   const branches = [
     "Gezira Club October",
-    "Gazira Club Zamalek",
+    "Gezira Club Zamalek",
     "Zamalek Studio",
     "Maadi",
     "Sheikh Zayed",
