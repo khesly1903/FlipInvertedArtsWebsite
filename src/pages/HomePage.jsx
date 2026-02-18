@@ -37,8 +37,7 @@ import homepage_classes from "../assets/homepage/homepage_classes.webp";
 import homepage_events from "../assets/homepage/homepage_events.webp";
 import homepage_schedules from "../assets/homepage/homepage_schedules.webp";
 
-import homepage_video from "../assets/homepage/homepage_video.mp4";
-import homepage_video_poster from "../assets/homepage/homepage_video_poster.webp";
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -63,9 +62,9 @@ export default function HomePage() {
           loop
           muted
           playsInline
-          src={homepage_video}
+          src={`${R2_URL}/homepage_video.mp4`}
           preload="auto"
-          poster={homepage_video_poster}
+          // poster={homepage_video_poster}
           style={{
             position: "absolute",
             top: 0,

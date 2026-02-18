@@ -14,7 +14,11 @@ const PORT = process.env.PORT || 3001;
 // see https://expressjs.com/en/guide/behind-proxies.html
 app.set("trust proxy", 1);
 
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  }),
+);
 app.use(express.json());
 
 // Rate Limiting
@@ -224,6 +228,7 @@ app.post("/api/register-schedule", formLimiter, async (req, res) => {
     parentName,
     parentEmail,
     parentPhone,
+    whatsappPhone,
     geziraMembership,
     childName,
     childDOB,
@@ -232,6 +237,8 @@ app.post("/api/register-schedule", formLimiter, async (req, res) => {
     emergencyPhone,
     message,
   } = req.body;
+
+  const finalWhatsapp = whatsappPhone || parentPhone;
 
   const html = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
@@ -248,6 +255,7 @@ app.post("/api/register-schedule", formLimiter, async (req, res) => {
                 <p><strong>Name:</strong> ${parentName}</p>
                 <p><strong>Email:</strong> ${parentEmail}</p>
                 <p><strong>Phone:</strong> ${parentPhone}</p>
+                <p><strong>WhatsApp:</strong> ${finalWhatsapp}</p>
                 ${geziraMembership ? `<p><strong>Gezira Membership #:</strong> ${geziraMembership}</p>` : ""}
                 
                 <h3 style="color: #2c3e50; border-bottom: 2px solid #f6831fff; padding-bottom: 5px; margin-top: 25px;">👶 Child Information</h3>
@@ -285,21 +293,31 @@ app.post("/api/register-schedule", formLimiter, async (req, res) => {
     ),
   ]);
 
-  // Columns: ['DATE', 'P NAME', 'PHONE', 'MAIL', 'MEMBERSHIP', 'C NAME', 'C DOB', 'C SCHOOL', 'EM CONTACT NAME', 'EC PHONE', 'MESSAGE']
+  // Columns: ['LOCATION', 'C NAME', '', '', 'P NAME', 'PHONE', 'WHATSAPP', 'EM CONTACT NAME', 'EC PHONE', 'C DOB', '', 'MAIL', 'MEMBERSHIP', 'DATE', 'MESSAGE', '', '', '', 'C SCHOOL']
   const sheetResult = await appendToSheet("SCHEDULE", [
-    new Date().toLocaleString("en-GB", { timeZone: "Africa/Cairo" }),
+    locationName || "",
+    childName,
+    "",
+    "",
     parentName,
     `'${parentPhone}`,
-    parentEmail,
-    geziraMembership || "",
-    childName,
-    childDOB,
-    childSchool,
+    `'${finalWhatsapp}`,
     emergencyName,
     `'${emergencyPhone}`,
+    childDOB,
+    "",
+    parentEmail,
+    geziraMembership || "",
+    new Date().toLocaleString("en-GB", { timeZone: "Africa/Cairo" }),
     message || "",
-    locationName || "",
+    "",
+    "",
+    "",
+    childSchool,
   ]);
+
+  // Append empty row for spacing
+  await appendToSheet("SCHEDULE", []);
 
   if (adminResult.success) {
     res.json({

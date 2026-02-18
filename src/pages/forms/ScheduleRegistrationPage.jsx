@@ -11,6 +11,8 @@ import {
   CircularProgress,
   Paper,
   Divider,
+  FormControlLabel,
+  Checkbox,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { useTranslation } from "react-i18next";
@@ -27,6 +29,7 @@ export default function ScheduleRegistrationPage() {
   const [locationName, setLocationName] = useState("");
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
   const [dobError, setDobError] = useState(false);
+  const [isWhatsappSame, setIsWhatsappSame] = useState(false);
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: "",
@@ -68,6 +71,8 @@ export default function ScheduleRegistrationPage() {
 
     // Add location manually
     data.locationName = locationName;
+
+    // if isWhatsappSame is true, we don't send whatsappPhone, backend handles it.
 
     try {
       const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3001";
@@ -162,7 +167,7 @@ export default function ScheduleRegistrationPage() {
                 sx={{
                   display: "flex",
                   gap: 2,
-                  flexDirection: { xs: "column", sm: "row" },
+                  flexDirection: "column",
                 }}
               >
                 <TextField
@@ -174,12 +179,35 @@ export default function ScheduleRegistrationPage() {
                 />
                 <TextField
                   name="parentPhone"
-                  label={t("forms.labels.phone")}
+                  label={t("forms.labels.local-phone")}
                   variant="outlined"
                   fullWidth
                   required
                 />
               </Box>
+
+              <Box>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={isWhatsappSame}
+                      onChange={(e) => setIsWhatsappSame(e.target.checked)}
+                      color="primary"
+                    />
+                  }
+                  label={t("forms.labels.whatsapp-same")}
+                />
+              </Box>
+
+              {!isWhatsappSame && (
+                <TextField
+                  name="whatsappPhone"
+                  label={t("forms.labels.whatsapp-phone")}
+                  variant="outlined"
+                  fullWidth
+                  required
+                />
+              )}
 
               {locationName.toLowerCase().includes("gezira") && (
                 <TextField

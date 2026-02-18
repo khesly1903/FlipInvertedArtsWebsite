@@ -579,7 +579,11 @@
       "additional-notes": "Additional Message / Notes",
       "gezira-membership": "Gezira Membership Number",
       "emergency-name": "Emergency Contact Name",
-      "emergency-phone": "Emergency Contact Phone"
+      "emergency-phone": "Emergency Contact Phone",
+      "local-phone": "Local Phone Number",
+      "whatsapp-phone": "WhatsApp Phone Number",
+      "whatsapp-different": "My WhatsApp number is different",
+      "whatsapp-same": "My WhatsApp number is the same as my Local Phone Number"
     },
     "placeholders": {
       "dob": "DD/MM/YYYY",

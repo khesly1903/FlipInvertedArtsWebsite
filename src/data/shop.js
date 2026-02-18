@@ -115,7 +115,7 @@ export const shopItems = [
       "shop.mat.details.4",
     ],
   },
-  //{ 
+  //{
   //id: "2",
   //category: "long-sleeve",
   //title: "shop.long-sleeve.title",

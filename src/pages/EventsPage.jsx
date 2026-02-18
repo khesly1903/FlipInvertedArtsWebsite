@@ -14,8 +14,10 @@ import AnimatedInformation from "../components/AnimatedInformation";
 import MasonryGrid from "../components/Masonry";
 import { events } from "../data/events";
 import AnimatedTitle from "../components/AnimatedTitle";
-import eventSummerVideo from "../assets/events/event_summer.mp4";
-import eventSpringVideo from "../assets/events/event_spring.mp4";
+import LazyVideo from "../components/LazyVideo";
+// Remove local video imports
+// import eventSummerVideo from "../assets/events/event_summer.mp4";
+// import eventSpringVideo from "../assets/events/event_spring.mp4";
 import eventWinterVideo from "../assets/events/winter_coming_soon.webp";
 import eventLanding from "../assets/events/events_landing.webp";
 
@@ -30,6 +32,8 @@ const EventsPage = () => {
   const unavailableEvents = events.filter(
     (e) => e.availability === "unavailable",
   );
+
+  const R2_URL = import.meta.env.VITE_R2_URL;
 
   useEffect(() => {
     if (state && state.targetId) {
@@ -163,19 +167,7 @@ const EventsPage = () => {
                   boxShadow: 3,
                 }}
               >
-                <video
-                  src={eventSpringVideo}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    display: "block",
-                  }}
-                />
+                <LazyVideo src={`${R2_URL}/event_spring.mp4`} />
               </Box>
               <Box sx={{ flex: 1 }}>
                 <AnimatedTitle
@@ -223,19 +215,7 @@ const EventsPage = () => {
                   boxShadow: 3,
                 }}
               >
-                <video
-                  src={eventSummerVideo}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    display: "block",
-                  }}
-                />
+                <LazyVideo src={`${R2_URL}/event_summer.mp4`} />
               </Box>
             </Box>
           </Box>
