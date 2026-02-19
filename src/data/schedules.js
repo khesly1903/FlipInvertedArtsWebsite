@@ -1,3 +1,5 @@
+const R2_URL = import.meta.env.VITE_R2_URL;
+
 // schedule cards
 import card_zamalek_studio from "../assets/schedules/card/card_zamalek_studio.webp";
 import card_maadi from "../assets/schedules/card/card_maadi.webp";
@@ -9,14 +11,14 @@ import card_october from "../assets/schedules/card/card_october.webp";
 import card_zayed from "../assets/schedules/card/card_zayed.webp";
 
 // schedule landging
-import landing_skeikh_zayed from "../assets/schedules/landing/landing_skeikh_zayed.webp";
-import landing_gezira_club_october from "../assets/schedules/landing/landing_gezira_club_october.webp";
-import landing_gezira_club_zamalek from "../assets/schedules/landing/landing_gezira_club_zamalek.webp";
-import landing_new_cairo from "../assets/schedules/landing/landing_new_cairo.webp";
-import landing_diplo from "../assets/schedules/landing/landing_diplo.webp";
-import landing_almaza from "../assets/schedules/landing/landing_almaza.webp";
-import landing_maadi from "../assets/schedules/landing/landing_maadi.webp";
-import landing_zamalek_studio from "../assets/schedules/landing/landing_zamalek_studio.webp";
+// import landing_skeikh_zayed from "../assets/schedules/landing/landing_skeikh_zayed.webp";
+// import landing_gezira_club_october from "../assets/schedules/landing/landing_gezira_club_october.webp";
+// import landing_gezira_club_zamalek from "../assets/schedules/landing/landing_gezira_club_zamalek.webp";
+// import landing_new_cairo from "../assets/schedules/landing/landing_new_cairo.webp";
+// import landing_diplo from "../assets/schedules/landing/landing_diplo.webp";
+// import landing_almaza from "../assets/schedules/landing/landing_almaza.webp";
+// import landing_maadi from "../assets/schedules/landing/landing_maadi.webp";
+// import landing_zamalek_studio from "../assets/schedules/landing/landing_zamalek_studio.webp";
 
 // current schedule images
 import october_1 from "../assets/schedules/october_1.webp";
@@ -60,7 +62,7 @@ export const schedules = [
     details: {
       description: "schedules.gezira-club-october.description",
       formDescription: "schedules.gezira-club-october.form-description",
-      landingImage: landing_gezira_club_october,
+      landingImage: `${R2_URL}/landing/landing_gezira_club_october.webp`,
       images: [
         october_1,
         // october_2,
@@ -79,7 +81,7 @@ export const schedules = [
     details: {
       description: "schedules.gezira-club-zamalek.description",
       formDescription: "schedules.gezira-club-zamalek.form-description",
-      landingImage: landing_gezira_club_zamalek,
+      landingImage: `${R2_URL}/landing/landing_gezira_club_zamalek.webp`,
       images: [
         zamalek_club_1,
         // zamalek_club_2,
@@ -98,7 +100,7 @@ export const schedules = [
     details: {
       description: "schedules.zamalek-studio.description",
       formDescription: "schedules.zamalek-studio.form-description",
-      landingImage: landing_zamalek_studio,
+      landingImage: `${R2_URL}/landing/landing_zamalek_studio.webp`,
       images: [
         zamalek_studio_1,
         // zamalek_studio_2,
@@ -117,7 +119,7 @@ export const schedules = [
     details: {
       description: "schedules.maadi.description",
       formDescription: "schedules.maadi.form-description",
-      landingImage: landing_maadi,
+      landingImage: `${R2_URL}/landing/landing_maadi.webp`,
       images: [maadi_2, maadi_3, maadi_1],
       mapLocation:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.736334479096!2d31.2709341!3d29.958261800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458380c4dcb4b71%3A0x158071c9865714ff!2sSteel%20Fitness%20Club%20Egypt!5e0!3m2!1str!2seg!4v1770743876471!5m2!1str!2seg",
@@ -133,7 +135,7 @@ export const schedules = [
     details: {
       description: "schedules.sheikh-zayed.description",
       formDescription: "schedules.sheikh-zayed.form-description",
-      landingImage: landing_skeikh_zayed,
+      landingImage: `${R2_URL}/landing/landing_skeikh_zayed.webp`,
       images: [
         zayed_1,
         // zayed_2,
@@ -152,7 +154,7 @@ export const schedules = [
     details: {
       description: "schedules.new-cairo.description",
       formDescription: "schedules.new-cairo.form-description",
-      landingImage: landing_new_cairo,
+      landingImage: `${R2_URL}/landing/landing_new_cairo.webp`,
       images: [
         new_cairo_1,
         // new_cairo_2,
@@ -171,7 +173,7 @@ export const schedules = [
     details: {
       description: "schedules.almaza-bay.description",
       formDescription: "schedules.almaza-bay.form-description",
-      landingImage: landing_almaza,
+      landingImage: `${R2_URL}/landing/landing_almaza.webp`,
       images: [
         "/coming_soon.webp",
         // almaza_1,
@@ -191,7 +193,7 @@ export const schedules = [
     details: {
       description: "schedules.diplo.description",
       formDescription: "schedules.diplo.form-description",
-      landingImage: landing_diplo,
+      landingImage: `${R2_URL}/landing/landing_diplo.webp`,
       images: [
         "/coming_soon.webp",
         // diplo_1,

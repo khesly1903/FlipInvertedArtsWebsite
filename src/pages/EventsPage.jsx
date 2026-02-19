@@ -19,7 +19,7 @@ import LazyVideo from "../components/LazyVideo";
 // import eventSummerVideo from "../assets/events/event_summer.mp4";
 // import eventSpringVideo from "../assets/events/event_spring.mp4";
 import eventWinterVideo from "../assets/events/winter_coming_soon.webp";
-import eventLanding from "../assets/events/events_landing.webp";
+// import eventLanding from "../assets/events/events_landing.webp";
 
 import { useTranslation } from "react-i18next";
 
@@ -47,7 +47,7 @@ const EventsPage = () => {
   return (
     <Box>
       <HalfPageLanding
-        image={eventLanding}
+        image={`${R2_URL}/landing/events_landing.webp`}
         logo="/logos/flip_logo_half_landing_white_events.svg"
       />
 
@@ -167,7 +167,7 @@ const EventsPage = () => {
                   boxShadow: 3,
                 }}
               >
-                <LazyVideo src={`${R2_URL}/event_spring.mp4`} />
+                <LazyVideo src={`${R2_URL}/video/event_spring.mp4`} />
               </Box>
               <Box sx={{ flex: 1 }}>
                 <AnimatedTitle
@@ -215,7 +215,7 @@ const EventsPage = () => {
                   boxShadow: 3,
                 }}
               >
-                <LazyVideo src={`${R2_URL}/event_summer.mp4`} />
+                <LazyVideo src={`${R2_URL}/video/event_summer.mp4`} />
               </Box>
             </Box>
           </Box>

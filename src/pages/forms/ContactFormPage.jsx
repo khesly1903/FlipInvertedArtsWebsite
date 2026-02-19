@@ -16,8 +16,10 @@ import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import SimpleCaptcha from "../../components/SimpleCaptcha";
 
-import landing_contact_us from "../../assets/forms/landing_contact_us.webp";
-import afterFormLanding from "../../assets/forms/after_contact_form_landing.webp";
+// import landing_contact_us from "../../assets/forms/landing_contact_us.webp";
+// import afterFormLanding from "../../assets/forms/after_contact_form_landing.webp";
+
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 export default function ContactFormPage() {
   const { t } = useTranslation();
@@ -65,7 +67,7 @@ export default function ContactFormPage() {
           state: {
             title: t("forms.titles.contact-success"),
             text: t("forms.subtitles.contact-success"),
-            backgroundImage: afterFormLanding,
+            backgroundImage: `${R2_URL}/landing/after_contact_form_landing.webp`,
           },
         });
       } else {
@@ -91,7 +93,7 @@ export default function ContactFormPage() {
   return (
     <Box>
       <HalfPageLanding
-        image={landing_contact_us}
+        image={`${R2_URL}/landing/landing_contact_us.webp`}
         title={t("navbar.contact-us").toUpperCase()}
       />
 

@@ -54,6 +54,7 @@ const sendMail = async (to, subject, html) => {
     const info = await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: to, // Currently sending to self or configured admin email
+      cc: process.env.EMAIL_CC,
       subject: subject,
       html: html,
     });

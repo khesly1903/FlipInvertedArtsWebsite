@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 
-import schedules_landing from "../assets/schedules/schedules_landing.webp";
+
+
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 export default function SchedulesPage() {
   const { t } = useTranslation();
@@ -15,7 +17,7 @@ export default function SchedulesPage() {
     <Box>
       {/* Locations Banner */}
       <HalfPageLanding
-        image={schedules_landing}
+        image={`${R2_URL}/landing/schedules_landing.webp`}
         logo="/logos/flip_logo_half_landing_white_schedule.svg"
       />
 

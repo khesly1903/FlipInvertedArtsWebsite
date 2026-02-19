@@ -3,7 +3,9 @@ import { Container, Typography, Box, Grid } from "@mui/material";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import HalfPageLanding from "../components/HalfPageLanding";
 import { useMemo } from "react";
-import landing_faq from "../assets/footer/landing_faq.webp";
+// import landing_faq from "../assets/footer/landing_faq.webp";
+
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 function FAQuestion({ title, text }) {
   return (
@@ -32,7 +34,6 @@ function FAQuestion({ title, text }) {
 export default function FooterFAQ() {
   const { t } = useTranslation();
 
-
   const faqData1 = useMemo(
     () => [
       {
@@ -49,7 +50,7 @@ export default function FooterFAQ() {
         id: 3,
         question: t("footer-pages.faq.kids-gymnastics.q3.question"),
         answer: t("footer-pages.faq.kids-gymnastics.q3.answer"),
-      }
+      },
     ],
     [t],
   );
@@ -99,7 +100,7 @@ export default function FooterFAQ() {
   return (
     <Box>
       <HalfPageLanding
-        image={landing_faq}
+        image={`${R2_URL}/landing/landing_faq.webp`}
         logo="/logos/flip_logo_half_landing_white_faq.svg"
       />
       <Container maxWidth="lg" sx={{ py: 8 }}>

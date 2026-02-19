@@ -33,9 +33,9 @@ import homepage_carousel1 from "../assets/homepage/homepage_carousel1.webp";
 import homepage_carousel2 from "../assets/homepage/homepage_carousel2.webp";
 import homepage_carousel3 from "../assets/homepage/homepage_carousel3.webp";
 import homepage_carousel4 from "../assets/homepage/homepage_carousel4.webp";
-import homepage_classes from "../assets/homepage/homepage_classes.webp";
-import homepage_events from "../assets/homepage/homepage_events.webp";
-import homepage_schedules from "../assets/homepage/homepage_schedules.webp";
+// import homepage_classes from "../assets/homepage/homepage_classes.webp";
+// import homepage_events from "../assets/homepage/homepage_events.webp";
+// import homepage_schedules from "../assets/homepage/homepage_schedules.webp";
 
 const R2_URL = import.meta.env.VITE_R2_URL;
 
@@ -62,9 +62,9 @@ export default function HomePage() {
           loop
           muted
           playsInline
-          src={`${R2_URL}/homepage_video.mp4`}
+          src={`${R2_URL}/video/homepage_video.mp4`}
           preload="auto"
-          // poster={homepage_video_poster}
+          poster={`${R2_URL}/video/homepage_video_poster.webp`}
           style={{
             position: "absolute",
             top: 0,
@@ -197,7 +197,7 @@ export default function HomePage() {
         images={[
           card_diplo,
           class_3_card,
-          homepage_events,
+          `${R2_URL}/landing/events_landing.webp`,
           class_1_3,
           class_2_3,
           homepage_carousel1,
@@ -229,19 +229,19 @@ export default function HomePage() {
             {
               title: t("home.classes"),
               description: t("home.classes-description"),
-              image: homepage_classes,
+              image: `${R2_URL}/landing/classes_landing.webp`,
               path: "/classes",
             },
             {
               title: t("home.events"),
               description: t("home.events-description"),
-              image: homepage_events,
+              image: `${R2_URL}/landing/events_landing.webp`,
               path: "./events",
             },
             {
               title: t("home.schedules"),
               description: t("home.schedules-description"),
-              image: homepage_schedules,
+              image: `${R2_URL}/landing/schedules_landing.webp`,
               path: "./schedules",
             },
           ].map((item, index) => (

@@ -17,8 +17,10 @@ import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import SimpleCaptcha from "../../components/SimpleCaptcha";
 
-import afterFormLanding from "../../assets/forms/after_events_form_landing.webp";
-import landing_event_registration from "../../assets/forms/landing_event_registration.webp";
+// import afterFormLanding from "../../assets/forms/after_events_form_landing.webp";
+// import landing_event_registration from "../../assets/forms/landing_event_registration.webp";
+
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 export default function EventRegistrationPage() {
   const { t } = useTranslation();
@@ -67,7 +69,7 @@ export default function EventRegistrationPage() {
           state: {
             title: t("forms.titles.event-success"),
             text: t("forms.subtitles.event-success"),
-            backgroundImage: afterFormLanding,
+            backgroundImage: `${R2_URL}/landing/after_events_form_landing.webp`,
           },
         });
       } else {
@@ -104,7 +106,7 @@ export default function EventRegistrationPage() {
   return (
     <Box>
       <HalfPageLanding
-        image={landing_event_registration}
+        image={`${R2_URL}/landing/landing_event_registration.webp`}
         title={t("home.events").toUpperCase()}
       />
 

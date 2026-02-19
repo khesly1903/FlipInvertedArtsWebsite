@@ -4,9 +4,10 @@ import { useTranslation } from "react-i18next";
 import ShopCard from "../components/ShopCard";
 import { shopItems, shopTags } from "../data/shop";
 
-
 import HalfPageLanding from "../components/HalfPageLanding";
-import shopLanding from "../assets/shop/landing_shop.webp";
+// import shopLanding from "../assets/shop/landing_shop.webp";
+
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 import { useNavigate } from "react-router-dom";
 
@@ -23,7 +24,7 @@ const ShopPage = () => {
   return (
     <>
       <HalfPageLanding
-        image={shopLanding}
+        image={`${R2_URL}/landing/landing_shop.webp`}
         // logo="/logos/flip_logo_half_landing_white_shop.svg"
         logo="./flip_logo.svg"
         title={t("home.shop")}

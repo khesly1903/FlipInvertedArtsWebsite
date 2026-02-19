@@ -19,7 +19,9 @@ import { useTranslation } from "react-i18next";
 import HalfPageLanding from "../../components/HalfPageLanding";
 import SimpleCaptcha from "../../components/SimpleCaptcha";
 
-import landing_schedule_registration from "../../assets/forms/landing_schedule_registration.webp";
+// import landing_schedule_registration from "../../assets/forms/landing_schedule_registration.webp";
+
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 export default function ScheduleRegistrationPage() {
   const { t } = useTranslation();
@@ -92,7 +94,7 @@ export default function ScheduleRegistrationPage() {
           state: {
             title: t("forms.titles.schedule-success"),
             text: t("forms.subtitles.schedule-success"),
-            backgroundImage: landing_schedule_registration,
+            backgroundImage: `${R2_URL}/landing/landing_schedule_registration.webp`,
           },
         });
       } else {
@@ -118,7 +120,7 @@ export default function ScheduleRegistrationPage() {
   return (
     <Box>
       <HalfPageLanding
-        image={landing_schedule_registration}
+        image={`${R2_URL}/landing/landing_schedule_registration.webp`}
         title={t("home.schedules").toUpperCase()}
       />
 

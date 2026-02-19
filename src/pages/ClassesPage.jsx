@@ -2,7 +2,7 @@ import { Typography, Container, Box, Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";;
+import { useTranslation } from "react-i18next";
 import ClassCard from "../components/ClassCard";
 import AnimatedInformation from "../components/AnimatedInformation";
 import HalfPageLanding from "../components/HalfPageLanding";
@@ -17,9 +17,8 @@ import class_5_1 from "../assets/classes/class_5/class_5_1.webp";
 import class_6_1 from "../assets/classes/class_6/class_6_1.webp";
 import class_7_1 from "../assets/classes/class_7/class_7_1.webp";
 import class_8_1 from "../assets/classes/class_8/class_8_1.webp";
-import class_3_landing from "../assets/classes/class_3/class_3_landing.webp";
 
-import classes_landing from "../assets/classes/classes_landing.webp";
+const R2_URL = import.meta.env.VITE_R2_URL;
 
 export default function ClassesPage() {
   const { state } = useLocation();
@@ -38,7 +37,7 @@ export default function ClassesPage() {
     <Box>
       {/* Classes Banner */}
       <HalfPageLanding
-        image={classes_landing}
+        image={`${R2_URL}/landing/classes_landing.webp`}
         logo="/logos/flip_logo_half_landing_white_classes.svg"
       />
 
@@ -48,7 +47,6 @@ export default function ClassesPage() {
         text={t("classes.classes-text")}
       />
 
-      
       <ImageCarousel
         images={[
           class_1_1,
@@ -59,7 +57,6 @@ export default function ClassesPage() {
           class_6_1,
           class_7_1,
           class_8_1,
-          class_3_landing,
         ]}
       />
       {/* Kids Classes Section */}
