@@ -30,6 +30,7 @@ export default function ScheduleRegistrationPage() {
   const [loading, setLoading] = useState(false);
   const [locationName, setLocationName] = useState("");
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+  const [isAdult, setIsAdult] = useState(false);
   const [dobError, setDobError] = useState(false);
   const [isWhatsappSame, setIsWhatsappSame] = useState(false);
   const [snackbar, setSnackbar] = useState({
@@ -73,6 +74,10 @@ export default function ScheduleRegistrationPage() {
 
     // Add location manually
     data.locationName = locationName;
+
+    if (isAdult) {
+      data.parentName = null;
+    }
 
     // if isWhatsappSame is true, we don't send whatsappPhone, backend handles it.
 
@@ -157,12 +162,101 @@ export default function ScheduleRegistrationPage() {
 
           <form ref={formRef} onSubmit={handleSubmit}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-              {/* Parent Info */}
+              {/* Adult Checkbox */}
+              <Box>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={isAdult}
+                      onChange={(e) => setIsAdult(e.target.checked)}
+                      color="primary"
+                    />
+                  }
+                  label={t("forms.labels.is-adult")}
+                />
+              </Box>
+
+              {/* Child Info / About You */}
               <Typography
                 variant="h6"
-                sx={{ mt: 1, borderBottom: "1px solid #eee", pb: 1 }}
+                sx={{ mt: 2, borderBottom: "1px solid #eee", pb: 1 }}
               >
-                {t("forms.subtitles.parent-info")}
+                {isAdult
+                  ? t("forms.subtitles.about-me")
+                  : t("forms.subtitles.child-info")}
+              </Typography>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: 2,
+                  flexDirection: { xs: "column", sm: "row" },
+                }}
+              >
+                <TextField
+                  name="childName"
+                  label={
+                    isAdult
+                      ? t("forms.labels.my-name")
+                      : t("forms.labels.child-name")
+                  }
+                  variant="outlined"
+                  fullWidth
+                  required
+                />
+                <TextField
+                  name="childDOB"
+                  label={t("forms.labels.dob")}
+                  variant="outlined"
+                  fullWidth
+                  required
+                  placeholder={t("forms.placeholders.dob")}
+                  helperText={
+                    dobError ? "Invalid Date (DD/MM/YYYY)" : "e.g. 25/12/2015"
+                  }
+                  error={dobError}
+                  inputProps={{ inputMode: "numeric" }}
+                  onBlur={(e) => {
+                    const val = e.target.value;
+                    if (!val) {
+                      setDobError(false);
+                      return;
+                    }
+                    const regex =
+                      /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d$/;
+                    setDobError(!regex.test(val));
+                  }}
+                  onChange={(e) => {
+                    setDobError(false);
+                    let value = e.target.value.replace(/\D/g, "");
+                    if (value.length > 2)
+                      value = value.slice(0, 2) + "/" + value.slice(2);
+                    if (value.length > 5)
+                      value = value.slice(0, 5) + "/" + value.slice(5);
+                    if (value.length > 10) value = value.slice(0, 10);
+                    e.target.value = value;
+                  }}
+                />
+              </Box>
+
+              {!isAdult && (
+                <TextField
+                  name="childSchool"
+                  label={t("forms.labels.school")}
+                  variant="outlined"
+                  fullWidth
+                  required={!isAdult}
+                />
+              )}
+
+              {/* Parent Info / Contact Info */}
+              <Typography
+                variant="h6"
+                sx={{ mt: 3, borderBottom: "1px solid #eee", pb: 1 }}
+              >
+                {isAdult
+                  ? t("forms.subtitles.contact-info")
+                  : t("forms.subtitles.parent-info")}
               </Typography>
 
               <Box
@@ -172,13 +266,15 @@ export default function ScheduleRegistrationPage() {
                   flexDirection: "column",
                 }}
               >
-                <TextField
-                  name="parentName"
-                  label={t("forms.labels.parent-name")}
-                  variant="outlined"
-                  fullWidth
-                  required
-                />
+                {!isAdult && (
+                  <TextField
+                    name="parentName"
+                    label={t("forms.labels.parent-name")}
+                    variant="outlined"
+                    fullWidth
+                    required={!isAdult}
+                  />
+                )}
                 <TextField
                   name="parentPhone"
                   label={t("forms.labels.local-phone")}
@@ -225,71 +321,6 @@ export default function ScheduleRegistrationPage() {
                 name="parentEmail"
                 label={t("forms.labels.email")}
                 type="email"
-                variant="outlined"
-                fullWidth
-                required
-              />
-
-              {/* Child Info */}
-              <Typography
-                variant="h6"
-                sx={{ mt: 2, borderBottom: "1px solid #eee", pb: 1 }}
-              >
-                {t("forms.subtitles.child-info")}
-              </Typography>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  gap: 2,
-                  flexDirection: { xs: "column", sm: "row" },
-                }}
-              >
-                <TextField
-                  name="childName"
-                  label={t("forms.labels.child-name")}
-                  variant="outlined"
-                  fullWidth
-                  required
-                />
-                <TextField
-                  name="childDOB"
-                  label={t("forms.labels.dob")}
-                  variant="outlined"
-                  fullWidth
-                  required
-                  placeholder={t("forms.placeholders.dob")}
-                  helperText={
-                    dobError ? "Invalid Date (DD/MM/YYYY)" : "e.g. 25/12/2015"
-                  }
-                  error={dobError}
-                  inputProps={{ inputMode: "numeric" }}
-                  onBlur={(e) => {
-                    const val = e.target.value;
-                    if (!val) {
-                      setDobError(false);
-                      return;
-                    }
-                    const regex =
-                      /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d$/;
-                    setDobError(!regex.test(val));
-                  }}
-                  onChange={(e) => {
-                    setDobError(false);
-                    let value = e.target.value.replace(/\D/g, "");
-                    if (value.length > 2)
-                      value = value.slice(0, 2) + "/" + value.slice(2);
-                    if (value.length > 5)
-                      value = value.slice(0, 5) + "/" + value.slice(5);
-                    if (value.length > 10) value = value.slice(0, 10);
-                    e.target.value = value;
-                  }}
-                />
-              </Box>
-
-              <TextField
-                name="childSchool"
-                label={t("forms.labels.school")}
                 variant="outlined"
                 fullWidth
                 required

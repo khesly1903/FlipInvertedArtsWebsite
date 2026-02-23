@@ -462,7 +462,8 @@
     "upcomingEvents": "حفلاتنا الجاية",
     "pastEvents": "حفلاتنا السابقة",
     "viewPage": "عرض صفحة {{page}}",
-    "contact-us": "تواصل معانا"
+    "contact-us": "تواصل معانا",
+    "shop": "المحل"
   },
   "footer": {
     "classes": "التدريب",
@@ -472,7 +473,8 @@
     "faq": "الأسئلة الشائعة",
     "privacy-policy": "سياسة الخصوصية",
     "safety": "السلامة",
-    "contact-us": "تواصل معانا"
+    "contact-us": "تواصل معانا",
+    "shop": "المحل"
   },
   "footer-pages": {
     "about-flip": {
@@ -561,7 +563,9 @@
       "emergency-contact": "جهة اتصال للطوارئ",
       "contact-success": "شكراً لتواصلك. هنرد عليك في أقرب وقت.",
       "event-success": "استلمنا تسجيلك. هنتواصل معاك قريباً.",
-      "schedule-success": "استلمنا تسجيلك. هنتواصل معاك قريباً."
+      "schedule-success": "استلمنا تسجيلك. هنتواصل معاك قريباً.",
+      "about-me": "بياناتك",
+      "contact-info": "معلومات التواصل"
     },
     "labels": {
       "full-name": "اسمك الكامل",
@@ -579,7 +583,9 @@
       "additional-notes": "رسالة إضافية / ملاحظات",
       "gezira-membership": "رقم عضوية الجزيرة",
       "emergency-name": "اسم شخص اتصال الطوارئ",
-      "emergency-phone": "تليفون شخص اتصال الطوارئ"
+      "emergency-phone": "تليفون شخص اتصال الطوارئ",
+      "is-adult": "أنا أكبر من ١٨ سنة",
+      "my-name": "اسمك بالكامل"
     },
     "placeholders": {
       "dob": "يوم/شهر/سنة",

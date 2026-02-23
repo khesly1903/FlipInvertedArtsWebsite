@@ -68,6 +68,14 @@ export default function Footer() {
             >
               {t("footer.schedules")}
             </Button>
+            <Button
+              color="inherit"
+              component={RouterLink}
+              to="/shop"
+              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+            >
+              {t("footer.shop")}
+            </Button>
           </Stack>
 
           <Stack

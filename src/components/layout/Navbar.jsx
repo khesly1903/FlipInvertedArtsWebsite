@@ -84,6 +84,12 @@ export default function Navbar({ hideOnScrollTop = false }) {
       })),
     },
     {
+      title: t("navbar.shop"),
+      path: "/shop",
+      desc: "Check our products",
+      subLinks: [],
+    },
+    {
       title: t("navbar.about"),
       path: "/about-flip",
       desc: "Learn more about us",
