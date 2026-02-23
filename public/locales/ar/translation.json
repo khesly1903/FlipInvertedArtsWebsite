@@ -463,7 +463,7 @@
     "pastEvents": "حفلاتنا السابقة",
     "viewPage": "عرض صفحة {{page}}",
     "contact-us": "تواصل معانا",
-    "shop": "المحل"
+    "shop_nav": "المحل"
   },
   "footer": {
     "classes": "التدريب",
@@ -474,7 +474,7 @@
     "privacy-policy": "سياسة الخصوصية",
     "safety": "السلامة",
     "contact-us": "تواصل معانا",
-    "shop": "المحل"
+    "shop_footer": "المحل"
   },
   "footer-pages": {
     "about-flip": {

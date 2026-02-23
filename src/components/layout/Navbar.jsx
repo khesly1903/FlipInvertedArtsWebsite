@@ -84,7 +84,7 @@ export default function Navbar({ hideOnScrollTop = false }) {
       })),
     },
     {
-      title: t("navbar.shop"),
+      title: t("navbar.shop_nav"),
       path: "/shop",
       desc: "Check our products",
       subLinks: [],

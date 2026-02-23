@@ -463,7 +463,7 @@
     "pastEvents": "Past Events",
     "viewPage": "View {{page}} Page",
     "contact-us": "Contact Us",
-    "shop": "Shop"
+    "shop_nav": "Shop"
   },
   "footer": {
     "classes": "classes",
@@ -474,7 +474,7 @@
     "privacy-policy": "privacy policy",
     "safety": "safety",
     "contact-us": "contact us",
-    "shop": "shop"
+    "shop_footer": "shop"
   },
   "footer-pages": {
     "about-flip": {

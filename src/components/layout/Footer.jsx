@@ -43,12 +43,29 @@ export default function Footer() {
             }}
           />
 
-          <Stack direction="row" spacing={2} sx={{ mb: 2 }}>
+          <Stack
+            direction="row"
+            spacing={2}
+            useFlexGap
+            sx={{
+              mb: 2,
+              flexWrap: "wrap",
+              justifyContent: "center",
+              display: "flex",
+              width: "100%",
+              maxWidth: "100%",
+              rowGap: 1,
+            }}
+          >
             <Button
               color="inherit"
               component={RouterLink}
               to="/classes"
-              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+              sx={{
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                minWidth: { xs: "140px", sm: "auto" },
+              }}
             >
               {t("footer.classes")}
             </Button>
@@ -56,7 +73,11 @@ export default function Footer() {
               color="inherit"
               component={RouterLink}
               to="/events"
-              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+              sx={{
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                minWidth: { xs: "140px", sm: "auto" },
+              }}
             >
               {t("footer.events")}
             </Button>
@@ -64,7 +85,11 @@ export default function Footer() {
               color="inherit"
               component={RouterLink}
               to="/schedules"
-              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+              sx={{
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                minWidth: { xs: "140px", sm: "auto" },
+              }}
             >
               {t("footer.schedules")}
             </Button>
@@ -72,9 +97,13 @@ export default function Footer() {
               color="inherit"
               component={RouterLink}
               to="/shop"
-              sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
+              sx={{
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                minWidth: { xs: "140px", sm: "auto" },
+              }}
             >
-              {t("footer.shop")}
+              {t("footer.shop_footer")}
             </Button>
           </Stack>
 
